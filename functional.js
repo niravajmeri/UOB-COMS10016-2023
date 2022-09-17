@@ -1,5 +1,5 @@
 //LAYOUT CUSTOMIZATION
-var currentWeek   = 1;                        // current week [releases content fully visible up to this week]
+var currentWeek   = 0;                        // current week [releases content fully visible up to this week]
 var activityNum   = 8;                         // number of activities per week (empty slots possible)
 var columnNum     = 4;                         // desired columns per week (yet, autofitted to max 2 rows per week)
 var title         = "FUNCTIONAL PROGRAMMING";  // content title (different to unitName since multiple content streams maybe in one unit)
@@ -24,7 +24,7 @@ var categories = [
 ["2", "Teams Q&amp;A",       "#CCDFFF","1","",          "",              ],
 ["3", "Lab",           "#EEDFCF","1","",          "Materials",              ],
 ["4", "Exercises",           "#D8CCFF","1","","Code",          ],
-["5", "PrepTask:",           "#DDDDDD","0","",          "",              ],
+["5", "Startup Materials:",           "#DDDDDD","0","",          "",              ],
 ["6", "Formative Coursework","#EEEEDD","1","",          "Materials",     ],
 ["7", "Summative Coursework","#EEEEDD","1","",          "Materials",     ],
 ["8",  "",                   "#EEEEDD","0","",          "",              ], // multi-week coursework
@@ -50,14 +50,15 @@ var activities = [
 //CATEGORY NUM, DATE|TIME, ACTIVITY TITLE, ACTIVITY URL, SLIDES URL, MATERIAL START, MATERIAL RANGE
 
 //WEEK 01
-["9", "",                   "",                                "", "", "0", "1"],
 ["5", "in your own time",   "GET STARTED WITH HASKELL",        "https://mediasite.bris.ac.uk/Mediasite/Play/ed9419f3296a4b5c9c37398b077563481d", "", "0", "0"],
 ["15", "watch after Tue",   "Introduction", "https://mediasite.bris.ac.uk/Mediasite/Play/7aebc67b88544693a67bd13e75063ec61d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/slides/intro.zip",    "0", "0"],
+["0",  "watch after Tue",   "Datatypes",    "https://mediasite.bris.ac.uk/Mediasite/Play/f608c6f1ea994e68a580d048f51e16c11d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/slides/datatypes.zip", "0", "1"],
 ["11","Thu 30/09/21<br/>1pm-4pm<br/>MVB2.11", "Join Session",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/thursday.html", "", "0", "0"],
 ["9", "",                   "",                                "", "", "0", "1"],
-["0",  "watch after Tue",   "Datatypes",    "https://mediasite.bris.ac.uk/Mediasite/Play/f608c6f1ea994e68a580d048f51e16c11d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/slides/datatypes.zip", "0", "1"],
 ["0",  "watch after Tue",   "Functions",    "https://mediasite.bris.ac.uk/Mediasite/Play/30f33a32f25f424981cc78f36fa2de7b1d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/slides/functions.zip", "1", "1"],
 ["9", "",                   "",             "", "", "0", "0"],
+["9", "",                   "",                                "", "", "0", "1"],
+  
 //WEEK 02
 ["9", "",                   "",                                "", "", "0", "1"],
 ["15", "watch before Tue",   "Evaluation", "https://mediasite.bris.ac.uk/Mediasite/Play/414c3f30ea7640128553df9124ca84091d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/slides/evaluation.zip",    "0", "0"],
