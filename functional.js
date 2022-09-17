@@ -1,5 +1,5 @@
 //LAYOUT CUSTOMIZATION
-var currentWeek   = 12;                        // current week [releases content fully visible up to this week]
+var currentWeek   = 1;                        // current week [releases content fully visible up to this week]
 var activityNum   = 8;                         // number of activities per week (empty slots possible)
 var columnNum     = 4;                         // desired columns per week (yet, autofitted to max 2 rows per week)
 var title         = "FUNCTIONAL PROGRAMMING";  // content title (different to unitName since multiple content streams maybe in one unit)
@@ -22,9 +22,9 @@ var categories = [
 ["0", "Lecture:",             "#CCCFFF","0","Slides with Voice",    "Code",     ],
 ["1", "Teams Session",       "#DDE3FC","1","Slides",    "Code",     ],
 ["2", "Teams Q&amp;A",       "#CCDFFF","1","",          "",              ],
-["3", "Hybrid Lab",           "#EEDFCF","1","",          "Materials",              ],
+["3", "Lab",           "#EEDFCF","1","",          "Materials",              ],
 ["4", "Exercises",           "#D8CCFF","1","","Code",          ],
-["5", "PrepTask 4:",           "#DDDDDD","0","",          "",              ],
+["5", "PrepTask:",           "#DDDDDD","0","",          "",              ],
 ["6", "Formative Coursework","#EEEEDD","1","",          "Materials",     ],
 ["7", "Summative Coursework","#EEEEDD","1","",          "Materials",     ],
 ["8",  "",                   "#EEEEDD","0","",          "",              ], // multi-week coursework
