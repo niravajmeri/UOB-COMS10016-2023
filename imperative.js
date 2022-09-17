@@ -4,7 +4,7 @@ var activityNum   = 8;                         // number of activities per week 
 var columnNum     = 4;                         // desired columns per week (yet, autofitted to max 2 rows per week)
 var title         = "IMPERATIVE PROGRAMMING";  // content title (different to unitName since multiple content streams maybe in one unit)
 var headerOn      = 1;                         // table column headers on(=1) or off(=0), min of 4 columns needed to render
-var header1       = "Extra Exercises";    // leftmost 1x column header
+var header1       = "Exercises";    // leftmost 1x column header
 var header2       = "Lectures";  // middle 2x column header
 var header3       = "Coursework &amp; Labs";   // rest of the columns header
 var inactColour   = "#999999";                 // font colour for inactive content
@@ -24,7 +24,7 @@ var categories = [
 ["2", "Teams Q&amp;A",       "#CCDFFF","1","Slides",    "Code",          ],
 ["3", "Hybrid C Lab",          "#EEDFCF","0","",          "",              ],
 ["4", "Exercises",  "#D8CCFF","1","",          "Sample Solutions",],
-["5", "Getting Started:",            "#DDDDDD","0","",          "",              ],
+["5", "Startup Materials:",            "#DDDDDD","0","",          "",              ],
 ["6", "Formative Coursework","#EEEEDD","1","",          "Materials",     ],
 ["7", "Individual Summative Coursework","#EEEEDD","1","",          "",     ],
 ["8",  "",                   "#EEEEDD","0","",          "",              ], // multi-week coursework
@@ -52,7 +52,7 @@ var activities = [
 ["1", "Tue 27/09/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley", "WELCOME &amp INTRODUCTION",  "", "", "21", "4"],
 ["0", "Fri 30/09/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",    "PROCEDURES &amp; PROGRAMS",       "https://mediasite.bris.ac.uk/Mediasite/Play/91d05240456c424a922dd1c8db97569d1d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_01.pdf", "0", "2"],
 ["11","Wed 28/09/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "GET YOUR PC READY",  "http://people.cs.bris.ac.uk/~burghard/setup/index.html", "", "0", "0"],
-["5", "Read before 20/09/22",   "MARKING GUIDE",         "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week01/marking.html", "", "0", "0"],
+["5", "Read before 27/09/22",   "<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week01/marking.html' target='_blank'>MARKING GUIDE</a>",         "", "", "0", "0"],
 ["9", "",                   "",                                "", "", "0", "0"],
 ["9", "",                   "",                                "", "", "0", "0"],
 ["9", "",                   "",                                "", "", "0", "0"],
