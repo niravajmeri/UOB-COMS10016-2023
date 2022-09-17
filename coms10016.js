@@ -1,5 +1,5 @@
 //UNIT DETAILS
-var unitName      = "Imperative and Functional Programming<hr/>";
+var unitName      = "Imperative and Functional Programming 2022";
 var unitCode      = "COMS10016";
 var startWeekNum  = 1;                         // start week number [usual start is week 1 or 13]
 var totalWeeks    = 12;                        // total teaching weeks for unit [usually 12]
