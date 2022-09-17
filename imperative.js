@@ -19,8 +19,8 @@ var extendCatNum2 = 10;                        // number of one category that ha
 //ACTIVITY CATEGORIES (up to 35 allowed)
 //CATEGORY NUM, CATEGORY TITLE, COLOUR, COUNTER?, SLIDES LINK, MATERIAL LINK
 var categories = [
-["0", "Chapter",             "#CCCFFF","1","Slides",    "Code",          ],
-["1", "Introduction:",      "#CCCFFF","0","Slides",    "Lecturers",     ],
+["0", "Chapter",             "#CCCFFF","1","Revision Video",    "Code",          ],
+["1", "Introduction:",      "#CCCFFF","1","",    "Lecturers",     ],
 ["2", "Teams Q&amp;A",       "#CCDFFF","1","Slides",    "Code",          ],
 ["3", "Hybrid C Lab",          "#EEDFCF","0","",          "",              ],
 ["4", "Exercises",  "#D8CCFF","1","",          "Sample Solutions",],
@@ -49,11 +49,11 @@ var activities = [
 
 //WEEK 01 - INTRO
 ["5", "Tue 20/09/22<br/>02:00pm-04:00pm<br/>MVB2.11/1.15",   "THE LINUX TUTORIAL",              "https://seis.bristol.ac.uk/~sh1670/LinTut.pdf", "", "0", "0"],
-["1", "Tue 27/09/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley", "WELCOME &amp INTRODUCTION",  "", "", "21", "4"],
-["0", "Fri 30/09/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",    "PROCEDURES &amp; PROGRAMS",       "https://mediasite.bris.ac.uk/Mediasite/Play/91d05240456c424a922dd1c8db97569d1d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_01.pdf", "0", "2"],
+["1", "Tue 27/09/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley", "WELCOME LECTURE",  "", "", "21", "4"],
+["0", "Fri 30/09/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",    "PROCEDURES &amp; PROGRAMS",       "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_01.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/91d05240456c424a922dd1c8db97569d1d", "0", "2"],
 ["11","Wed 28/09/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "GET YOUR PC READY",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/setup.html", "", "0", "0"],
 ["5", "Read before 27/09/22",   "<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week01/marking.html' target='_blank'>MARKING GUIDE</a>",         "", "", "0", "0"],
-["0", "Fri 30/09/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",     "TYPES, VARIABLES &amp; SCOPE",     "https://mediasite.bris.ac.uk/Mediasite/Play/0015df077d4d4287892c1e7563a68da71d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_02.pdf", "2", "4"],
+["0", "Fri 30/09/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",     "TYPES, VARIABLES &amp; SCOPE",      "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_02.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/0015df077d4d4287892c1e7563a68da71d", "2", "4"],
 ["9", "",                   "",                                "", "", "0", "0"],
 ["9", "",                   "",                                "", "", "0", "0"],
 
