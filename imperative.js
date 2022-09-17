@@ -4,9 +4,9 @@ var activityNum   = 8;                         // number of activities per week 
 var columnNum     = 4;                         // desired columns per week (yet, autofitted to max 2 rows per week)
 var title         = "IMPERATIVE PROGRAMMING";  // content title (different to unitName since multiple content streams maybe in one unit)
 var headerOn      = 1;                         // table column headers on(=1) or off(=0), min of 4 columns needed to render
-var header1       = "Exercises";    // leftmost 1x column header
-var header2       = "Lectures";  // middle 2x column header
-var header3       = "Coursework &amp; Labs";   // rest of the columns header
+var header1       = "EXERCISES";    // leftmost 1x column header
+var header2       = "LECTURES";  // middle 2x column header
+var header3       = "COURSEWORK &amp; LABS";   // rest of the columns header
 var inactColour   = "#999999";                 // font colour for inactive content
 var titleColour   = "#777777";                 // table title colour
 var titleBColour  = "#BBBBBB";                 // table title background colour
@@ -19,7 +19,7 @@ var extendCatNum2 = 10;                        // number of one category that ha
 //ACTIVITY CATEGORIES (up to 35 allowed)
 //CATEGORY NUM, CATEGORY TITLE, COLOUR, COUNTER?, SLIDES LINK, MATERIAL LINK
 var categories = [
-["0", "Lecture",             "#CCCFFF","1","Slides",    "Code",          ],
+["0", "Chapter",             "#CCCFFF","1","Slides",    "Code",          ],
 ["1", "Introduction:",      "#CCCFFF","0","Slides",    "Lecturers",     ],
 ["2", "Teams Q&amp;A",       "#CCDFFF","1","Slides",    "Code",          ],
 ["3", "Hybrid C Lab",          "#EEDFCF","0","",          "",              ],
@@ -48,12 +48,12 @@ var categories = [
 var activities = [
 
 //WEEK 01 - INTRO
-["5", "Tue 20/09/22<br/>14:00am-16:00pm<br/>MVB2.11/1.15",   "THE LINUX TUTORIAL",              "https://seis.bristol.ac.uk/~sh1670/LinTut.pdf", "", "0", "0"],
+["5", "Tue 20/09/22<br/>02:00pm-04:00pm<br/>MVB2.11/1.15",   "THE LINUX TUTORIAL",              "https://seis.bristol.ac.uk/~sh1670/LinTut.pdf", "", "0", "0"],
 ["1", "Tue 27/09/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley", "WELCOME &amp INTRODUCTION",  "", "", "21", "4"],
 ["0", "Fri 30/09/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",    "PROCEDURES &amp; PROGRAMS",       "https://mediasite.bris.ac.uk/Mediasite/Play/91d05240456c424a922dd1c8db97569d1d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_01.pdf", "0", "2"],
-["11","Wed 28/09/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "GET YOUR PC READY",  "http://people.cs.bris.ac.uk/~burghard/setup/index.html", "", "0", "0"],
+["11","Wed 28/09/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "GET YOUR PC READY",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/setup.html", "", "0", "0"],
 ["5", "Read before 27/09/22",   "<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week01/marking.html' target='_blank'>MARKING GUIDE</a>",         "", "", "0", "0"],
-["9", "",                   "",                                "", "", "0", "0"],
+["0", "Fri 30/09/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",     "TYPES, VARIABLES &amp; SCOPE",     "https://mediasite.bris.ac.uk/Mediasite/Play/0015df077d4d4287892c1e7563a68da71d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_02.pdf", "2", "4"],
 ["9", "",                   "",                                "", "", "0", "0"],
 ["9", "",                   "",                                "", "", "0", "0"],
 
@@ -272,10 +272,10 @@ var files = [
 [ "18", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/fullpaint.c",               "fullpaint.c"],
 [ "19", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/doublepaint.c",             "doublepaint.c"],
 [ "20", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/trianglenum.c",             "trianglenum.c"],
-[ "21", "https://research-information.bris.ac.uk/en/persons/tilo-burghardt", "Website of Tilo"],
-[ "22", "https://research-information.bris.ac.uk/en/persons/sion-l-hannuna", "Website of Sion"],
-[ "23", "https://research-information.bris.ac.uk/en/persons/meng-wang",      "Website of Meng"],
-[ "24", "https://research-information.bris.ac.uk/en/persons/peter-d-bennett","Website of Pete"],
+[ "21", "https://tiloburghardt.github.io", "Website of Tilo"],
+[ "22", "https://mengwangoxf.github.io", "Website of Meng"],
+[ "23", "http://people.cs.bris.ac.uk/~oray",      "Website of Oliver"],
+[ "24", "https://niravajmeri.github.io","Website of Nirav"],
 [ "25", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/week03/grade.c",             "grade.c"],
 [ "26", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/week03/Makefile",            "Improved Makefile"],
 [ "27", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/week01/marking.html",        "Marking Guide"],
