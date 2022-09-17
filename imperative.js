@@ -24,7 +24,7 @@ var categories = [
 ["2", "Teams Q&amp;A",       "#CCDFFF","1","Slides",    "Code",          ],
 ["3", "Hybrid C Lab",          "#EEDFCF","0","",          "",              ],
 ["4", "Exercises",  "#D8CCFF","1","",          "Sample Solutions",],
-["5", "PrepTask",            "#DDDDDD","1","",          "",              ],
+["5", "Getting Started:",            "#DDDDDD","0","",          "",              ],
 ["6", "Formative Coursework","#EEEEDD","1","",          "Materials",     ],
 ["7", "Individual Summative Coursework","#EEEEDD","1","",          "",     ],
 ["8",  "",                   "#EEEEDD","0","",          "",              ], // multi-week coursework
@@ -48,11 +48,11 @@ var categories = [
 var activities = [
 
 //WEEK 01 - INTRO
-["5", "in your own time",   "THE LINUX TUTORIAL",              "https://seis.bristol.ac.uk/~sh1670/LinTut.pdf", "", "0", "0"],
-["1", "Tue 27/09/22<br/>03:00pm<br/>QB1.40 Pugsley", "WELCOME &amp INTRODUCTION",  "", "", "21", "4"],
-["0", "Fri 30/09/22<br/>03:00pm<br/>QB1.40 Pugsley",    "PROCEDURES &amp; PROGRAMS",       "https://mediasite.bris.ac.uk/Mediasite/Play/91d05240456c424a922dd1c8db97569d1d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_01.pdf", "0", "2"],
-["11","Wed 28/09/22<br/>10am-1pm<br/>MVB2.11/1.15", "GET YOUR PC READY",  "http://people.cs.bris.ac.uk/~burghard/setup/index.html", "", "0", "0"],
-["5", "in your own time",   "MARKING GUIDE",         "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week01/marking.html", "", "0", "0"],
+["5", "Tue 20/09/22<br/>14:00am-16:00pm<br/>MVB2.11/1.15",   "THE LINUX TUTORIAL",              "https://seis.bristol.ac.uk/~sh1670/LinTut.pdf", "", "0", "0"],
+["1", "Tue 27/09/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley", "WELCOME &amp INTRODUCTION",  "", "", "21", "4"],
+["0", "Fri 30/09/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",    "PROCEDURES &amp; PROGRAMS",       "https://mediasite.bris.ac.uk/Mediasite/Play/91d05240456c424a922dd1c8db97569d1d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_01.pdf", "0", "2"],
+["11","Wed 28/09/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "GET YOUR PC READY",  "http://people.cs.bris.ac.uk/~burghard/setup/index.html", "", "0", "0"],
+["5", "Read before 20/09/22",   "MARKING GUIDE",         "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week01/marking.html", "", "0", "0"],
 ["9", "",                   "",                                "", "", "0", "0"],
 ["9", "",                   "",                                "", "", "0", "0"],
 ["9", "",                   "",                                "", "", "0", "0"],
