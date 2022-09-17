@@ -6,7 +6,7 @@ var title         = "IMPERATIVE PROGRAMMING";  // content title (different to un
 var headerOn      = 1;                         // table column headers on(=1) or off(=0), min of 4 columns needed to render
 var header1       = "EXERCISES";    // leftmost 1x column header
 var header2       = "LECTURES";  // middle 2x column header
-var header3       = "COURSEWORK &amp; LABS";   // rest of the columns header
+var header3       = "COURSEWORK";   // rest of the columns header
 var inactColour   = "#999999";                 // font colour for inactive content
 var titleColour   = "#777777";                 // table title colour
 var titleBColour  = "#BBBBBB";                 // table title background colour
