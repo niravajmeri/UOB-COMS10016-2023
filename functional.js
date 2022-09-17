@@ -4,9 +4,9 @@ var activityNum   = 8;                         // number of activities per week 
 var columnNum     = 4;                         // desired columns per week (yet, autofitted to max 2 rows per week)
 var title         = "FUNCTIONAL PROGRAMMING";  // content title (different to unitName since multiple content streams maybe in one unit)
 var headerOn      = 1;                         // table column headers on(=1) or off(=0), min of 4 columns needed to render
-var header1       = "Extra Exercises";    // leftmost 1x column header
-var header2       = "Lectures";  // middle 2x column header
-var header3       = "Coursework &amp; Labs";  // rest of the columns header
+var header1       = "EXERCISES";    // leftmost 1x column header
+var header2       = "LECTURES";  // middle 2x column header
+var header3       = "COURSEWORK";  // rest of the columns header
 var inactColour   = "#999999";                 // font colour for inactive content
 var titleColour   = "#777777";                 // table title colour
 var titleBColour  = "#BBBBBB";                 // table title background colour
