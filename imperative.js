@@ -20,7 +20,7 @@ var extendCatNum2 = 10;                        // number of one category that ha
 //CATEGORY NUM, CATEGORY TITLE, COLOUR, COUNTER?, SLIDES LINK, MATERIAL LINK
 var categories = [
 ["0", "Lecture",             "#CCCFFF","1","Slides",    "Code",          ],
-["1", "Live Session:",        "#DDE3FC","0","Slides",    "Info",     ],
+["1", "Introduction:",      "#CCCFFF","0","Slides",    "Lecturers",     ],
 ["2", "Teams Q&amp;A",       "#CCDFFF","1","Slides",    "Code",          ],
 ["3", "Hybrid C Lab",          "#EEDFCF","0","",          "",              ],
 ["4", "Exercises",  "#D8CCFF","1","",          "Sample Solutions",],
@@ -48,13 +48,13 @@ var categories = [
 var activities = [
 
 //WEEK 01 - INTRO
-["1", "Tue 28/09/21<br/>03:00pm<br/>CHEM LT1", "WELCOME &amp INTRODUCTION",  "https://web.microsoftstream.com/video/d32e0744-53b6-427f-8f9d-b30ef26e9a24", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_00.pdf", "21", "4"],
-["5", "in your own time",   "GET YOUR PC READY",               "http://people.cs.bris.ac.uk/~burghard/setup/index.html", "", "0", "0"],
 ["5", "in your own time",   "THE LINUX TUTORIAL",              "https://seis.bristol.ac.uk/~sh1670/LinTut.pdf", "", "0", "0"],
-["11","Wed 29/09/21<br/>10am-1pm<br/>MVB2.11", "Join Session",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/wednesday.html", "", "0", "0"],
+["1", "Tue 27/09/22<br/>03:00pm<br/>QB1.40 Pugsley", "WELCOME &amp INTRODUCTION",  "", "", "21", "4"],
+["0", "Fri 30/09/22<br/>03:00pm<br/>QB1.40 Pugsley",    "PROCEDURES &amp; PROGRAMS",       "https://mediasite.bris.ac.uk/Mediasite/Play/91d05240456c424a922dd1c8db97569d1d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_01.pdf", "0", "2"],
+["11","Wed 28/09/22<br/>10am-1pm<br/>MVB2.11/1.15", "GET YOUR PC READY",  "http://people.cs.bris.ac.uk/~burghard/setup/index.html", "", "0", "0"],
+["5", "in your own time",   "MARKING GUIDE",         "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week01/marking.html", "", "0", "0"],
 ["9", "",                   "",                                "", "", "0", "0"],
-["5", "in your own time",   "UNDERSTAND UNIT MARKING",         "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/week01/marking.html", "", "0", "0"],
-["0", "watch after Tue<br/>24min",    "PROCEDURES &amp; PROGRAMS",       "https://mediasite.bris.ac.uk/Mediasite/Play/91d05240456c424a922dd1c8db97569d1d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_01.pdf", "0", "2"],
+["9", "",                   "",                                "", "", "0", "0"],
 ["9", "",                   "",                                "", "", "0", "0"],
 
 //WEEK 02 - WRITING SIMPLE C PROGRAMS AND RECURSION
