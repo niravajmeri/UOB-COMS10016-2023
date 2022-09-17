@@ -1,5 +1,5 @@
 //LAYOUT CUSTOMIZATION
-var currentWeek   = 1;                         // current week [releases content fully visible up to this week]
+var currentWeek   = 2;                         // current week [releases content fully visible up to this week]
 var activityNum   = 8;                         // number of activities per week (empty slots possible)
 var columnNum     = 4;                         // desired columns per week (yet, autofitted to max 2 rows per week)
 var title         = "IMPERATIVE PROGRAMMING";  // content title (different to unitName since multiple content streams maybe in one unit)
@@ -20,7 +20,7 @@ var extendCatNum2 = 10;                        // number of one category that ha
 //CATEGORY NUM, CATEGORY TITLE, COLOUR, COUNTER?, SLIDES LINK, MATERIAL LINK
 var categories = [
 ["0", "Chapter",             "#CCCFFF","1","Revision Video",    "Code",          ],
-["1", "Introduction",      "#CCCFFF","0","",    "Lecturer Websites",     ],
+["1", "Introduction:",      "#CCCFFF","0","",    "Lecturer Websites",     ],
 ["2", "Teams Q&amp;A",       "#CCDFFF","1","Slides",    "Code",          ],
 ["3", "Hybrid C Lab",          "#EEDFCF","0","",          "",              ],
 ["4", "Exercises",  "#D8CCFF","1","",          "Sample Solutions",],
