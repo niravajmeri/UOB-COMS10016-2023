@@ -49,7 +49,7 @@ var categories = [
 var activities = [
 
 //WEEK 01 - INTRO
-["5", "Tue 20/09/22<br/>02:00pm-04:00pm<br/>MVB2.11/1.15",   "THE LINUX TUTORIAL",              "https://seis.bristol.ac.uk/~sh1670/LinTut.pdf", "", "0", "0"],
+["5", "Tue 20/09/22<br/>02:00pm-04:00pm<br/>MVB2.11/1.15",   "<a href='https://seis.bristol.ac.uk/~sh1670/LinTut.pdf' target='_blank'>THE LINUX TUTORIAL</a>", "", "", "0", "0"],
 ["1", "Tue 27/09/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley", "WELCOME &amp; OVERVIEW",  "", "", "21", "4"],
 ["0", "Fri 30/09/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",    "PROCEDURES &amp; PROGRAMS",       "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_01.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/91d05240456c424a922dd1c8db97569d1d", "0", "2"],
 ["11","Wed 28/09/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "GET YOUR PC READY",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/setup.html", "", "0", "0"],
