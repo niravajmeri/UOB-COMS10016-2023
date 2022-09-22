@@ -36,19 +36,31 @@ It is your responsibility to keep your personal system and passwords safe.
 
 <h2>INSTALL THE CLANG COMPILER</h2>
 <ul>
-<li>right-click on the desktop and click on "Open Terminal", a Linux terminal window will open</li>
-<li>update Ubuntu by running "sudo apt update" (this checks for upgrades), then "sudo apt upgrade" (this installs the upgrades). When asked "Do you want to continue? [Y/n]", press enter to select the default "Y"/"Yes" option, and wait for the upgrade to complete.</li>
-<li>if asked, enter the administrator password</li>
-<li>in case you are queried about disk usage during the installation type "Y" and press enter to confirm</li>
-<li>once ready, type "sudo apt install clang", then press enter and the installation will begin</li>
-<li>in case you are queried about disk usage during the installation type "Y" and press enter to confirm</li>
-<li>once ready, the clang compiler should be installed</li>
-<li>type "exit" and press enter to close the Linux terminal window</li>
+<li>Right-click on the desktop and click on "Open Terminal", a Linux terminal window will open</li>
+<li>Update Ubuntu by running <code>sudo apt update</code> (this checks for upgrades), then <code>sudo apt upgrade</code> (this installs the upgrades). When asked "Do you want to continue? [Y/n]", press enter to select the default "Y"/"Yes" option, and wait for the upgrade to complete. [Side note: <code>apt</code> is a "package manager", which does what it says on the tin and manages packages/software on your system. <code>sudo</code> stands for "SuperUser DO" and you add it to the front of a command to run that command as the superuser (a.k.a. administrator or "root").]</li>
+<li>If asked, enter the administrator password</li>
+<li>In case you are queried about disk usage during the installation type "Y" and press enter to confirm</li>
+<li>Once ready, run <code>sudo apt install clang</code></li>
 </ul>
 
 <h2>INSTALL HASKELL AND QUICKCHECK</h2>
 
-TODO: replace with GHCup instructions
+<ul>
+  <li>In a terminal, first install the dependencies for GHCup by running <code>sudo apt install build-essential libgmp-dev libncurses-dev libncurses5 libtinfo5</code></li>
+  
+  <li>Once that's done, run <code>curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh</code></li>
+  
+  <li>Press enter to proceed</li>
+  <li>When asked about adding the required PATH variable to .bashrc, select "Yes, prepend" by typing "P" and pressing enter. [Side note: Your PATH variable contains a list of directories your terminal will look through to find executables, e.g. when you use <code>curl</code> as a command, your terminal looks for an executable named "curl" in those directories. GHCup creates a new directory where it will put executables, so this has to be added to your PATH if you want to use them in your terminal.]</li>
+  <li>When asked about installing haskell-language-server, select "Yes" by entering "Y".</li>
+  <li>When asked about installing stack, select "No" by entering "N".</li>
+  <li>Press enter to proceed and wait for the installation to finish.</li>
+  <li>This will install <code>ghc</code> (the Haskell compiler), <code>ghci</code> (the Haskell <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">REPL</a>), <code>cabal</code> (a Haskell package manager), and the Haskell Language Server (a.k.a. HLS, which adds <a href="https://en.wikipedia.org/wiki/Integrated_development_environment">IDE</a> support for Haskell)</li>
+  <li>Close and reopen your Ubuntu terminal so the updated PATH variable in .bashrc can take effect, giving you access to the programs you just installed.</li>
+  <li>Check they're working by running <code>ghc --version</code>, <code>cabal --version</code>, and <code>haskell-language-server-wrapper --version</code>. If they've installed correctly, each of these commands should print out version information.</li>
+  <li>Install QuickCheck by running <code>cabal install --lib QuickCheck</code></li>
+  
+  <li>Note: if you have any further installation issues, the Teaching Assistants (TAs) will be there in the first lab to help you with this in the setup labs.</li>
 
 <h2>INSTALL THE VSCODE EDITOR</h2>
 <h3>Option 1: Ubuntu Software Center</h3>
