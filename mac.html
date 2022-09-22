@@ -46,8 +46,14 @@ Ensure that your user account is listed as 'Admin', otherwise log in with an Adm
 <li><i>OR: </i>A dialogue box pops up suggesting you install the Command Line Developer Tools.<br />Select <b>Install</b> and follow the wizard steps to install these Tools.<br />After this is complete, again type: <code>clang --version</code><br />You should now get output as above, move on to Installing the VSCode Editor.</li>
 <li><i>OR: </i>An error showing that the command is not found.<br />Enter: <code>xcode-select --install</code> to start the Command Line Developer Tools install dialogue - follow instructions as above.</li>
 </ul>
-If the above fails install 'Xcode12' and 'Command Line Tools for Xcode 12' from <a href="https://developer.apple.com/download/more" target="_blank">https://developer.apple.com/download/more</a>.
+If the above fails, install 'Xcode' from the App Store on your Mac.
 </ol>
+
+<h2>INSTALL HASKELL AND QUICKCHECK</h2>
+
+TODO: Replace with Windows Haskell install instructions 
+
+
 
 <h2>INSTALL THE VSCODE EDITOR</h2>
 Note that VSCode is the recommended text editor for this unit, but you can substitute it with your preferred editor/IDE if you wish.
@@ -56,25 +62,7 @@ Note that VSCode is the recommended text editor for this unit, but you can subst
 <li>Follow the 'Installation' and 'Launching from the command line' instructions</li>
 </ol>
 
-<h2>INSTALL HASKELL AND QUICKCHECK</h2>
-<ul>
-<li>Open the Terminal (Mac command prompt).</li>
-<li>type "curl -sSL https://get.haskellstack.org/ | sh", then press enter and the update process will begin</li><hr/>
-<li>Note: you will be asked for your root password for sudo purposes (approx. 2 times)</li>
-<li>Note: after the installation, you may need to add "~/.local/bin" to your PATH variable. You can do this with the following terminal command: "PATH=$PATH:~/.local/bin"</li>
-<li>Note: if you out of disk space, try deleting ".stack". This is a hidden file that you can see using "ls -a", and delete using "rm -fr .stack"</li>
-<li>Note: if you have any further installation issues, try checking these <a href="https://docs.haskellstack.org/en/stable/faq/" target="_blank">FAQs</a>. The Teaching Assistants (TAs) will be there in the first lab to help you with this in the setup labs.</li>
-<hr/>
-<li>after a successful installation, you can run the Haskell GHCi interpreter by typing "stack ghci" in the terminal and pressing enter</li>
-<li>after a successful installation, you can run the Haskell GHCi interpreter with the QuickCheck package by typing "stack ghci --package QuickCheck" in the terminal and pressing enter</li>
-<li>after a successful installation, you can interpret Haskell files (such as a file "File.hs") by adding the file as a final argument to your stack command like "stack ghci --package QuickCheck File.hs" in the terminal and pressing enter</li>
-<li>after a successful installation, you can compile Haskell files (such as a file "File.hs") by adding the file as a final argument to your stack command like "stack ghc --package QuickCheck File.hs" in the terminal and pressing enter</li>
-<hr/>
-<li>Note: once you verify that GHCi is running, you can use the :q command to exit it and go back to the command prompt.</li>
-<hr/>
-<b>IMPORTANT NOTE:</b> If the Haskell installation does not work for you then hold on and use the setup labs during week 1 to get help from a TA. 
-Only if after asking TAs for help you have not been able to install Haskell successfully, then consider looking into more complicated <a href="haskellextra.html" target="_blank">alternatives</a>.
-</ul>
+TODO: Add extension steps
 
 At this point your system is ready for most of the COMS10016 unit and you are ready to start programming in C and Haskell. Further installations
 are optional at the beginning of the unit. However, during the last part of the unit we will use graphics, and for this we will need the SDL2 graphics libraries 
@@ -83,31 +71,25 @@ and a Linux desktop environment...
 <h2>INSTALL THE SDL2 DEVELOPMENT PACKAGE</h2>
 <ol>
 <li>Open the Terminal if not already open (see the first few steps above for how).</li>
-<li>The simplest (but not only) way to install SDL2 on a Mac is to use the <a href="https://brew.sh" target="_blank">HomeBrew</a> package manager:</li>
+<li>The simplest (but not only) way to install SDL2 on a Mac is to use the <a href="https://brew.sh" target="_blank">Homebrew</a> package manager:</li>
 <ul>
-<li>Type: <code>brew</code> to check if it's installed.<br />
-If a 'command not found' error is shown, run the following command to install brew and follow the instructions (installation takes several minutes):<br />
-<code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code></li>
+<li>Type: <code>brew</code> to check if it's already installed.<br />
+If a 'command not found' error is shown, run the following command in your terminal and follow the instructions, including the commands it tells you to run in the "Next steps" section after the installation finishes:<br />
+<code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></li>
 If you encounter a permissions issue on your device you may want to check out this <a href="https://gist.github.com/irazasyed/7732946" target="_blank">discussion</a>.
-<li>Type: <code>brew update</code></li>
-<li>To install SDL2, type: <code>brew install sdl2</code></li>
+<li>Run: <code>brew update</code></li>
+<li>To install SDL2, run: <code>brew install sdl2</code></li>
 </ul>
-<li>Ensure SDL2 is installed by typing: <code>sdl2-config --version</code> (version information should be displayed, such as 2.0.10).</li>
+<li>Ensure SDL2 is installed by typing: <code>sdl2-config --version</code> (version information should be displayed, such as 2.24.0).</li>
+<li>Install <a href="https://formulae.brew.sh/formula/pkg-config">pkg-config</a> to make compiling with SDL2 easier: <code>brew install pkg-config</code></li>
 </ol>
 
 <h2>CHECK SDL2 GRAPHICS</h2>
 <ol>
-<li>Download the program <a href="hellosdl.c" target="_blank">hellosdl.c</a> to your current working directory (or change directory in the Terminal to the location of the downloaded file).</li>
-<li>Compile and run the program:</li>
-<ul>
-<li>Use the following command to compile the program:<br />
-     <code>clang -std=c11 -Wall -lSDL2 hellosdl.c -o hellosdl</code><br />
-     <i>OR</i> if this fails with a clang 'ld' linker error, try compiling with static (not dynamic) libraries using this command:<br />
-     <code>clang -std=c11 -Wall `sdl2-config --static-libs` hellosdl.c -o hellosdl</code>
-     <i>OR</i> if this fails for M1s try:
-     <code>clang -std=c11 -Wall -o hellosdl hellosdl.c -lSDL2 -L/opt/homebrew/Cellar/sdl2/2.0.16/lib -I/opt/homebrew/Cellar/sdl2/2.0.16/include</code>
+<li>Download the program <a href="hellosdl.c" target="_blank">hellosdl.c</a> (Right click/two finger click the link -> Download Linked File As) and save it to your terminal's current working directory (or wherever you want to save it, but you have to change directory in the Terminal to the location of the downloaded file).</li>
+<li>Compile and run the program: <code>clang -std=c11 -Wall -lSDL2 hellosdl.c -o hellosdl `pkg-config --libs --cflags sdl2`</code></li>
 <li>If the compilation was sucessful, you will see the new executable file <b>hellosdl</b> in the current directory.</li>
-<li>Run this program by typing: <code>./hellosdl</code></li>
+<li>Run this program by running: <code>./hellosdl</code></li>
 </ul>
 <li>If you see a sky blue 'HelloSDL' window appear then SDL2 is working properly.<br />
 Setup is complete!</li>

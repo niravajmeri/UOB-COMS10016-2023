@@ -37,14 +37,18 @@ It is your responsibility to keep your personal system and passwords safe.
 <h2>INSTALL THE CLANG COMPILER</h2>
 <ul>
 <li>right-click on the desktop and click on "Open Terminal", a Linux terminal window will open</li>
-<li>type "sudo apt update", then press enter and the update process will begin</li>
+<li>update Ubuntu by running "sudo apt update" (this checks for upgrades), then "sudo apt upgrade" (this installs the upgrades). When asked "Do you want to continue? [Y/n]", press enter to select the default "Y"/"Yes" option, and wait for the upgrade to complete.</li>
 <li>if asked, enter the administrator password</li>
 <li>in case you are queried about disk usage during the installation type "Y" and press enter to confirm</li>
-<li>once ready, type "sudo apt-get install clang", then press enter and the installation will begin</li>
+<li>once ready, type "sudo apt install clang", then press enter and the installation will begin</li>
 <li>in case you are queried about disk usage during the installation type "Y" and press enter to confirm</li>
 <li>once ready, the clang compiler should be installed</li>
 <li>type "exit" and press enter to close the Linux terminal window</li>
 </ul>
+
+<h2>INSTALL HASKELL AND QUICKCHECK</h2>
+
+TODO: replace with GHCup instructions
 
 <h2>INSTALL THE VSCODE EDITOR</h2>
 <h3>Option 1: Ubuntu Software Center</h3>
@@ -59,33 +63,13 @@ It is your responsibility to keep your personal system and passwords safe.
 <ul>
 <li>go to <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li>
 <li>download the .deb file</li>
-<li>open a terminal and navigate to the directory you downloaded the .deb file to (if you saved it to the Downloads folder, run `cd ~/Downloads` in the terminal)</li>
+<li>open a terminal and navigate to the directory you downloaded the .deb file to (e.g. if you saved it to the Downloads folder, run `cd ~/Downloads` in the terminal)</li>
 <li>run `sudo apt install ./[file name].deb` (replace '[file name].deb' with the actual name of the .deb file you downloaded)</li>
 <li>enter the administrator password when prompted</li>
 <li>run `sudo apt install apt-transport-https`</li>
 <li>run `sudo apt update`</li>
 <li>run `sudo apt install code`</li>
 <li>VSCode should now be installed</li>
-</ul>
-
-<h2>INSTALL HASKELL AND QUICKCHECK</h2>
-<ul>
-<li>right-click on the desktop and click on "Open Terminal", a Linux terminal window will open</li>
-<li>type "curl -sSL https://get.haskellstack.org/ | sh", then press enter and the update process will begin</li><hr/>
-<li>Note: you will be asked for your root password for sudo purposes (approx. 2 times)</li>
-<li>Note: after the installation, you may need to add "~/.local/bin" to your PATH variable. You can do this with the following terminal command: "PATH=$PATH:~/.local/bin"</li>
-<li>Note: if you out of disk space, try deleting ".stack". This is a hidden file that you can see using "ls -a", and delete using "rm -fr .stack"</li>
-<li>Note: if you have any further installation issues, try checking these <a href="https://docs.haskellstack.org/en/stable/faq/" target="_blank">FAQs</a>. The Teaching Assistants (TAs) will be there in the first lab to help you with this in the setup labs.</li>
-<hr/>
-<li>after a successful installation, you can run the Haskell GHCi interpreter by typing "stack ghci" in the terminal and pressing enter</li>
-<li>after a successful installation, you can run the Haskell GHCi interpreter with the QuickCheck package by typing "stack ghci --package QuickCheck" in the terminal and pressing enter</li>
-<li>after a successful installation, you can interpret Haskell files (such as a file "File.hs") by adding the file as a final argument to your stack command like "stack ghci --package QuickCheck File.hs" in the terminal and pressing enter</li>
-<li>after a successful installation, you can compile Haskell files (such as a file "File.hs") by adding the file as a final argument to your stack command like "stack ghc --package QuickCheck File.hs" in the terminal and pressing enter</li>
-<hr/>
-<li>Note: once you verify that GHCi is running, you can use the :q command to exit it and go back to the command prompt.</li>
-<hr/>
-<b>IMPORTANT NOTE:</b> If the Haskell installation does not work for you then hold on and use the setup labs during week 1 to get help from a TA. 
-Only if after asking TAs for help you have not been able to install Haskell successfully, then consider looking into more complicated <a href="haskellextra.html" target="_blank">alternatives</a>.
 </ul>
 
 At this point your system is ready for most of the COMS10016 unit and you are ready to start programming in C and Haskell. Further installations

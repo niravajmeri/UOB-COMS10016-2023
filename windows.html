@@ -36,13 +36,17 @@ It is your responsibility to keep your personal system and passwords safe.
 
 <h2>CHECK SYSTEM COMPATIBILITY</h2>
 <ul>
-<li>hold the Windows key down and simultaneously press "s" so that a search box appears</li>
-<li>type "about" in the searchbox</li>
-<li>left-click on "About your PC" in the results and the system specifications window will open</li>
-<li>your system is compatible only if your "System type" is "64-bit operating system, x64-based processor"</li>
-<li>your system is not in S-Mode and ready to go further in this tutorial if the "Edition" is either just "Windows 10 Home" or "Windows 10 Professional" without "S Mode"</li>
-<li>in case you need to switch out of S-Mode follow the instructions on the <a href="https://support.microsoft.com/en-gb/help/4456067/windows-10-switch-out-of-s-mode" target="_blank">Microsoft Support Page</a></li>
-</ul>
+<li>Hold the Windows key down and simultaneously press "s" so that a search box appears.</li>
+<li>Type "about" in the searchbox.</li>
+<li>Left-click "About your PC" in the results and the system specifications window should open.</li>
+<li>Your system is compatible only if:</li>
+  <ul>
+    <li>Your "System type" is "64-bit operating system, x64-based processor".</li>
+    <li>Your system is not in S-Mode and your "Edition" is either "Windows 10 Home" or "Windows 10 Professional" without "S Mode". If you need to switch out of S-Mode, follow the instructions on the <a href="https://support.microsoft.com/en-gb/help/4456067/windows-10-switch-out-of-s-mode" target="_blank">Microsoft Support Page</a>.</li>
+    <li>"Version" must be at least 2004, including 20H2, 20H2, 21H1, 21H2. Version 1909 and before are unsupported. If you are running Version 1909 or earlier, you must update your system by going to "Settings -> Update & Security -> Windows Update", then checking for updates and installing any that are available.</li>
+  </ul>
+</ul> 
+
 
 <h2>ACTIVATE LINUX-SUBSYSTEM IN WINDOWS 10</h2>
 <ul>
@@ -53,6 +57,32 @@ It is your responsibility to keep your personal system and passwords safe.
 <li>click yes the consent prompt and an elevated PowerShell will open</li>
 <li>type "Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux" and press enter</li>
 <li>restart your computer if prompted... then Windows 10's Linux subsystem should be activated</li>
+</ul>
+
+<h3>ACTIVATE WSL2 (WINDOWS SUBSYSTEM FOR LINUX) IN WINDOWS 10</h3>
+
+<h4>Pleasant path</h4>
+
+This will only work if you have the KB5004296 update released in July 2021 https://devblogs.microsoft.com/commandline/install-wsl-with-a-single-command-now-available-in-windows-10-version-2004-and-higher/
+
+<!-- TODO: Emphasise importance of fully updated system -->
+
+Requirements:
+- Fully updated Windows
+- Powershell must be in 64-bit mode (check by running `[Environment]::Is64BitProcess`)
+- Hyper-V compatible machine (it's been around since 2008, so every laptop should be)
+
+<ul>
+  <li>hold the Windows key down and simultaneously press "s" so that a search box appears</li>
+  <li>type "powershell" in the search box</li> 
+  <li>right-click on "Windows PowerShell" in the results</li> 
+  <li>select "Run as administrator"</li> 
+  <li>click yes the consent prompt and an elevated PowerShell will open</li>
+  <li>type "wsl --install -d Ubuntu" and press enter</li>
+  <li>restart your computer</li>
+  <li>soon after your computer reboots, an Ubuntu window should open and complete the installation process. This may take a few minutes.</li>
+  <li>you will then be prompted to enter a UNIX username and password. Make sure you remember them. You can use any username, but many people just use their name in lowercase (eg. "tilo").</li>
+  <li>update Ubuntu by running "sudo apt update" (this checks for upgrades), then "sudo apt upgrade" (this installs the upgrades). When asked "Do you want to continue? [Y/n]", press enter to select the default "Y"/"Yes" option, and wait for the upgrade to complete.</li>
 </ul>
 
 <h2>INSTALL THE LINUX UBUNTU DISTRIBUTION</h2>
@@ -69,6 +99,8 @@ It is your responsibility to keep your personal system and passwords safe.
 <li>type "exit" and press enter to close the Linux terminal window</li>
 </ul>
 
+TODO: Add symlink instructions, eg. `~$ ln -s /mnt/c/Users/[username]/Documents WindowsDocuments`
+
 <h2>INSTALL THE CLANG COMPILER</h2>
 <ul>
 <li>hold the Windows key down and simultaneously press "s" so that a search box appears</li>
@@ -76,7 +108,7 @@ It is your responsibility to keep your personal system and passwords safe.
 <li>left-click on "Ubuntu" in the results and a Linux terminal window will open</li>
 <li>type "sudo apt update", then press enter and the update process will begin</li>
 <li>in case you are queried about disk usage during the installation type "Y" and press enter to confirm</li>
-<li>once ready, type "sudo apt-get install clang", then press enter and the installation will begin</li>
+<li>once ready, type "sudo apt install clang", then press enter and the installation will begin</li>
 <li>in case you are queried about disk usage during the installation type "Y" and press enter to confirm</li>
 <li>once ready, the clang compiler should be installed</li>
 <li>type "exit" and press enter to close the Linux terminal window</li>
@@ -85,19 +117,36 @@ It is your responsibility to keep your personal system and passwords safe.
 <h2>INSTALL THE VSCODE EDITOR</h2>
 <ul>
 <li>go to <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>
-<li>download and run the installer</li>
+<li>download and run the installer for Windows</li>
+<li>During installation, under the Additional Tasks step, ensure all the checkboxes under "Other:" are checked.</li>
+<li>Once VSCode is installed, open it.</li>
+<li>Install the "Remote - WSL" extension by pressing Ctrl + P and then entering "ext install ms-vscode-remote.remote-wsl".</li>
+<li>Whenever using VSCode, make you're using a WSL window. The easiest way to do that is to look in the bottom right corner of the window. If it's using WSL, it will say "WSL: Ubuntu". If it doesn't, click it and select one of the commands to open a WSL Window, e.g. "New WSL Window" or "Reopen Folder in WSL" if you have a folder open already. (TODO: Come back to this and make it as straight forward as possible, maybe add pictures)</li>
+<li>Make sure you have a VSCode WSL window open and install the "Haskell" extension by pressing Ctrl + P and then entering "ext install haskell.haskell".</li>
+<li>Test this is working by creating a new Haskell file named "test.hs" (e.g. with "File -> New File" and naming it "test.hs"). This should give you a prompt saying "How do you want the extension to manage/discover HLS and the relevant toolchain?". Select "Automatically via GHCup".</li>
+<li>If it says "Need to download stack, continue?", you can safely select either "Yes" or "No". Either way, we will not be using stack.</li>
+<li>In "test.hs", start typing some invalid Haskell code, e.g. "x = True && 'c'". If HLS is working, you should see that VSCode underlines the error.</li>
 </ul>
 
 <h2>INSTALL HASKELL AND QUICKCHECK</h2>
+TODO: Do this before VSCode, then add HLS stuff to VSCode instructions
+
 <ul>
-<li>hold the Windows key down and simultaneously press "s" so that a search box appears</li>
-<li>type "Ubuntu" in the searchbox</li>
-<li>left-click on "Ubuntu" in the results and a Linux terminal window will open</li>
-<li>type "curl -sSL https://get.haskellstack.org/ | sh", then press enter and the update process will begin</li><hr/>
-<li>Note: you will be asked for your root password for sudo purposes (approx. 2 times)</li>
-<li>Note: after the installation, you may need to add "~/.local/bin" to your PATH variable. You can do this with the following terminal command: "PATH=$PATH:~/.local/bin"</li>
-<li>Note: if you out of disk space, try deleting ".stack". This is a hidden file that you can see using "ls -a", and delete using "rm -fr .stack"</li>
-<li>Note: if you have any further installation issues, try checking these <a href="https://docs.haskellstack.org/en/stable/faq/" target="_blank">FAQs</a>. The Teaching Assistants (TAs) will be there in the first lab to help you with this in the setup labs.</li>
+<li>In the Ubuntu terminal, first install the dependencies for GHCup by running "sudo apt install build-essential libgmp-dev libncurses-dev libncurses5 libtinfo5" </li>
+
+<li>In the Ubuntu terminal, run "curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh"</li>
+
+<li>Press enter to proceed</li>
+<li>When asked about adding the required PATH variable to .bashrc, select "Yes, prepend" by typing "P" and pressing enter.</li>
+<li>When asked about installing haskell-language-server, select "Yes" by entering "Y".</li>
+<li>When asked about installing stack, select "No" by entering "N".</li>
+<li>Press enter to proceed and wait for the installation to finish.</li>
+<li>This will install "ghc" (the Haskell compiler), "ghci" (the Haskell <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">REPL</a>), "cabal" (a Haskell package manager), and the Haskell Language Server (a.k.a. HLS, which adds <a href="https://en.wikipedia.org/wiki/Integrated_development_environment">IDE</a> support for Haskell)</li>
+<li>Close and reopen your Ubuntu terminal so the updated PATH variable in .bashrc can take effect, giving you access to the programs you just installed.</li>
+<li>Check they're working by running "ghc --version", "cabal --version", and "haskell-language-server-wrapper --version". If they've installed correctly, these commands should print out the version information.</li>
+<li>Install QuickCheck by running "cabal install --lib QuickCheck"</li>
+
+<li>Note: if you have any further installation issues, the Teaching Assistants (TAs) will be there in the first lab to help you with this in the setup labs.</li>
 <hr/>
 <li>after a successful installation, you can run the Haskell GHCi interpreter by typing "stack ghci" in the terminal and pressing enter</li>
 <li>after a successful installation, you can run the Haskell GHCi interpreter with the QuickCheck package by typing "stack ghci --package QuickCheck" in the terminal and pressing enter</li>
@@ -121,7 +170,7 @@ and a Linux desktop environment...
 <li>left-click on "Ubuntu" in the results and a Linux terminal window will open</li>
 <li>type "sudo apt update", then press enter and the update process will begin</li>
 <li>in case you are queried about disk usage during the installation type "Y" and press enter to confirm</li>
-<li>once ready, type "sudo apt-get install libsdl2-dev", then press enter and the installation will begin</li>
+<li>once ready, type "sudo apt install libsdl2-dev", then press enter and the installation will begin</li>
 <li>in case you are queried about disk usage during the installation type "Y" and press enter to confirm</li>
 <li>once ready, the SDL2 library should be installed</li>
 <li>type "exit" and press enter to close the Linux terminal window</li>
@@ -135,7 +184,7 @@ and a Linux desktop environment...
 <li>type "sourceforge.net/projects/vcxsrv/files/latest/download" in the browser bar, then press enter</li> 
 <li>left-click on "Run" when asked so the download and setup starts</li>
 <li>in case your windows administrator password is required provide it and press enter to confirm</li>
-<li>the installation window will open, left-click on the "Next" button, then "Confirm" and finally "Close"</li>  
+<li>the installation window will open, left-click on the "Next" button, then "Install" and finally "Close"</li>  
 <li>the windows x-server should now be installed</li>
 </ul>
 
@@ -149,6 +198,7 @@ and a Linux desktop environment...
 <li>during the installation select "YES" for restarting services without further queries</li>
 <li>once ready, type "sudo apt install lxde" in your terminal, then press enter and the installation will start</li>
 <li>in case you are queried about disk usage during the installation type "Y" and press enter to confirm</li>
+<li>If asked which display manager to use, select "lightdm"</li>
 <li>after some significant installation time, once ready, the LXDE Linux desktop should be installed</li>
 <li>type "exit" and press enter to close the Linux terminal window</li>
 </ul>
@@ -160,21 +210,21 @@ and a Linux desktop environment...
 <li>left-click on "XLaunch" in the results and a display settings window will open</li>
 <li>select "One large window" and left-click "Next"</li>
 <li>select "Start no client" and left-click "Next"</li>
-<li>make sure "Clipboard", "Primary Selection", and "Native opengl" are ticked, then left-click "Next"</li>
+<li>make sure "Clipboard", "Primary Selection", "Native opengl", and "Disable access control" are ticked, then left-click "Next"</li>
 <li>left-click "Finish" and a black VcXsrv window will open</li>
+<li>If you get a security alert saying "Windows Defender Firewall has blocked some features of VcXsrv windows xserver on all public and private networks", under "Allow VcXsrv windows xserver to communicate on these networks:", make sure "Private networks" and "Public networks" are checked, then click "Allow access". Ideally this wouldn't be necessary, but it's been an <a href="https://github.com/microsoft/WSL/issues/4139">open issue since 2019</a>.</li>
 <li>hold the Windows key down and simultaneously press "s" so that a search box appears</li>
 <li>type "Ubuntu" in the searchbox</li>
 <li>left-click on "Ubuntu" in the results and a Linux terminal window will open</li>
-<li>type "export DISPLAY=:0" and press enter</li>
-<li>type "export LIBGL_ALWAYS_INDIRECT=1" and press enter</li>
+<li>type "export DISPLAY=$(grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}'):0" and press enter</li>
+<li>type "export LIBGL_ALWAYS_INDIRECT=1" and press enter</li> (TODO: Maybe add these to .bashrc for simplicity...)
 <li>type "startlxde" and press enter</li>
 <li>the Linux desktop should appear in the VcXsrv window</li>
 <li>open a terminal on the Linux desktop by going to "System Tools" and selecting "LXTerminal"</li>
-<li>download the program <a href="hellosdl.c" target="_blank">hellosdl.c</a> and copy it into a new folder</li>
+<li>download the program <a href="hellosdl.c" target="_blank">hellosdl.c</a> and copy it into a new folder (TODO: expand on this/make it easier)</li>
 <li>change directory to that new folder where the downloaded file is located (just as an example in the Ubuntu terminal you find your D:/ drive via "cd /mnt/d")
 <li>avoid using the top directory of your C: drive since it is write-protected by the operating system
-<li>compile the program in that folder, for instance via "clang -std=c11 -Wall hellosdl.c -lSDL2 -o hellosdl", where the 'l' (small L) in -lSDL2 stands for link</li>
-<li>if this did not work and there was an error then try compilation via "clang -std=c11 -Wall hellosdl.c -I/usr/include/SDL2 -lSDL2 -o hellosdl", where the 'I' (capital i) in -I stands for include</li>
+<li>compile the program in that folder with "clang -std=c11 -Wall hellosdl.c -I /usr/include/SDL2 -l SDL2 -o hellosdl", where the 'I' (uppercase i) in "-I /usr/include/SDL2" stands for "include" and the 'l' (lowercase L) in "-l SDL2" stands for 'link'</li>
 <li>run the program, for instance via "./hellosdl" - if you see a sky blue window appear then SDL2 is working properly</li>
 <li>note that some parts of the SDL library unfortunately have memory leaks, which may be reported back to the terminal...you have to live with it</li>
 </ul>
