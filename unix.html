@@ -43,7 +43,7 @@ It is your responsibility to keep your personal system and passwords safe.
 <li>Once ready, run <code>sudo apt install clang</code></li>
 </ul>
 
-<h2>INSTALL HASKELL AND QUICKCHECK</h2>
+<h2>INSTALL HASKELL, QUICKCHECK, and HLS</h2>
 
 <ul>
   <li>In a terminal, first install the dependencies for GHCup by running <code>sudo apt install build-essential curl libffi-dev libffi7 libgmp-dev libgmp10 libncurses-dev libncurses5 libtinfo5</code></li>
@@ -56,57 +56,46 @@ It is your responsibility to keep your personal system and passwords safe.
   <li>When asked about installing stack, select "No" by entering "N".</li>
   <li>Press enter to proceed and wait for the installation to finish.</li>
   <li>This will install <code>ghc</code> (the Haskell compiler), <code>ghci</code> (the Haskell <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">REPL</a>), <code>cabal</code> (a Haskell package manager), and the Haskell Language Server (a.k.a. HLS, which adds <a href="https://en.wikipedia.org/wiki/Integrated_development_environment">IDE</a> support for Haskell)</li>
-  <li>Close and reopen your Ubuntu terminal so the updated PATH variable in .bashrc can take effect, giving you access to the programs you just installed.</li>
+  <li>Close and reopen your terminal so the updated PATH variable in .bashrc can take effect, giving you access to the programs you just installed.</li>
   <li>Check they're working by running <code>ghc --version</code>, <code>cabal --version</code>, and <code>haskell-language-server-wrapper --version</code>. If they've installed correctly, each of these commands should print out version information.</li>
   <li>Install QuickCheck by running <code>cabal install --lib QuickCheck</code></li>
   
   <li>Note: if you have any further installation issues, the Teaching Assistants (TAs) will be there in the first lab to help you with this in the setup labs.</li>
 
 <h2>INSTALL THE VSCODE EDITOR</h2>
-<h3>Option 1: Ubuntu Software Center</h3>
+
 <ul>
-<li>open Ubuntu Software Center</li>
-<li>search for 'vscode'</li>
-<li>select the 'code' result</li>
-<li>click install and enter the administrator password</li>
+  <li>Open Ubuntu Software Center</li>
+  <li>Search for 'vscode'</li>
+  <li>Select the 'code' result</li>
+  <li>Click install and enter your password</li>
+  <li>For alternative installation methods, see: <a href="https://code.visualstudio.com/docs/setup/linux">https://code.visualstudio.com/docs/setup/linux</a></li>
+  <li>Open a VSCode window.</li>
+  <li>Install the "Haskell" extension by pressing Ctrl + P and entering "ext install haskell.haskell".</li>
+  <li>Test HLS is working by creating a new Haskell file named "test.hs" (e.g. with "File -> New File" and naming it "test.hs"). This should give you a prompt saying "How do you want the extension to manage/discover HLS and the relevant toolchain?". Select "Automatically via GHCup".</li>
+  <li>If it says "Need to download stack, continue?", you can safely select either "Yes" or "No". We will not be using stack either way, but you may want to say "Yes" just to make the popup go away.</li>
+  <li>In "test.hs", start typing some invalid Haskell code, e.g. "x = True && 'c'". If HLS is working, you should see that VSCode underlines the error.</li>
 </ul>
 
-<h3>Option 2: Terminal</h3>
-<ul>
-<li>go to <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li>
-<li>download the .deb file</li>
-<li>open a terminal and navigate to the directory you downloaded the .deb file to (e.g. if you saved it to the Downloads folder, run `cd ~/Downloads` in the terminal)</li>
-<li>run `sudo apt install ./[file name].deb` (replace '[file name].deb' with the actual name of the .deb file you downloaded)</li>
-<li>enter the administrator password when prompted</li>
-<li>run `sudo apt install apt-transport-https`</li>
-<li>run `sudo apt update`</li>
-<li>run `sudo apt install code`</li>
-<li>VSCode should now be installed</li>
-</ul>
+<hr/>
 
 At this point your system is ready for most of the COMS10016 unit and you are ready to start programming in C and Haskell. Further installations
-are optional at the beginning of the unit. However, during the last part of the unit we will use graphics, and for this we will need the SDL2 graphics libraries 
-and a Linux desktop environment...
+are optional at the beginning of the unit. However, during the last part of the unit we will use graphics, and for this we will need the SDL2 graphics libraries.
 
 <h2>INSTALL THE SDL2 DEVELOPMENT PACKAGE</h2>
+
 <ul>
-<li>right-click on the desktop and click on "Open Terminal", a Linux terminal window will open</li>
-<li>type "sudo apt update", then press enter and the update process will begin</li>
-<li>if asked, enter the administrator password</li>
-<li>in case you are queried about disk usage during the installation type "Y" and press enter to confirm</li>
-<li>once ready, type "sudo apt-get install libsdl2-dev", then press enter and the installation will begin</li>
-<li>in case you are queried about disk usage during the installation type "Y" and press enter to confirm</li>
-<li>once ready, the SDL2 library should be installed</li>
-<li>type "exit" and press enter to close the Linux terminal window</li>
+  <li>In a terminal, run <code>sudo apt install libsdl2-dev</code></li>
 </ul>
 
 <h2>CHECK SDL2 GRAPHICS</h2>
+
 <ul>
-<li>download the program <a href="hellosdl.c" target="_blank">hellosdl.c</a></li>
-<li>compile the program, for instance via "clang -std=c11 -Wall hellosdl.c -lSDL2 -o hellosdl", where the 'l' in -lSDL2 stands for link</li>
-<li>if this did not work try compilation via "clang -std=c11 -Wall hellosdl.c -I/usr/include/SDL2 -lSDL2 -o hellosdl"</li>
-<li>run the program, for instance via "./hellosdl" - if you see a sky blue window appear then SDL2 is working properly</li>
-<li>note that some ports of the SDL library unfortunately have memory leaks, which may be reported back to the terminal...you have to live with it</li>
+  <li>Download the program <a href="hellosdl.c" target="_blank">hellosdl.c</a> and save it into a new folder, e.g. you could make a folder with <code>mkdir ~/SDL-Test</code> and save it there.</li>
+  <li>In your terminal, change directory to folder where you just saved the file, e.g. if you saved it in "~/SDL-Test" you could run <code>cd ~/SDL-Test</code>
+  <li>Compile the program in that folder by running <code>clang -std=c11 -Wall hellosdl.c -I /usr/include/SDL2 -l SDL2 -o hellosdl</code> , where the 'I' (uppercase i) in <code>-I /usr/include/SDL2</code> stands for "Include" and the 'l' (lowercase L) in <code>-l SDL2</code> stands for "link".</li>
+  <li>Run the compiled program by running <code>./hellosdl</code> - if you see a sky blue window appear then SDL2 is working properly!</li>
+  <li>Note that some parts of the SDL library unfortunately have memory leaks, but there's nothing you can do about them, so don't be alarmed if you see some warnings.</li>
 </ul>
 </body>
 </html>
