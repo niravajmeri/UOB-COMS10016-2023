@@ -83,6 +83,7 @@ It is your responsibility to keep your personal system and passwords safe.
 <li>This will install <code>ghc</code> (the Haskell compiler), <code>ghci</code> (the Haskell <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">REPL</a>), <code>cabal</code> (a Haskell package manager), and the Haskell Language Server (a.k.a. HLS, which adds <a href="https://en.wikipedia.org/wiki/Integrated_development_environment">IDE</a> support for Haskell)</li>
 <li>Close and reopen your Ubuntu terminal so the updated PATH variable in .bashrc can take effect, giving you access to the programs you just installed.</li>
 <li>Check they're working by running <code>ghc --version</code>, <code>cabal --version</code>, and <code>haskell-language-server-wrapper --version</code>. If they've installed correctly, each of these commands should print out version information.</li>
+<li>Update cabal's package list by running <code>cabal update</code></li>
 <li>Install QuickCheck by running <code>cabal install --lib QuickCheck</code></li>
 
 <li>Note: if you have any further installation issues, the Teaching Assistants (TAs) will be there in the first lab to help you with this in the setup labs.</li>
