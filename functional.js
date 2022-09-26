@@ -1,5 +1,5 @@
 //LAYOUT CUSTOMIZATION
-var currentWeek   = 0;                        // current week [releases content fully visible up to this week]
+var currentWeek   = 1;                        // current week [releases content fully visible up to this week]
 var activityNum   = 8;                         // number of activities per week (empty slots possible)
 var columnNum     = 4;                         // desired columns per week (yet, autofitted to max 2 rows per week)
 var title         = "FUNCTIONAL PROGRAMMING";  // content title (different to unitName since multiple content streams maybe in one unit)
@@ -43,21 +43,21 @@ var categories = [
 ["21", "History",       "#EEEEDD","0","",    "Materials",     ],
 ["22", "Lecture",            "#CCCFFF","0","Slides",    "Code",     ],
 ["23", "Lecture",            "#CCCFFF","0","",    "",     ],
+["24", "Extra Materials",    "#DDDDDD","0","",    "",          ],
 ];
+
+const blank = ["9","","","","","0","0"]
 
 var activities = [
 //WEEKLY ACTIVITIES
 //CATEGORY NUM, DATE|TIME, ACTIVITY TITLE, ACTIVITY URL, SLIDES URL, MATERIAL START, MATERIAL RANGE
 
 //WEEK 01
-["5", "in your own time",   "GET STARTED WITH HASKELL",        "https://mediasite.bris.ac.uk/Mediasite/Play/ed9419f3296a4b5c9c37398b077563481d", "", "0", "0"],
-["15", "watch after Tue",   "Introduction", "https://mediasite.bris.ac.uk/Mediasite/Play/7aebc67b88544693a67bd13e75063ec61d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/slides/intro.zip",    "0", "0"],
-["0",  "watch after Tue",   "Datatypes",    "https://mediasite.bris.ac.uk/Mediasite/Play/f608c6f1ea994e68a580d048f51e16c11d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/slides/datatypes.zip", "0", "1"],
-["11","Thu 30/09/21<br/>1pm-4pm<br/>MVB2.11", "Join Session",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/thursday.html", "", "0", "0"],
-["9", "",                   "",                                "", "", "0", "1"],
-["0",  "watch after Tue",   "Functions",    "https://mediasite.bris.ac.uk/Mediasite/Play/30f33a32f25f424981cc78f36fa2de7b1d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/slides/functions.zip", "1", "1"],
-["9", "",                   "",             "", "", "0", "0"],
-["9", "",                   "",                                "", "", "0", "1"],
+["24", "in your own time",   "<a href='https://web.microsoftstream.com/video/17f0fbf7-461c-4cf1-937f-21e8407a137e' target='_blank'>Guest seminar VOD: Haskell in the Datacentre</a><br/><br/><a href='https://mengwangoxf.github.io/Papers/NSR15.pdf' target='_blank'>Paper: How functional programming mattered</a><br/><br/><a href='https://bristolpl.github.io/' target='_blank'>Bristol PL Research Group</a>", "", "", "0", "0"],
+["23", "Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley",   "Week 1 - Introduction", "https://mediasite.bris.ac.uk/Mediasite/Play/7aebc67b88544693a67bd13e75063ec61d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/week1.pdf",    "0", "0"],
+blank,
+["11","Thurs 29/09/22<br/>15:00-18:00<br/>MVB2.11/1.15", "GET YOUR PC READY",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/setup.html", "", "0", "0"],
+blank,blank,blank,blank,
   
 //WEEK 02
 ["9", "",                   "",                                "", "", "0", "1"],
