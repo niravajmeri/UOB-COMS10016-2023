@@ -44,10 +44,11 @@ var categories = [
 ["22", "Lecture",            "#CCCFFF","0","Slides",    "Code",     ],
 ["23", "Lecture",            "#CCCFFF","0","",    "",     ],
 ["24", "Extra Materials",    "#DDDDDD","0","",    "",          ],
+["25", "Lectures",            "#CCCFFF","0","",    "",     ],
 ];
 
 const blank = ["9","","","","","0","0"]
-const lectureSlidesOnly = (lectureName, slidesLink) => ["23", "Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley",   lectureName, slidesLink, "", "0", "0"]
+const lecturesSlidesOnly = (lectureName, slidesLink) => ["25", "Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley",   lectureName, slidesLink, "", "0", "0"]
 
 
 var activities = [
@@ -56,7 +57,7 @@ var activities = [
 
 //WEEK 01
 ["24", "in your own time",   "<a href='https://web.microsoftstream.com/video/17f0fbf7-461c-4cf1-937f-21e8407a137e' target='_blank'>Guest seminar VOD: Haskell in the Datacentre</a><br/><br/><a href='https://mengwangoxf.github.io/Papers/NSR15.pdf' target='_blank'>Paper: How functional programming mattered</a><br/><br/><a href='https://bristolpl.github.io/' target='_blank'>Bristol PL Research Group</a>", "", "", "0", "0"],
-lectureSlidesOnly("Week 1 - Introduction", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/week1.pdf"),
+lecturesSlidesOnly("Week 1 - Introduction", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/week1.pdf"),
 blank,
 ["11","Thurs 29/09/22<br/>15:00-18:00<br/>MVB2.11/1.15", "GET YOUR PC READY",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/setup.html", "", "0", "0"],
 blank,blank,blank,blank,
