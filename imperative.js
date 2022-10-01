@@ -25,7 +25,7 @@ var categories = [
 ["3", "Exercises",  "#D8CCFF","0","",          "",],
 ["4", "Exercises",  "#D8CCFF","1","",          "Sample Solutions",],
 ["5", "Startup Materials:",            "#DDDDDD","0","",          "",              ],
-["6", "Formative Lab","#EEEEDD","1","",          "Materials",     ],
+["6", "Formative<br/>Lab","#EEEEDD","1","",          "Materials",     ],
 ["7", "Individual Summative Coursework","#EEEEDD","1","",          "",     ],
 ["8",  "",                   "#EEEEDD","0","",          "",              ], // multi-week coursework
 ["9",  "",                   "#CCCCCC","0","",          "",              ], // empty slot
