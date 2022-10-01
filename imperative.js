@@ -30,7 +30,7 @@ var categories = [
 ["8",  "",                   "#EEEEDD","0","",          "",              ], // multi-week coursework
 ["9",  "",                   "#CCCCCC","0","",          "",              ], // empty slot
 ["10", "",                   "#CCCCCC","0","",          "",              ], // multi-week empty
-["11", "Setup Lab:",          "#E0CFCF","0","",          "",              ],
+["11", "Setup Lab:",          "#EEEEDD","0","",          "",              ],
 ["12", "<br/><div align='center' style='color:#777777'>LECTURE-FREE WEEK</div>",   "#CCCCCC","0","",          "",              ], // empty slot
 ["13", "Teams Session",       "#DDE3FC","0","",    "",     ],
 ["14", "Teams Q&amp;A",       "#CCDFFF","0","",    "",     ],
@@ -56,7 +56,7 @@ var activities = [
 ["5", "in your own time",   "<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week01/marking.html' target='_blank'>MARKING GUIDE</a><br/><a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week01/golden.html' target='_blank'>GOLDEN C RULES</a><br/><a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week01/plagiarism.html' target='_blank'>ACADEMIC INTEGRITY</a>",         "", "", "0", "0"],
 ["0", "Fri 30/09/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",     "TYPES, VARIABLES &amp; SCOPE",      "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_02.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/0015df077d4d4287892c1e7563a68da71d", "2", "4"],
 ["9", "",                   "",                                "", "", "0", "0"],
-["9", "",                   "",                                "", "", "0", "0"],
+["8", "",                   "",                                "", "", "0", "0"],
 
 //WEEK 02 - WRITING SIMPLE C PROGRAMS AND RECURSION
 ["5", "in your own time",   "<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week02/COMS10016_Make.pdf' target='_blank'>BASICS OF MAKE</a><br/><a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week02/COMS10016_Linux.pdf' target='_blank'>LINUX COMMANDS</a><br/><a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week01/style.html' target='_blank'>C-STYLE GUIDE</a>",         "", "", "0", "0"],
@@ -66,7 +66,7 @@ var activities = [
 ["3", "in your own time",     "HAIL &amp; THUNDER",               "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_Task01.pdf", "", "11", "2"],
 ["22", "Fri 07/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",     "</a>LOOPS &amp; JUMPS<a>",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_05.pdf",   "https://mediasite.bris.ac.uk/Mediasite/Play/ecad33ee4d3f4d6889d4a0993c8c64fc1d", "33", "2"],
 ["9", "",                     "",                                 "", "", "0", "0"],
-["9", "",                     "",                                 "", "", "0", "0"],
+["8", "",                     "",                                 "", "", "0", "0"],
  
 //WEEK 03 - LOOPS, ARRAYS, STRINGS
 ["1", "Tue 12/10/21<br/>03:00pm<br/>CHEM LT1", "RECURSION, LOOPS &amp; ARRAYS",  "https://web.microsoftstream.com/video/2c68c3e6-4d28-42e9-b280-2a23ecfa22b6", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_Week03.pdf", "160", "1"],
