@@ -22,7 +22,7 @@ var categories = [
 ["0", "Lecture",             "#CCCFFF","1","Revision Video",    "Code",          ],
 ["1", "Intro Lecture:",      "#CCCFFF","0","",    "Lecturer Websites",     ],
 ["2", "Teams Q&amp;A",       "#CCDFFF","1","Slides",    "Code",          ],
-["3", "Hybrid C Lab",          "#EEDFCF","0","",          "",              ],
+["3", "Exercises",  "#D8CCFF","0","",          "",],
 ["4", "Exercises",  "#D8CCFF","1","",          "Sample Solutions",],
 ["5", "Startup Materials:",            "#DDDDDD","0","",          "",              ],
 ["6", "Formative Lab","#EEEEDD","1","",          "Materials",     ],
@@ -59,7 +59,7 @@ var activities = [
 ["9", "",                   "",                                "", "", "0", "0"],
 
 //WEEK 02 - WRITING SIMPLE C PROGRAMS AND RECURSION
-["4", "in your own time",     "HAIL &amp; THUNDER",               "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_Task01.pdf", "", "11", "2"],
+["3", "in your own time",     "HAIL &amp; THUNDER",               "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_Task01.pdf", "", "11", "2"],
 ["21", "Tue 04/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",     "DECISIONS &amp; RECURSION", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_03.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/142dc3fec056475caa68332b17666b701d", "6", "5"],
 ["22", "Fri 07/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",     "LITERALS, ENUMS &amp; CONSTANTS", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_04.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/87f3017862004a37ae1ac8b3fbdab33a1d", "31", "2"],
 ["6", "Wed 05/10/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "BIG INTEGER CHALLENGE",   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/week02/index.html", "", "13", "8"],
