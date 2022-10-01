@@ -59,12 +59,12 @@ var activities = [
 ["9", "",                   "",                                "", "", "0", "0"],
 
 //WEEK 02 - WRITING SIMPLE C PROGRAMS AND RECURSION
-["3", "in your own time",     "HAIL &amp; THUNDER",               "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_Task01.pdf", "", "11", "2"],
-["21", "Tue 04/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",     "</a>DECISIONS &amp; RECURSION<a>", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_03.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/142dc3fec056475caa68332b17666b701d", "6", "5"],
-["22", "Fri 07/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",     "</a>LITERALS, ENUMS &amp; CONSTANTS<a>", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_04.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/87f3017862004a37ae1ac8b3fbdab33a1d", "31", "2"],
-["6", "Wed 05/10/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "BIG INTEGER CHALLENGE",   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/week02/index.html", "", "13", "8"],
+["3", "in your own time",     "HAIL &amp; THUNDER",               "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_Task01.pdf", "", "11", "2"],
+["21", "Tue 04/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",     "</a>DECISIONS &amp; RECURSION<a>", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_03.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/142dc3fec056475caa68332b17666b701d", "6", "5"],
+["22", "Fri 07/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",     "</a>LITERALS, ENUMS &amp; CONSTANTS<a>", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_04.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/87f3017862004a37ae1ac8b3fbdab33a1d", "31", "2"],
+["6", "Wed 05/10/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "BIG INTEGER CHALLENGE",   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week02/index.html", "", "13", "8"],
 ["9", "",                     "",                                 "", "", "0", "0"],
-["22", "Fri 07/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",     "</a>LOOPS &amp; JUMPS<a>",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_05.pdf",   "https://mediasite.bris.ac.uk/Mediasite/Play/ecad33ee4d3f4d6889d4a0993c8c64fc1d", "33", "2"],
+["22", "Fri 07/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",     "</a>LOOPS &amp; JUMPS<a>",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_05.pdf",   "https://mediasite.bris.ac.uk/Mediasite/Play/ecad33ee4d3f4d6889d4a0993c8c64fc1d", "33", "2"],
 ["9", "",                     "",                                 "", "", "0", "0"],
 ["9", "",                     "",                                 "", "", "0", "0"],
  
