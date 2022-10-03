@@ -1,5 +1,5 @@
 //LAYOUT CUSTOMIZATION
-var currentWeek   = 1;                        // current week [releases content fully visible up to this week]
+var currentWeek   = 2;                        // current week [releases content fully visible up to this week]
 var activityNum   = 8;                         // number of activities per week (empty slots possible)
 var columnNum     = 4;                         // desired columns per week (yet, autofitted to max 2 rows per week)
 var title         = "FUNCTIONAL PROGRAMMING";  // content title (different to unitName since multiple content streams maybe in one unit)
@@ -48,7 +48,7 @@ var categories = [
 ];
 
 const blank = ["9","","","","","0","0"]
-const lecturesSlidesOnly = (lectureName, slidesLink) => ["25", "Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley",   lectureName, slidesLink, "", "0", "0"]
+const lecturesSlidesOnly = (lectureName, slidesFilename) => ["25", "Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley",   lectureName, "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/" + slidesFilename, "", "0", "0"]
 
 
 var activities = [
@@ -57,20 +57,20 @@ var activities = [
 
 //WEEK 01
 ["24", "in your own time",   "<a href='https://web.microsoftstream.com/video/17f0fbf7-461c-4cf1-937f-21e8407a137e' target='_blank'>Guest seminar VOD: Haskell in the Datacentre</a><br/><br/><a href='https://mengwangoxf.github.io/Papers/NSR15.pdf' target='_blank'>Paper: How functional programming mattered</a><br/><br/><a href='https://bristolpl.github.io/' target='_blank'>Bristol PL Research Group</a>", "", "", "0", "0"],
-lecturesSlidesOnly("Week 1 - Introduction", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/week1.pdf"),
+lecturesSlidesOnly("Week 1 - Introduction", "week1.pdf"),
 blank,
 ["11","Thurs 29/09/22<br/>15:00-18:00<br/>MVB2.11/1.15", "GET YOUR PC READY",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/setup.html", "", "0", "0"],
 blank,blank,blank,blank,
 
 //WEEK 02
-["9", "",                   "",                                "", "", "0", "1"],
-["15", "watch before Tue",   "Evaluation", "https://mediasite.bris.ac.uk/Mediasite/Play/414c3f30ea7640128553df9124ca84091d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/slides/evaluation.zip",    "0", "0"],
-["15", "watch before Tue",   "Currying", "https://mediasite.bris.ac.uk/Mediasite/Play/52ceaba7371a483aa9b60df27fdb35991d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/slides/currying.zip",    "0", "0"],
-["3",  "07/10/21<br/>1pm-4pm<br/>MVB2.11", "Join Session Virtually", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/thursday.html", "", "10", "5"],
-["9", "",                   "",             "", "", "0", "0"],
-["15", "watch before Tue",   "Case and Recursion", "https://mediasite.bris.ac.uk/Mediasite/Play/056c02fa85cc4f4290edbf8f2a8ae36c1d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/slides/case&recursion.zip",    "0", "0"],
-["13", "in your own time",  "",             "", "", "2", "8"],
-["21", "(optional)",         "History of Haskell",              "", "", "25", "2"],
+blank,
+lecturesSlidesOnly("Week 2 - Data Types and Functions", "week2.pdf"),
+blank,
+blank,
+blank,
+blank,
+blank,
+blank,
 //WEEK 03
 ["9", "",                   "",             "", "", "0", "0"],
 ["0", "watch before Tue",   "Modelling&Datatypes",       "https://mediasite.bris.ac.uk/Mediasite/Play/b1707b1a799d441980f7d6f349a261d91d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/slides/modelling&datatypes.zip", "27", "1"],
