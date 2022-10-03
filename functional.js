@@ -45,10 +45,14 @@ var categories = [
 ["23", "Lecture",            "#CCCFFF","0","",    "",     ],
 ["24", "Extra Materials",    "#DDDDDD","0","",    "",          ],
 ["25", "Lectures",            "#CCCFFF","0","",    "",     ],
+["26", "Worksheet","#EEEEDD","1","",          "Materials",     ],
 ];
 
 const blank = ["9","","","","","0","0"]
+const functionalDir = "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/"
+const sheetFile = path => functionalDir + "sheets/" + path;
 const lecturesSlidesOnly = (lectureName, slidesFilename) => ["25", "Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley",   lectureName, "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/" + slidesFilename, "", "0", "0"]
+const worksheet = (worksheetName, mainSheetPath, materialStart, materialRange) => ["26", "Thurs 15:00-18:00<br/>MVB2.11/1.15", worksheetName, sheetFile(mainSheetPath), "", materialStart, materialRange]
 
 
 var activities = [
@@ -67,7 +71,7 @@ blank,
 lecturesSlidesOnly("Week 2 - Data Types and Functions", "week2.pdf"),
 blank,
 blank,
-blank,
+worksheet("Worksheet 1 - Types, Parentheses, and Inhabitants", "sheet01.pdf", "0", "2"),
 blank,
 blank,
 blank,
@@ -167,8 +171,8 @@ blank,
 
 //UNIT RESOURCES & MATERIALS
 var files = [
-[  "0", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/day.hs",           "day.hs"],
-[  "1", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/functions.hs",             "functions.hs"],
+[  "0", sheetFile("sheet01.pdf"), "sheet01.pdf"],
+[  "1", sheetFile("sheet01Dyslexic.pdf"), "sheet01Dyslexic.pdf"],
 [  "2", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Notes/Types.pdf", "Types"],
 [  "3", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Notes/HaskellPoDs.pdf", "Haskell PoDs"],
 [  "4", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Notes/DataConstructors.pdf", "Data Constructors"],
