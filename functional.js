@@ -65,14 +65,14 @@ var activities = [
 
 //WEEK 01
 ["24", "(optional)",   "<a href='https://web.microsoftstream.com/video/17f0fbf7-461c-4cf1-937f-21e8407a137e' target='_blank'>Guest seminar VOD: Haskell in the Datacentre</a><br/><br/><a href='https://mengwangoxf.github.io/Papers/NSR15.pdf' target='_blank'>Paper: How functional programming mattered</a><br/><br/><a href='https://bristolpl.github.io/' target='_blank'>Bristol PL Research Group</a>", "", "", "0", "0"],
-lecturesSlidesOnly("Week 1 - Introduction", "week1.pdf"),
+lecturesSlides("Week 1 - Introduction", "week1.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/18e6ea68ad654e9aaafc9f34805f2c831d"),
 blank,
 ["11","Thurs 29/09/22<br/>15:00-18:00<br/>MVB2.11/1.15", "GET YOUR PC READY",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/setup.html", "", "0", "0"],
 blank,blank,blank,blank,
 
 //WEEK 02
 blank,
-lecturesSlides("Week 2 - Data Types and Functions", "week2.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/18e6ea68ad654e9aaafc9f34805f2c831d"),
+lecturesSlides("Week 2 - Data Types and Functions", "week2.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/21b78fbe973d43a599fbf79dd94f8aa51d"),
 blank,
 worksheet("Worksheet 1 - Types, Parentheses, and Inhabitants", "sheet01.pdf", 0, 3),
 blank,
