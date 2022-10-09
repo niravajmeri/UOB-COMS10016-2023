@@ -72,7 +72,7 @@ blank,blank,blank,blank,
 
 //WEEK 02
 blank,
-lecturesSlides("Week 2 - Data Types and Functions</a><br/></b>(<a href='https://mediasite.bris.ac.uk/Mediasite/Play/7aae664dcbf94eb28fe13a6ed93f24221d' target='_blank'>Revision Video</a>)<br/><a><b>", "week2.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/21b78fbe973d43a599fbf79dd94f8aa51d"),
+lecturesSlides("Week 2 - Data Types and Functions</a><br/></b>(<a href='https://mediasite.bris.ac.uk/Mediasite/Play/7aae664dcbf94eb28fe13a6ed93f24221d' target='_blank'>Revision Video</a>), <a>", "week2.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/21b78fbe973d43a599fbf79dd94f8aa51d"),
 blank,
 worksheet("Worksheet 1 - Types, Parentheses, and Inhabitants", "sheet01.pdf", 0, 3),
 blank,
