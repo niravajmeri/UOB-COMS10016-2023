@@ -22,8 +22,8 @@ var categories = [
 ["0", "Lecture",             "#CCCFFF","1","Revision Video",    "Code",          ],
 ["1", "Intro Lecture:",      "#CCCFFF","0","",    "Lecturer Websites",     ],
 ["2", "Teams Q&amp;A",       "#CCDFFF","1","Slides",    "Code",          ],
-["3", "Exercises",  "#D8CCFF","0","",          "",],
-["4", "Exercises",  "#D8CCFF","1","",          "Sample Solutions",],
+["3", "Exercises",  "#CCCCCC","0","",          "",],
+["4", "Exercises",  "#CCCCCC","1","",          "Sample Solutions",],
 ["5", "Startup Materials:",            "#DDDDDD","0","",          "",              ],
 ["6", "Formative<br/>Lab","#EEEEDD","1","",          "Materials",     ],
 ["7", "Individual Summative Coursework","#EEEEDD","1","",          "",     ],
@@ -69,15 +69,15 @@ var activities = [
 ["8", "",                     "",                                 "", "", "0", "0"],
  
 //WEEK 03 - LOOPS, ARRAYS, STRINGS
-["1", "Tue 12/10/21<br/>03:00pm<br/>CHEM LT1", "RECURSION, LOOPS &amp; ARRAYS",  "https://web.microsoftstream.com/video/2c68c3e6-4d28-42e9-b280-2a23ecfa22b6", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_Week03.pdf", "160", "1"],
-["0", "watch before Tue<br/>29min",     "LOOPS &amp; JUMPS",     "https://mediasite.bris.ac.uk/Mediasite/Play/ecad33ee4d3f4d6889d4a0993c8c64fc1d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_05.pdf", "33", "2"],
-["0", "watch before Tue<br/>27min",     "ARRAYS",        "https://mediasite.bris.ac.uk/Mediasite/Play/6fc2ef02c0cf4c14946695028ed6d8921d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_06.pdf", "35", "3"],
-["3", "Wed 13/10/21<br/>10am-1pm<br/>MVB2.11", "GRADE CHALLENGE", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/wednesday.html", "", "0", "0"],
+["3", "in your own time",     "TOWERS OF HANOI",               "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_Task02.pdf", "", "48", "2"],
+["21", "Tue 11/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",     "ARRAYS",        "https://mediasite.bris.ac.uk/Mediasite/Play/6fc2ef02c0cf4c14946695028ed6d8921d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_06.pdf", "35", "3"],
+["22", "Fri 14/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",     "STRINGS",  "https://web.microsoftstream.com/video/2b1a31a0-1afa-4379-877e-faeae2f5e6ab", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_07.pdf", "37", "6"],
+["3", "Wed 12/10/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "GRADE CHALLENGE", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week03/index.html", "", "25", "4"],
+["10", "",                     "",                                 "", "", "0", "0"],
+["22", "Fri 14/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "SEARCHING", "https://mediasite.bris.ac.uk/Mediasite/Play/ead7ce2e083945a380347d8bd0559ac01d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_08.pdf", "43", "1"],
 ["9", "",                     "",                                 "", "", "0", "0"],
-["0", "watch before Tue<br/>38min",     "STRINGS",  "https://web.microsoftstream.com/video/2b1a31a0-1afa-4379-877e-faeae2f5e6ab", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_07.pdf", "37", "6"],
-["4", "in your own time",     "TOWERS OF HANOI",               "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_Task02.pdf", "", "48", "2"],
-["6", "during weekly labs",   "GRADE CHALLENGE<br/><a target='_blank' href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/week03/sample/grade.c'>(Grade Sample Solution)</a>",            "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/week03/index.html", "", "25", "4"],
-
+["8", "",                     "",                                 "", "", "0", "0"],
+ 
 //WEEK 04 - SEARCHING, BITS, POINTERS
 ["1", "Tue 19/10/21<br/>03:00pm<br/>CHEM LT1", "SEARCHING, BITS, POINTERS",  "https://web.microsoftstream.com/video/fc3203b2-4e3b-452c-83eb-280515c063c9", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_Week04.pdf", "161", "1"],
 ["0", "watch before Tue<br/>10min",   "SEARCHING",                       "https://mediasite.bris.ac.uk/Mediasite/Play/ead7ce2e083945a380347d8bd0559ac01d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_08.pdf", "43", "1"],
