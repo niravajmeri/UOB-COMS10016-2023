@@ -30,9 +30,9 @@ var categories = [
 ["8",  "",                   "#EEEEDD","0","",          "",              ], // multi-week coursework
 ["9",  "",                   "#CCCCCC","0","",          "",              ], // empty slot
 ["10", "",                   "#CCCCCC","0","",          "",              ], // multi-week empty
-["11", "Setup Lab:",          "#E0CFCF","0","",          "",              ],
+["11", "Setup Lab:",          "#EEEEDD","0","",          "",              ],
 ["12", "No Lab this Week",   "#CCCCCC","0","",          "",              ], // week off
-["13", "Notes ft. <br> Extra Examples <br> + Explanations",      "#94e5bf","0","",          "Notes",         ],
+["13", "Notes ft. <br> Extra Examples <br> + Explanations",      "#DDDDDD","0","",          "Notes",         ],
 ["14", "Q&A",                "#94e5bf","0","",          "",              ],
 ["15", "Lecture",            "#CCCFFF","0","Slides with Voice",    "",     ],
 ["16", "<br/><div align='center' style='color:#777777'>LECTURE-FREE WEEK</div>",   "#CCCCCC","0","",          "",              ], // empty slot
@@ -46,6 +46,7 @@ var categories = [
 ["24", "Extra Materials",    "#DDDDDD","0","",    "",          ],
 ["25", "Lectures",            "#CCCFFF","0","",    "",     ],
 ["26", "Worksheet","#EEEEDD","1","",          "Materials",     ],
+["27", "Lectures",            "#CCCFFF","0","Revision Video",    "",     ],
 ];
 
 const blank = ["9","","","","","0","0"]
@@ -53,6 +54,7 @@ const functionalDir = "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2
 const sheetFile = path => functionalDir + "sheets/" + path;
 const notesFile = path => functionalDir + "notes/" + path;
 const lecturesSlidesOnly = (lectureName, slidesFilename) => ["25", "Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley",   lectureName, "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/" + slidesFilename, "", "0", "0"]
+const lecturesSlides = (lectureName, slidesFilename, videoFilename,) => ["27", "Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley",   lectureName, "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/" + slidesFilename, videoFilename, "0", "0"]
 const worksheet = (worksheetName, mainSheetPath, materialStart, materialEndInclusive) => ["26", "Thurs 15:00-18:00<br/>MVB2.11/1.15", worksheetName, sheetFile(mainSheetPath), "", materialStart.toString(), (materialEndInclusive - materialStart + 1).toString()]
 const notes = (materialStart, materialEndInclusive) => ["13", "in your own time",  "", "", "", materialStart.toString(), (materialEndInclusive - materialStart + 1).toString()]
 const worksheetPlaceholder = worksheetName => ["26", "Thurs 15:00-18:00<br/>MVB2.11/1.15", worksheetName, "https://www.youtube.com/watch?v=ZZ5LpwO-An4", "", "12", "1"]
@@ -63,14 +65,14 @@ var activities = [
 
 //WEEK 01
 ["24", "(optional)",   "<a href='https://web.microsoftstream.com/video/17f0fbf7-461c-4cf1-937f-21e8407a137e' target='_blank'>Guest seminar VOD: Haskell in the Datacentre</a><br/><br/><a href='https://mengwangoxf.github.io/Papers/NSR15.pdf' target='_blank'>Paper: How functional programming mattered</a><br/><br/><a href='https://bristolpl.github.io/' target='_blank'>Bristol PL Research Group</a>", "", "", "0", "0"],
-lecturesSlidesOnly("Week 1 - Introduction", "week1.pdf"),
+lecturesSlides("Week 1 - Introduction<b>", "week1.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/18e6ea68ad654e9aaafc9f34805f2c831d"),
 blank,
 ["11","Thurs 29/09/22<br/>15:00-18:00<br/>MVB2.11/1.15", "GET YOUR PC READY",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/setup.html", "", "0", "0"],
 blank,blank,blank,blank,
 
 //WEEK 02
 blank,
-lecturesSlidesOnly("Week 2 - Data Types and Functions", "week2.pdf"),
+lecturesSlides("Week 2 - Data Types and Functions</a><br/></b>(<a href='https://mediasite.bris.ac.uk/Mediasite/Play/21b78fbe973d43a599fbf79dd94f8aa51d' target='_blank'>Revision Video</a>), <b><a>", "week2.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/7aae664dcbf94eb28fe13a6ed93f24221d"),
 blank,
 worksheet("Worksheet 1 - Types, Parentheses, and Inhabitants", "sheet01.pdf", 0, 3),
 blank,
