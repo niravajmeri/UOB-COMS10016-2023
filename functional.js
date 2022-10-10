@@ -1,5 +1,5 @@
 //LAYOUT CUSTOMIZATION
-var currentWeek   = 2;                        // current week [releases content fully visible up to this week]
+var currentWeek   = 3;                        // current week [releases content fully visible up to this week]
 var activityNum   = 8;                         // number of activities per week (empty slots possible)
 var columnNum     = 4;                         // desired columns per week (yet, autofitted to max 2 rows per week)
 var title         = "FUNCTIONAL PROGRAMMING";  // content title (different to unitName since multiple content streams maybe in one unit)
@@ -81,7 +81,7 @@ blank,
 ["21", "(optional)", "History of Haskell", "", "", "12", "2"],
 lecturesSlidesOnly("Week 3 - Evaluation, Currying, Cases, and Recursion", "week3.pdf"),
 notes(4,11),
-worksheetPlaceholder("Worksheet 2"),
+worksheet("Worksheet 2 - Evaluation and Guards", "sheet02.pdf", 15, 16),
 blank,
 blank,
 blank,
@@ -199,6 +199,11 @@ var files = [
 [  "12", notesFile("HistoryOfHaskell.pdf"), "HistoryOfHaskell.pdf"],
 [  "13", notesFile("HowFPMattered.pdf"), "HowFPMattered.pdf"],
 [  "14", "https://www.youtube.com/watch?v=ZZ5LpwO-An4", "Null link"],
+
+[  "15", sheetFile("sheet02.pdf"), "sheet02.pdf"],
+[  "16", sheetFile("sheet02Dyslexic.pdf"), "sheet02Dyslexic.pdf"],
+[  "17", sheetFile("answer02.pdf"), "answer02.pdf"],
+[  "18", sheetFile("answer02Dyslexic.pdf"), "answer02Dyslexic.pdf"],
 
 // [  "10", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/sheet01.pdf", "Sheet One"],
 // [  "11", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/sheet01Dyslexic.pdf", "Sheet One (Dyslexic Friendly)"],
