@@ -83,11 +83,18 @@ blank,
 ["21", "(optional)", "History of Haskell", "", "", "12", "2"],
 lecturesSlidesOnly("Week 3 - Evaluation, Currying, Cases, and Recursion", "week3.pdf"),
 notes(4,11),
-worksheet("Worksheet 2 - Evaluation and Guards", "sheet02.pdf", 15, 16),
+worksheet("Worksheet 2 - Evaluation and Guards", "sheet02.pdf", 15, 18),
+blank,
+["24", "", "week3.hs",functionalDir + "code/week3.hs","", "0","0"],
 blank,
 blank,
+
+//WEEK 04
 blank,
+lecturesSlidesOnly("Week 4 - Modelling, Datatypes, and Testing", "week4.pdf"),
 blank,
+worksheet("Worksheet 3 - Pattern Matching", "sheet03.pdf", 19, 20),
+blank,blank,blank,blank,
 
 // OLD WEEKS, STARTING FROM 3
 ["9", "",                   "",             "", "", "0", "0"],
@@ -206,6 +213,11 @@ var files = [
 [  "16", sheetFile("sheet02Dyslexic.pdf"), "sheet02Dyslexic.pdf"],
 [  "17", sheetFile("answer02.pdf"), "answer02.pdf"],
 [  "18", sheetFile("answer02Dyslexic.pdf"), "answer02Dyslexic.pdf"],
+
+[  "19", sheetFile("sheet03.pdf"), "sheet03.pdf"],
+[  "20", sheetFile("sheet03Dyslexic.pdf"), "sheet03Dyslexic.pdf"],
+[  "21", sheetFile("answer03.pdf"), "answer03.pdf"],
+[  "22", sheetFile("answer03Dyslexic.pdf"), "answer03Dyslexic.pdf"],
 
 // [  "10", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/sheet01.pdf", "Sheet One"],
 // [  "11", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/functional/Sheets/sheet01Dyslexic.pdf", "Sheet One (Dyslexic Friendly)"],
