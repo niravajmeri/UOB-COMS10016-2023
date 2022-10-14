@@ -71,10 +71,10 @@ var activities = [
 //WEEK 03 - LOOPS, ARRAYS, STRINGS
 ["3", "in your own time",     "TOWERS OF HANOI",               "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_Task02.pdf", "", "48", "2"],
 ["21", "Tue 11/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",     "ARRAYS",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_06.pdf",       "https://mediasite.bris.ac.uk/Mediasite/Play/6fc2ef02c0cf4c14946695028ed6d8921d", "35", "3"],
-["22", "Fri 14/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",     "STRINGS", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_07.pdf", "https://web.microsoftstream.com/video/2b1a31a0-1afa-4379-877e-faeae2f5e6ab",  "37", "6"],
+["21", "Fri 14/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",     "STRINGS", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_07.pdf", "https://web.microsoftstream.com/video/2b1a31a0-1afa-4379-877e-faeae2f5e6ab",  "37", "6"],
 ["6", "Wed 12/10/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "GRADE CHALLENGE", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week03/index.html", "", "25", "4"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["22", "Fri 14/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "SEARCHING", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_08.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/ead7ce2e083945a380347d8bd0559ac01d",  "43", "1"],
+["21", "Fri 14/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "SEARCHING", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_08.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/ead7ce2e083945a380347d8bd0559ac01d",  "43", "1"],
 ["9", "",                     "",                                 "", "", "0", "0"],
 ["8", "",                     "",                                 "", "", "0", "0"],
  
