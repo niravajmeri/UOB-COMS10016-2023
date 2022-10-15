@@ -3,38 +3,13 @@
 
 module Main where
 
-import Data.List (foldl', nub, sortOn)
+import Data.List (nub, sortOn)
 import Data.Map.Strict (Map)
 import Data.Map.Strict qualified as M
-import Text.Printf
-import GHC.CmmToAsm.AArch64.Instr (_d)
+import Text.Printf ( printf )
 
 main :: IO ()
-main = putStr "Hello, world!"
-
-data Config = MkConfig
-  { currentWeek :: Int, -- current week [releases content fully visible up to this week]
-    activityNum :: Int, -- number of activities per week (empty slots possible)
-    columnNum :: Int, -- desired columns per week (yet, autofitted to max 2 rows per week)
-    title :: String, -- content title (different to unitName since multiple content streams maybe in one unit)
-    headerOn :: Bool, -- table column headers on(=1) or off(=0), min of 4 columns needed to render
-    header1 :: String, -- leftmost 1x column header
-    header2 :: String, -- middle 2x column header
-    header3 :: String, -- rest of the columns header
-    inactColour :: Colour, -- font colour for inactive content
-    titleColour :: Colour, -- table title colour
-    titleBColour :: Colour, -- table title background colour
-    bkgColour :: Colour, -- table border background colour
-    embossColour :: Colour, -- table border emboss colour
-    fontSizePix :: Int -- font size in pixels
-    --   , extendCatNum1 :: Int     -- number of one category that has no border to above cell (e.g. for multi-week coursework)
-    --   , extendCatNum2 :: Int     -- number of one category that has no border to above cell (e.g. for multi-week empty)
-  }
-  deriving (Show)
-
--- extendCatNum1 and extendCatNum2 should be generated
-
-type Colour = String
+main = putStr $ pageToJS functionalPage config
 
 config :: Config
 config =
@@ -55,127 +30,100 @@ config =
       fontSizePix = 11
     }
 
-data GridEntry = Entry
-  { title :: String, -- Title
-    spec :: EntrySpec,
-    materials :: [MaterialLink]
-  }
-
-data EntrySpec
-  = ExtraMaterials
-  | Lectures
-      { slidesFile :: String
-      , revisionVideos :: [URL]
-      }
-  | SetupLab
-      { setupLink :: URL }
-  | Worksheet
-      { file :: String }
-  | History
-  | NotesExtra
-  | Coursework
-  | Blank
-  deriving (Show, Eq, Ord)
-
-type Week = [GridEntry]
-
-type Page = [Week]
-
-type URL = String
-
-type SlidesLink = String
-
-data MaterialLink = MkMaterial
-  { mtype :: MaterialType,
-    name :: String,
-    file :: String
-  }
-  deriving (Show, Eq, Ord)
-
-data MaterialType = Note | Sheet | External
-  deriving (Show, Eq, Ord)
-
-note :: String -> String -> MaterialLink
-note = MkMaterial Note
-
-sheet :: String -> MaterialLink
-sheet file = MkMaterial Sheet file file
-
-sheets :: Int -> [MaterialLink]
-sheets i = map sheet
-  [ printf "sheet%02d.pdf" i
-  , printf "sheet%02dDyslexic.pdf" i
-  ]
-
-answers :: Int -> [MaterialLink]
-answers i = map sheet
-  [ printf "answer%02d.pdf" i
-  , printf "answer%02dDyslexic.pdf" i
-  ]
-
-external :: String -> String -> MaterialLink
-external = MkMaterial External
 
 functionalPage :: Page
 functionalPage =
   [ -- Week 1
     [  Entry
-        { title = "",
-          spec = ExtraMaterials,
-          materials = 
+        { title = ""
+        , spec = ExtraMaterials
+        , materials = 
             [ external "Guest seminar VOD: Haskell in the Datacentre" "https://web.microsoftstream.com/video/17f0fbf7-461c-4cf1-937f-21e8407a137e"
             , external "Paper: How functional programming mattered" "https://mengwangoxf.github.io/Papers/NSR15.pdf"
             , external "Bristol PL Research Group" "https://bristolpl.github.io/"
             ]
         }
     , Entry
-        { title = "Week 1 - Introduction",
-          spec =
+        { title = "Week 1 - Introduction"
+        , spec =
             Lectures
-              { slidesFile = "week1.pdf",
-                revisionVideos = ["https://mediasite.bris.ac.uk/Mediasite/Play/18e6ea68ad654e9aaafc9f34805f2c831d"]
-              },
-          materials = []
+              { slidesFile = "week1.pdf"
+              , revisionVideos = ["https://mediasite.bris.ac.uk/Mediasite/Play/18e6ea68ad654e9aaafc9f34805f2c831d"]
+              }
+        , materials = []
         }
     , Entry
-        { title = "GET YOUR PC READY",
-          spec = SetupLab{setupLink = bbRootDir ++ "setup.html"},
-          materials = []
+        { title = "GET YOUR PC READY"
+        , spec = SetupLab{setupLink = bbRootDir ++ "setup.html"}
+        , materials = []
         }
     ]
     -- Week 2
   , [ Entry
-        { title = "Week 2 - Data Types and Functions",
-          spec =
+        { title = "Week 2 - Data Types and Functions"
+        , spec =
             Lectures
-              { slidesFile = "week2.pdf",
-                revisionVideos = [ "https://mediasite.bris.ac.uk/Mediasite/Play/21b78fbe973d43a599fbf79dd94f8aa51d"
+              { slidesFile = "week2.pdf"
+              , revisionVideos = [ "https://mediasite.bris.ac.uk/Mediasite/Play/21b78fbe973d43a599fbf79dd94f8aa51d"
                                  , "https://mediasite.bris.ac.uk/Mediasite/Play/7aae664dcbf94eb28fe13a6ed93f24221d"
                                  ]
-              },
-          materials = []
+              }
+        , materials = []
         }
     , Entry
-        { title = "Types, Parentheses, and Inhabitants",
-          spec =
-            Worksheet
-              { file = "week2.pdf" },
-          materials = sheets 1 ++ answers 1
+        { title = "Types, Parentheses, and Inhabitants"
+        , spec = Worksheet "sheet01.pdf"
+        , materials = sheets 1 ++ answers 1
         }
     ]
+    -- Week 3
+    , [ Entry
+          { title = "History of Haskell"
+          , spec = History
+          , materials =
+              [ note "History of Haskell" "HistoryOfHaskell.pdf"
+              , note "How Functional Programming Mattered" "HowFPMattered.pdf"
+              ]
+          }
+      , Entry
+          { title = "Week 3 - Evaluation, Currying, Cases, and Recursion"
+          , spec =
+              Lectures
+                { slidesFile = "week3.pdf"
+                , revisionVideos = []
+                }
+          , materials = [code "week3.hs"]
+          }
+      , Entry
+          { title = ""
+          , spec = NotesExtra
+          , materials = map (uncurry note)
+              [ ("Types", "Types.pdf")
+              , ("Haskell PoDs", "HaskellPoDs.pdf")
+              , ("Data Constructors", "DataConstructors.pdf")
+              , ("Tuples", "Tuples.pdf")
+              , ("Function Composition", "FunctionComposition.pdf")
+              , ("Branching", "Branching.pdf")
+              , ("Guards", "Guards.pdf")
+              , ("Laziness", "Laziness.pdf")
+              ]
+          }
+      , Entry
+          { title = "Evaluation and Guards"
+          , spec = Worksheet "sheet02.pdf"
+          , materials = sheets 2 ++ answers 2
+          }
+      ]
   ]
 
-data Category = MkCat
-  { title :: String,
-    colour :: Colour,
-    counter :: Bool,
-    slidesLinkName :: String,
-    materialLinkName :: String
-  }
-  deriving (Show, Eq, Ord)
 
-gridEntryCategory :: GridEntry -> Category
-gridEntryCategory (Entry _ details materials) = case details of
+
+---------------------------------------------------------------------
+-- Specifying Categories for Entry types
+---------------------------------------------------------------------
+
+entryToCategory :: GridEntry -> Category
+entryToCategory (Entry _ details materials) = case details of
   Lectures{} -> simpleCat "Lectures" "#CCCFFF"
   ExtraMaterials -> simpleCat "Extra Materials" "#DDDDDD"
   SetupLab{} -> simpleCat "Setup Lab:" "#CCCCCC"
@@ -186,38 +134,112 @@ gridEntryCategory (Entry _ details materials) = case details of
         , slidesLinkName = ""
         , materialLinkName = "Materials"
         }
-  _ -> blankCategory
-  where
-    simpleCat title colour = MkCat
-        { title,
-          colour,
-          counter = False,
-          slidesLinkName = "",
-          materialLinkName = ""
+  NotesExtra -> MkCat
+        { title = "Notes ft.<br>Extra Examples<br>+ Explanations"
+        , colour = "#DDDDDD"
+        , counter = False
+        , slidesLinkName = ""
+        , materialLinkName = "Notes"
         }
+  History -> MkCat
+        { title = "History"
+        , colour = "#EEEEDD"
+        , counter = False
+        , slidesLinkName = ""
+        , materialLinkName = "Materials"
+        }
+  _ -> blankCategory
 
+---------------------------------------------------------------------
+-- Specifying Entry to Activity transformation 
+---------------------------------------------------------------------
+
+entryToActivity :: CategoryDict -> GridEntry -> Activity
+entryToActivity catDict entry@(Entry {title, spec, materials})
+  = MkActivity
+      { categoryNum = catDict M.! entryToCategory entry, -- Slightly unsafe
+        dateTime = case spec of
+          ExtraMaterials -> "(optional)"
+          SetupLab{} -> "Thurs 29/09/22<br/>15:00-18:00<br/>MVB2.11/1.15"
+          Worksheet{} -> "Thurs 15:00-18:00<br/>MVB2.11/1.15"
+          Lectures{} -> "Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley"
+          _ -> "",
+        title = title,
+        activityURL = case spec of
+          Lectures{slidesFile} -> slideLink slidesFile
+          SetupLab{setupLink}  -> setupLink
+          Worksheet{file} -> sheetLink file
+          _ -> "",
+        slidesURL = case spec of
+          _ -> "",
+        materialStart = 0,
+        materialRange = length materials
+      }
+
+---------------------------------------------------------------------
+-- Types API
+---------------------------------------------------------------------
+
+data GridEntry = Entry
+  { title     :: String
+  , spec      :: EntrySpec
+  , materials :: [Material]
+  } deriving (Show, Eq, Ord)
+
+data EntrySpec
+  = ExtraMaterials
+  | Lectures  { slidesFile :: String
+              , revisionVideos :: [URL]
+              }
+  | SetupLab  { setupLink :: URL }
+  | Worksheet { file :: String }
+  | History
+  | NotesExtra
+  | Coursework
+  | Blank
+  deriving (Show, Eq, Ord)
+
+data Material = MkMaterial
+  { name :: String
+  , link :: URL
+  } deriving (Show, Eq, Ord)
+
+data Category = MkCat
+  { title :: String,
+    colour :: Colour,
+    counter :: Bool,
+    slidesLinkName :: String,
+    materialLinkName :: String
+  } deriving (Show, Eq, Ord)
+
+data Config = MkConfig
+  { currentWeek  :: Int    -- current week [releases content fully visible up to this week]
+  , activityNum  :: Int    -- number of activities per week (empty slots possible)
+  , columnNum    :: Int    -- desired columns per week (yet autofitted to max 2 rows per week)
+  , title        :: String -- content title (different to unitName since multiple content streams maybe in one unit)
+  , headerOn     :: Bool   -- table column headers on(=1) or off(=0) min of 4 columns needed to render
+  , header1      :: String -- leftmost 1x column header
+  , header2      :: String -- middle 2x column header
+  , header3      :: String -- rest of the columns header
+  , inactColour  :: Colour -- font colour for inactive content
+  , titleColour  :: Colour -- table title colour
+  , titleBColour :: Colour -- table title background colour
+  , bkgColour    :: Colour -- table border background colour
+  , embossColour :: Colour -- table border emboss colour
+  , fontSizePix  :: Int    -- font size in pixels
+    --    extendCatNum1 :: Int     -- number of one category that has no border to above cell (e.g. for multi-week coursework)
+    --    extendCatNum2 :: Int     -- number of one category that has no border to above cell (e.g. for multi-week empty)
+  } deriving (Show)
+-- extendCatNum1 and extendCatNum2 should ideally be generated
+
+-- Type synonyms
 type CategoryDict = Map Category Int
+type Page = [Week]
+type Week = [GridEntry]
+type URL = String
+type Colour = String
 
-genCategoryDict :: Page -> CategoryDict
-genCategoryDict page =
-  concat page
-    |> map gridEntryCategory
-    |> nub
-    |> (`zip` [1 ..])
-    |> M.fromList
-    |> M.insert blankCategory 0
-
-blankCategory :: Category
-blankCategory =
-  MkCat
-    { title = "",
-      colour = "",
-      counter = False,
-      slidesLinkName = "",
-      materialLinkName = ""
-    }
-
--- genMaterials :: Page -> MaterialDict
+-- Utility types for compiling to Javascript 
 
 data Activity = MkActivity
   { categoryNum :: Int,
@@ -229,9 +251,7 @@ data Activity = MkActivity
     materialRange :: Int
   } deriving (Show, Eq, Ord)
 
-data FoldData = MkFD
-
-data ActivitiesMaterials = MkAM ![Activity] ![MaterialLink]
+data ActivitiesMaterials = MkAM ![Activity] ![Material]
   deriving (Show, Eq, Ord)
 
 instance Semigroup ActivitiesMaterials where
@@ -244,8 +264,100 @@ instance Semigroup ActivitiesMaterials where
 instance Monoid ActivitiesMaterials where
   mempty = MkAM [] []
 
+
+---------------------------------------------------------------------
+-- Smart constructors
+---------------------------------------------------------------------
+
+-- Materials
+
+note :: String -> String -> Material
+note name file = MkMaterial name (noteLink file)
+
+code :: String -> Material
+code file = MkMaterial file (codeLink file) 
+
+external :: String -> String -> Material
+external name url = MkMaterial name url
+
+sheet :: String -> Material
+sheet file = MkMaterial file (sheetLink file)
+
+sheets :: Int -> [Material]
+sheets i = map sheet
+  [ printf "sheet%02d.pdf" i
+  , printf "sheet%02dDyslexic.pdf" i
+  ]
+
+answers :: Int -> [Material]
+answers i = map sheet
+  [ printf "answer%02d.pdf" i
+  , printf "answer%02dDyslexic.pdf" i
+  ]
+
+-- Link construction
+
+bbRootDir :: String
+bbRootDir = "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/"
+
+funcRootDir :: String
+funcRootDir = bbRootDir ++ "content/functional/"
+
+dir :: String -> String -> String
+dir folder path = funcRootDir ++ folder ++ "/" ++ path
+
+sheetLink :: String -> String
+sheetLink = dir "sheets"
+
+noteLink :: String -> String
+noteLink = dir "notes"
+
+slideLink :: String -> String
+slideLink = dir "slides"
+
+codeLink :: String -> String
+codeLink = dir "code"
+
+-- Grid entries
+
 blankEntry :: GridEntry
 blankEntry = Entry "" Blank []
+
+-- Categories
+
+simpleCat :: String -> Colour -> Category
+simpleCat title colour = MkCat
+  { title = title
+  , colour = colour
+  , counter = False
+  , slidesLinkName = ""
+  , materialLinkName = ""
+  }
+
+blankCategory :: Category
+blankCategory =
+  MkCat
+    { title = "",
+      colour = "",
+      counter = False,
+      slidesLinkName = "",
+      materialLinkName = ""
+    }
+
+
+---------------------------------------------------------------------
+-- Compilation machinery
+---------------------------------------------------------------------
+
+genCategoryDict :: Page -> CategoryDict
+genCategoryDict page =
+  concat page
+    |> map entryToCategory
+    |> nub
+    |> (`zip` [1 ..])
+    |> M.fromList
+    |> M.insert blankCategory 0
+
 
 genActivitiesAndMaterials
   :: Page
@@ -285,72 +397,7 @@ genActivitiesAndMaterials page catDict config
         pad n xs = take n $ xs ++ repeat blankEntry
 
     genPerEntry :: GridEntry -> ActivitiesMaterials
-    genPerEntry entry@(Entry {title, spec, materials}) =
-      MkAM [activity] materials
-      where
-        activity =
-          MkActivity
-            { categoryNum = catDict M.! (gridEntryCategory entry), -- Slightly unsafe
-              dateTime = case spec of
-                ExtraMaterials -> "(optional)"
-                SetupLab{} -> "Thurs 29/09/22<br/>15:00-18:00<br/>MVB2.11/1.15"
-                Worksheet{} -> labTime
-                Lectures{} -> "Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley"
-                _ -> "",
-              title = title,
-              activityURL = case spec of
-                Lectures{slidesFile} -> slideLink slidesFile
-                SetupLab{setupLink}  -> setupLink
-                Worksheet{file} -> sheetLink file
-                _ -> "",
-              slidesURL = case spec of
-                _ -> "",
-              materialStart = 0,
-              materialRange = length materials
-            }
-        
-        labTime = "Thurs 15:00-18:00<br/>MVB2.11/1.15"
-
-    blankActivity :: Activity
-    blankActivity =
-      MkActivity
-        { categoryNum = 0,
-          dateTime = "",
-          title = "",
-          activityURL = "",
-          slidesURL = "",
-          materialStart = 0,
-          materialRange = 0
-        }
-
--- >>> genActivitiesAndMaterials functionalPage functionalCatDict config
--- MkAM [MkActivity {categoryNum = 0, dateTime = "", title = "", activityURL = "", slidesURL = "", materialStart = 0, materialRange = 0},MkActivity {categoryNum = 1, dateTime = "", title = "Week 1 - Introduction", activityURL = "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/week1.pdf", slidesURL = "", materialStart = 0, materialRange = 0},MkActivity {categoryNum = 0, dateTime = "", title = "", activityURL = "", slidesURL = "", materialStart = 0, materialRange = 0},MkActivity {categoryNum = 0, dateTime = "", title = "", activityURL = "", slidesURL = "", materialStart = 0, materialRange = 0},MkActivity {categoryNum = 0, dateTime = "", title = "", activityURL = "", slidesURL = "", materialStart = 0, materialRange = 0},MkActivity {categoryNum = 0, dateTime = "", title = "", activityURL = "", slidesURL = "", materialStart = 0, materialRange = 0},MkActivity {categoryNum = 0, dateTime = "", title = "", activityURL = "", slidesURL = "", materialStart = 0, materialRange = 0},MkActivity {categoryNum = 0, dateTime = "", title = "", activityURL = "", slidesURL = "", materialStart = 0, materialRange = 0}] []
-
-functionalCatDict :: CategoryDict
-functionalCatDict = genCategoryDict functionalPage
-
-bbRootDir :: String
-bbRootDir = "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/"
-
-funcRootDir :: String
-funcRootDir = bbRootDir ++ "content/functional/"
-
-dir :: String -> String -> String
-dir folder path = funcRootDir ++ folder ++ "/" ++ path
-
-sheetLink :: String -> String
-sheetLink = dir "sheets"
-
-noteLink :: String -> String
-noteLink = dir "notes"
-
-slideLink :: String -> String
-slideLink = dir "slides"
-
--- >>> genCategoryDict functionalPage
--- fromList [(MkCat {title = "Lectures", colour = "#CCCFFF", counter = False, slidesLink = "", materialLink = ""},0)]
-
--- Compile to JS
+    genPerEntry entry = MkAM [entryToActivity catDict entry] (materials entry)
 
 pageToJS :: Page -> Config -> String
 pageToJS page config = unlines
@@ -415,7 +462,7 @@ activitiesToJS activities
   , "];"
   ]
 
-materialsToJS :: [MaterialLink] -> String
+materialsToJS :: [Material] -> String
 materialsToJS materials
   = unlines
   [ "const files = ["
@@ -424,17 +471,14 @@ materialsToJS materials
   , "];"
   ]
 
-materialToJS :: Int -> MaterialLink -> String
+materialToJS :: Int -> Material -> String
 materialToJS index MkMaterial{..}
-  = listToJSArray
-  $ [show index, name]
-  ++ [case mtype of
-        Note -> noteLink file
-        Sheet -> sheetLink file
-        External -> file
-     ]
+  = listToJSArray [show index, link, name]
 
--- Utility functions
+
+---------------------------------------------------------------------
+-- Utility Functions
+---------------------------------------------------------------------
 
 infixl 0 |>
 
