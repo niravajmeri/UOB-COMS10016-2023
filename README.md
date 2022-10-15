@@ -1,1 +1,3 @@
 - Webpage: https://uob-coms10016.github.io/2022/start.html
+- Compile functional DSL to functional.js file:
+  - `runghc functionalPageDSL.hs > functional.js`
