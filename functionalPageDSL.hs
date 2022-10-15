@@ -45,11 +45,10 @@ functionalPage =
         }
     , Entry
         { title = "Week 1 - Introduction"
-        , spec =
-            Lectures
-              { slidesFile = "week1.pdf"
-              , revisionVideos = ["https://mediasite.bris.ac.uk/Mediasite/Play/18e6ea68ad654e9aaafc9f34805f2c831d"]
-              }
+        , spec = Lectures
+            { slidesFile = "week1.pdf"
+            , revisionVideos = ["https://mediasite.bris.ac.uk/Mediasite/Play/18e6ea68ad654e9aaafc9f34805f2c831d"]
+            }
         , materials = []
         }
     , Entry
@@ -61,13 +60,12 @@ functionalPage =
     -- Week 2
   , [ Entry
         { title = "Week 2 - Data Types and Functions"
-        , spec =
-            Lectures
-              { slidesFile = "week2.pdf"
-              , revisionVideos = [ "https://mediasite.bris.ac.uk/Mediasite/Play/21b78fbe973d43a599fbf79dd94f8aa51d"
-                                 , "https://mediasite.bris.ac.uk/Mediasite/Play/7aae664dcbf94eb28fe13a6ed93f24221d"
-                                 ]
-              }
+        , spec = Lectures
+            { slidesFile = "week2.pdf"
+            , revisionVideos = [ "https://mediasite.bris.ac.uk/Mediasite/Play/21b78fbe973d43a599fbf79dd94f8aa51d"
+                               , "https://mediasite.bris.ac.uk/Mediasite/Play/7aae664dcbf94eb28fe13a6ed93f24221d"
+                               ]
+            }
         , materials = []
         }
     , Entry
@@ -87,11 +85,10 @@ functionalPage =
           }
       , Entry
           { title = "Week 3 - Evaluation, Currying, Cases, and Recursion"
-          , spec =
-              Lectures
-                { slidesFile = "week3.pdf"
-                , revisionVideos = []
-                }
+          , spec = Lectures
+              { slidesFile = "week3.pdf"
+              , revisionVideos = []
+              }
           , materials = [code "week3.hs"]
           }
       , Entry
@@ -114,6 +111,22 @@ functionalPage =
           , materials = sheets 2 ++ answers 2
           }
       ]
+    
+    -- Week 4
+    , [ Entry
+          { title = "Week 4 - Modelling, Datatypes, and Testing"
+          , spec = Lectures
+              { slidesFile = "week4.pdf"
+              , revisionVideos = []
+              }
+          , materials = []
+          }
+      , Entry
+          { title = "Pattern Matching"
+          , spec = Worksheet "sheet03.pdf"
+          , materials = sheets 3
+          }
+      ]
   ]
 
 
@@ -124,9 +137,23 @@ functionalPage =
 
 entryToCategory :: GridEntry -> Category
 entryToCategory (Entry _ details materials) = case details of
-  Lectures{} -> simpleCat "Lectures" "#CCCFFF"
-  ExtraMaterials -> simpleCat "Extra Materials" "#DDDDDD"
-  SetupLab{} -> simpleCat "Setup Lab:" "#CCCCCC"
+  SetupLab{} -> simpleCat "Setup Lab:" "#EEEEDD"
+  Lectures{..} -> MkCat
+        { title = "Lectures"
+        , colour = "#CCCFFF"
+        , counter = False
+        , slidesLinkName = ""
+        , materialLinkName = if not (null materials)
+                             then "Materials"
+                             else ""
+        }
+  ExtraMaterials -> MkCat
+        { title = "Extra Materials"
+        , colour = "#DDDDDD"
+        , counter = False
+        , slidesLinkName = ""
+        , materialLinkName = "Materials"
+        }
   Worksheet{} -> MkCat
         { title = "Worksheet"
         , colour = "#EEEEDD"
@@ -150,6 +177,15 @@ entryToCategory (Entry _ details materials) = case details of
         }
   _ -> blankCategory
 
+blankCategory :: Category
+blankCategory = MkCat
+  { title = "",
+    colour = "#CCCCCC",
+    counter = False,
+    slidesLinkName = "",
+    materialLinkName = ""
+  }
+
 ---------------------------------------------------------------------
 -- Specifying Entry to Activity transformation 
 ---------------------------------------------------------------------
@@ -157,24 +193,39 @@ entryToCategory (Entry _ details materials) = case details of
 entryToActivity :: CategoryDict -> GridEntry -> Activity
 entryToActivity catDict entry@(Entry {title, spec, materials})
   = MkActivity
-      { categoryNum = catDict M.! entryToCategory entry, -- Slightly unsafe
-        dateTime = case spec of
+      { categoryNum = catDict M.! entryToCategory entry -- Slightly unsafe
+      , dateTime = case spec of
           ExtraMaterials -> "(optional)"
+          History -> "(optional)"
           SetupLab{} -> "Thurs 29/09/22<br/>15:00-18:00<br/>MVB2.11/1.15"
           Worksheet{} -> "Thurs 15:00-18:00<br/>MVB2.11/1.15"
           Lectures{} -> "Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley"
-          _ -> "",
-        title = title,
-        activityURL = case spec of
-          Lectures{slidesFile} -> slideLink slidesFile
+          NotesExtra -> "in your own time"
+          _ -> ""
+      , title = case spec of
+          Lectures{slidesFile, revisionVideos}
+            -> href title (slideLink slidesFile) ++ revisionVidLinks revisionVideos
+          _ -> title
+      , activityURL = case spec of
           SetupLab{setupLink}  -> setupLink
           Worksheet{file} -> sheetLink file
-          _ -> "",
-        slidesURL = case spec of
-          _ -> "",
-        materialStart = 0,
-        materialRange = length materials
+          _ -> ""
+      , slidesURL = case spec of
+          _ -> ""
+      , materialStart = 0
+      , materialRange = length materials
       }
+
+href :: String -> URL -> String
+href text link = printf "<a href='%s' target='_blank'>%s</a>" link text
+
+revisionVidLinks :: [URL] -> String
+revisionVidLinks vids
+  =  zipWith f [1..] vids
+  |> concat
+  where
+    f :: Int -> URL -> String
+    f i link = "<br/>(" ++ href ("Revision Video " ++ show i) link ++ ")"
 
 ---------------------------------------------------------------------
 -- Types API
@@ -334,16 +385,6 @@ simpleCat title colour = MkCat
   , materialLinkName = ""
   }
 
-blankCategory :: Category
-blankCategory =
-  MkCat
-    { title = "",
-      colour = "",
-      counter = False,
-      slidesLinkName = "",
-      materialLinkName = ""
-    }
-
 
 ---------------------------------------------------------------------
 -- Compilation machinery
@@ -418,7 +459,7 @@ configToJS MkConfig{..} =
   , ("activityNum  ", show activityNum  )
   , ("columnNum    ", show columnNum    )
   , ("title        ", show title        )
-  , ("headerOn     ", show headerOn     )
+  , ("headerOn     ", if headerOn then "1" else "0" )
   , ("header1      ", show header1      )
   , ("header2      ", show header2      )
   , ("header3      ", show header3      )
