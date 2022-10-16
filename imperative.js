@@ -72,7 +72,7 @@ var activities = [
 ["4", "in your own time",     "TOWERS OF HANOI",               "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_Task02.pdf", "", "165", "6"],
 ["0", "Tue 11/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",     "ARRAYS",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_06.pdf",       "https://mediasite.bris.ac.uk/Mediasite/Play/6fc2ef02c0cf4c14946695028ed6d8921d", "35", "3"],
 ["0", "Fri 14/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",     "STRINGS", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_07.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/28cc121d4f214ceb9462400743deaa2b1d",  "37", "6"],
-["6", "Wed 12/10/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "GRADE CHALLENGE", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week03/index.html", "", "25", "4"],
+["6", "Wed 12/10/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "GRADE CHALLENGE<br/><a target='_blank' href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week03/sample/grade.c'", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week03/index.html", "", "25", "4"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["0", "Fri 14/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "SEARCHING", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_08.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/28cc121d4f214ceb9462400743deaa2b1d",  "43", "1"],
 ["9", "",                     "",                                 "", "", "0", "0"],
