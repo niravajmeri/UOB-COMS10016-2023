@@ -81,7 +81,7 @@ blank,
 blank,
 //WEEK 03
 ["21", "(optional)", "History of Haskell", "", "", "12", "2"],
-lecturesSlidesOnly("Week 3 - Evaluation, Currying, Cases, and Recursion</a><br/></b>(<a href='https://mediasite.bris.ac.uk/Mediasite/Play/6ec18e18e6814510b259e151366aecee1d' target='_blank'>Revision Video</a>), <b><a>", "week3.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/2da7d7439ebe40189e8e211a36208bee1d"),
+lecturesSlides("Week 3 - Evaluation, Currying, Cases, and Recursion</a><br/></b>(<a href='https://mediasite.bris.ac.uk/Mediasite/Play/6ec18e18e6814510b259e151366aecee1d' target='_blank'>Revision Video</a>), <b><a>", "week3.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/2da7d7439ebe40189e8e211a36208bee1d"),
 notes(4,11),
 worksheet("Worksheet 2 - Evaluation and Guards", "sheet02.pdf", 15, 18),
 blank,
