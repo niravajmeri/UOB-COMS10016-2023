@@ -31,7 +31,7 @@ config =
     }
 
 
-functionalPage :: Page
+functionalPage :: Page -- a.k.a. [Week], a.k.a [[GridEntry]]
 functionalPage =
   [ -- Week 1
     [  Entry
