@@ -46,7 +46,7 @@ const activities = [
 ["0","","","","","7","0",],
 ["0","","","","","7","0",],
 ["5","(optional)","History of Haskell","","","7","2",],
-["6","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/week3.pdf' target='_blank'>Week 3 - Evaluation, Currying, Cases, and Recursion</a>","","","9","1",],
+["6","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/week3.pdf' target='_blank'>Week 3 - Evaluation, Currying, Cases, and Recursion</a><br/>(<a href='https://mediasite.bris.ac.uk/Mediasite/Play/6ec18e18e6814510b259e151366aecee1d' target='_blank'>Revision Video 1</a>)<br/>(<a href='https://mediasite.bris.ac.uk/Mediasite/Play/2da7d7439ebe40189e8e211a36208bee1d' target='_blank'>Revision Video 2</a>)","","","9","1",],
 ["7","in your own time","","","","10","8",],
 ["4","Thurs 15:00-18:00<br/>MVB2.11/1.15","Evaluation and Guards","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet02.pdf","","18","4",],
 ["0","","","","","22","0",],
@@ -60,7 +60,7 @@ const activities = [
 ["0","","","","","24","0",],
 ["0","","","","","24","0",],
 ["0","","","","","24","0",],
-["8","Deadline: ","Power to the People","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/coursework/CW1/CW1-Instrs.pdf","","24","2",],
+["8","Deadline: 13:00 Thurs 27/10/22<br/>(submit at least 1 hour early)","Power to the People","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/coursework/CW1/CW1-Instrs.pdf","","24","2",],
 
 ];
 

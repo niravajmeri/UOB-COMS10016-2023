@@ -87,7 +87,8 @@ functionalPage =
           { title = "Week 3 - Evaluation, Currying, Cases, and Recursion"
           , spec = Lectures
               { slidesFile = "week3.pdf"
-              , revisionVideos = []
+              , revisionVideos = [ "https://mediasite.bris.ac.uk/Mediasite/Play/6ec18e18e6814510b259e151366aecee1d"
+                                 , "https://mediasite.bris.ac.uk/Mediasite/Play/2da7d7439ebe40189e8e211a36208bee1d"]
               }
           , materials = [code "week3.hs"]
           }
@@ -128,7 +129,10 @@ functionalPage =
           }
       , Entry
           { title = "Power to the People"
-          , spec = Coursework {instructions = "CW1/CW1-Instrs.pdf", deadline = ""}
+          , spec = Coursework
+              { instructions = "CW1/CW1-Instrs.pdf"
+              , deadline = "13:00 Thurs 27/10/22<br/>(submit at least 1 hour early)"
+              }
           , materials = map (coursework "CW1")
               [ "CW1-Instrs.pdf"
               , "CW1-PowerToThePeople.zip" ]
