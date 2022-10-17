@@ -14,7 +14,7 @@ main = putStr $ pageToJS functionalPage config
 config :: Config
 config =
   MkConfig
-    { currentWeek = 3,
+    { currentWeek = 4,
       activityNum = 8,
       columnNum = 4,
       title = "FUNCTIONAL PROGRAMMING",
@@ -126,6 +126,13 @@ functionalPage =
           , spec = Worksheet "sheet03.pdf"
           , materials = sheets 3
           }
+      , Entry
+          { title = "Power to the People"
+          , spec = Coursework {instructions = "CW1/CW1-Instrs.pdf", deadline = ""}
+          , materials = map (coursework "CW1")
+              [ "CW1-Instrs.pdf"
+              , "CW1-PowerToThePeople.zip" ]
+          }
       ]
   ]
 
@@ -175,6 +182,14 @@ entryToCategory (Entry _ details materials) = case details of
         , slidesLinkName = ""
         , materialLinkName = "Materials"
         }
+  Coursework{} -> MkCat
+        { title = "Coursework"
+        , colour = "#EEEEDD"
+        , counter = True
+        , slidesLinkName = ""
+        , materialLinkName = "Materials"
+        }
+       
   _ -> blankCategory
 
 blankCategory :: Category
@@ -201,6 +216,7 @@ entryToActivity catDict entry@(Entry {title, spec, materials})
           Worksheet{} -> "Thurs 15:00-18:00<br/>MVB2.11/1.15"
           Lectures{} -> "Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley"
           NotesExtra -> "in your own time"
+          Coursework{..} -> "Deadline: " ++ deadline
           _ -> ""
       , title = case spec of
           Lectures{slidesFile, revisionVideos}
@@ -209,6 +225,7 @@ entryToActivity catDict entry@(Entry {title, spec, materials})
       , activityURL = case spec of
           SetupLab{setupLink}  -> setupLink
           Worksheet{file} -> sheetLink file
+          Coursework{instructions} -> courseworkLink instructions
           _ -> ""
       , slidesURL = case spec of
           _ -> ""
@@ -246,7 +263,7 @@ data EntrySpec
   | Worksheet { file :: String }
   | History
   | NotesExtra
-  | Coursework
+  | Coursework { instructions :: String, deadline :: String }
   | Blank
   deriving (Show, Eq, Ord)
 
@@ -326,7 +343,10 @@ note :: String -> String -> Material
 note name file = MkMaterial name (noteLink file)
 
 code :: String -> Material
-code file = MkMaterial file (codeLink file) 
+code file = MkMaterial file (codeLink file)
+
+coursework :: String -> String -> Material
+coursework cwDir file = MkMaterial file (courseworkLink (cwDir ++ "/" ++ file))
 
 external :: String -> String -> Material
 external name url = MkMaterial name url
@@ -368,6 +388,9 @@ slideLink = dir "slides"
 
 codeLink :: String -> String
 codeLink = dir "code"
+
+courseworkLink :: String -> String
+courseworkLink = dir "coursework"
 
 -- Grid entries
 
