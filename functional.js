@@ -24,7 +24,7 @@ var categories = [
 ["5","History","#EEEEDD","0","","Materials",],
 ["6","Lectures","#CCCFFF","0","","Materials",],
 ["7","Notes ft.<br>Extra Examples<br>+ Explanations","#DDDDDD","0","","Notes",],
-["8","Coursework","#EEEEDD","1","","Materials",],
+["8","Coursework","#EEEEDD","1","SUBMIT HERE (Blackboard)","Materials",],
 
 ];
 
@@ -54,13 +54,13 @@ const activities = [
 ["0","","","","","22","0",],
 ["0","","","","","22","0",],
 ["0","","","","","22","0",],
-["2","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/week4.pdf' target='_blank'>Week 4 - Modelling, Datatypes, and Testing</a>","","","22","0",],
-["0","","","","","22","0",],
-["4","Thurs 15:00-18:00<br/>MVB2.11/1.15","Pattern Matching","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet03.pdf","","22","2",],
-["0","","","","","24","0",],
-["0","","","","","24","0",],
-["0","","","","","24","0",],
-["8","Deadline: 13:00 Thurs 27/10/22<br/>(submit at least 1 hour early)","Power to the People","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/coursework/CW1/CW1-Instrs.pdf","","24","2",],
+["6","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/week4.pdf' target='_blank'>Week 4 - Modelling, Datatypes, and Testing</a>","","","22","1",],
+["0","","","","","23","0",],
+["4","Thurs 15:00-18:00<br/>MVB2.11/1.15","Pattern Matching","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet03.pdf","","23","2",],
+["0","","","","","25","0",],
+["0","","","","","25","0",],
+["0","","","","","25","0",],
+["8","Deadline: 13:00 Thurs 27/10/22<br/>(submit at least 1 hour early)","Power to the People","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/coursework/CW1/CW1-Instrs.pdf","https://www.ole.bris.ac.uk/webapps/assignment/uploadAssignment?content_id=_7367855_1&course_id=_252989_1","25","2",],
 
 ];
 
@@ -87,10 +87,11 @@ const files = [
 ["19","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet02Dyslexic.pdf","sheet02Dyslexic.pdf",],
 ["20","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/answer02.pdf","answer02.pdf",],
 ["21","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/answer02Dyslexic.pdf","answer02Dyslexic.pdf",],
-["22","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet03.pdf","sheet03.pdf",],
-["23","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet03Dyslexic.pdf","sheet03Dyslexic.pdf",],
-["24","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/coursework/CW1/CW1-Instrs.pdf","CW1-Instrs.pdf",],
-["25","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/coursework/CW1/CW1-PowerToThePeople.zip","CW1-PowerToThePeople.zip",],
+["22","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/code/card.hs","card.hs",],
+["23","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet03.pdf","sheet03.pdf",],
+["24","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet03Dyslexic.pdf","sheet03Dyslexic.pdf",],
+["25","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/coursework/CW1/CW1-Instrs.pdf","CW1-Instrs.pdf",],
+["26","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/coursework/CW1/CW1-PowerToThePeople.zip","CW1-PowerToThePeople.zip",],
 
 ];
 

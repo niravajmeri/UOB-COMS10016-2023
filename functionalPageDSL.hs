@@ -120,7 +120,7 @@ functionalPage =
               { slidesFile = "week4.pdf"
               , revisionVideos = []
               }
-          , materials = []
+          , materials = [code "card.hs"]
           }
       , Entry
           { title = "Pattern Matching"
@@ -131,6 +131,7 @@ functionalPage =
           { title = "Power to the People"
           , spec = Coursework
               { instructions = "CW1/CW1-Instrs.pdf"
+              , submissionLink = "https://www.ole.bris.ac.uk/webapps/assignment/uploadAssignment?content_id=_7367855_1&course_id=_252989_1"
               , deadline = "13:00 Thurs 27/10/22<br/>(submit at least 1 hour early)"
               }
           , materials = map (coursework "CW1")
@@ -186,11 +187,13 @@ entryToCategory (Entry _ details materials) = case details of
         , slidesLinkName = ""
         , materialLinkName = "Materials"
         }
-  Coursework{} -> MkCat
+  Coursework{submissionLink} -> MkCat
         { title = "Coursework"
         , colour = "#EEEEDD"
         , counter = True
-        , slidesLinkName = ""
+        , slidesLinkName = if not (null submissionLink)
+                           then "SUBMIT HERE (Blackboard)"
+                           else ""
         , materialLinkName = "Materials"
         }
        
@@ -232,6 +235,7 @@ entryToActivity catDict entry@(Entry {title, spec, materials})
           Coursework{instructions} -> courseworkLink instructions
           _ -> ""
       , slidesURL = case spec of
+          Coursework{submissionLink} -> submissionLink
           _ -> ""
       , materialStart = 0
       , materialRange = length materials
@@ -267,7 +271,10 @@ data EntrySpec
   | Worksheet { file :: String }
   | History
   | NotesExtra
-  | Coursework { instructions :: String, deadline :: String }
+  | Coursework { instructions :: String
+               , submissionLink :: URL
+               , deadline :: String
+               }
   | Blank
   deriving (Show, Eq, Ord)
 
