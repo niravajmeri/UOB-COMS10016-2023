@@ -14,7 +14,7 @@ main = putStr $ pageToJS functionalPage config
 config :: Config
 config =
   MkConfig
-    { currentWeek = 4,
+    { currentWeek = 5,
       activityNum = 8,
       columnNum = 4,
       title = "FUNCTIONAL PROGRAMMING",
@@ -118,7 +118,10 @@ functionalPage =
           { title = "Week 4 - Modelling, Datatypes, and Testing"
           , spec = Lectures
               { slidesFile = "week4.pdf"
-              , revisionVideos = []
+              , revisionVideos =
+                  [ "https://mediasite.bris.ac.uk/Mediasite/Play/4361b923603143a18bdd32f7bfe710671d" 
+                  , "https://mediasite.bris.ac.uk/Mediasite/Play/c467dfea5fbb4d9a9fc73aea48f202ff1d"
+                  ]
               }
           , materials = [code "card.hs"]
           }
@@ -148,8 +151,15 @@ functionalPage =
               }
           , materials = []
           }
-
+      , Entry
+          { title = "List and Property Testing"
+          , spec = Worksheet "sheet04.pdf"
+          , materials = sheets 4
+          }
       ]
+    
+    -- Spare week of lectures, to make sure site doesn't break
+    , []
   ]
 
 
