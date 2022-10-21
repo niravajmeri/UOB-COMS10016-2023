@@ -125,7 +125,7 @@ functionalPage =
       , Entry
           { title = "Pattern Matching"
           , spec = Worksheet "sheet03.pdf"
-          , materials = sheets 3
+          , materials = sheets 3 ++ answers 3
           }
       , Entry
           { title = "Power to the People"
@@ -138,6 +138,17 @@ functionalPage =
               [ "CW1-Instrs.pdf"
               , "CW1-PowerToThePeople.zip" ]
           }
+      ]
+    -- Week 5
+    , [ Entry
+          { title = "Week 5 - Types and Constructors, Pattern Matching, and Lists"
+          , spec = Lectures
+              { slidesFile = "week5.pdf"
+              , revisionVideos = []
+              }
+          , materials = []
+          }
+
       ]
   ]
 
