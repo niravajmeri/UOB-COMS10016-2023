@@ -84,7 +84,7 @@ var activities = [
 ["0", "Tue 18/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",    "BITS",          "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_10.pdf",        "https://mediasite.bris.ac.uk/Mediasite/Play/a3533af3bc4e4fc0906e5ca4f2133dcf1d", "56", "1"],
 ["6", "Weds 19+26/10/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "TRIANGLE CHALLENGE",              "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week04/index.html", "", "44", "4"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["22", "Fri 21/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "</a>POINTERS<a>",             "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_11.pdf",           "https://mediasite.bris.ac.uk/Mediasite/Play/388e5402b8404f5d8dc76f2115f16cb31d",  "57", "2"],
+["21", "Fri 21/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "POINTERS",             "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_11.pdf",           "https://mediasite.bris.ac.uk/Mediasite/Play/388e5402b8404f5d8dc76f2115f16cb31d",  "57", "2"],
 ["9", "",                     "",                                 "", "", "0", "0"],
 ["8", "",                     "",                                 "", "", "0", "0"],
  
