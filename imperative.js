@@ -79,7 +79,7 @@ var activities = [
 ["8", "",                     "",                                 "", "", "0", "0"],
  
 //WEEK 04 - BITS, POINTERS
-["3", "in your own time",   "PRIME SUSPECT",                   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_Task03.pdf", "", "53", "1"],
+["4", "in your own time",   "PRIME SUSPECT",                   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_Task03.pdf", "", "53", "1"],
 ["0", "Tue 18/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "RUNTIME COMPLEXITY",             "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_09.pdf",  "https://mediasite.bris.ac.uk/Mediasite/Play/953a9c1c02e7421b86ea1bbee3ec83ec1d", "43", "1"],
 ["0", "Tue 18/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",    "BITS",          "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_10.pdf",        "https://mediasite.bris.ac.uk/Mediasite/Play/a3533af3bc4e4fc0906e5ca4f2133dcf1d", "56", "1"],
 ["6", "Weds 19+26/10/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "TRIANGLE CHALLENGE",              "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week04/index.html", "", "44", "4"],
@@ -89,13 +89,13 @@ var activities = [
 ["8", "",                     "",                                 "", "", "0", "0"],
 
 //WEEK 05 - WORKING WITH POINTERS
-["3", "in your own time",   "PRIME SUSPECT",                   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_Task03.pdf", "", "53", "1"],
-["0", "Tue 18/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "RUNTIME COMPLEXITY",             "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_09.pdf",  "https://mediasite.bris.ac.uk/Mediasite/Play/953a9c1c02e7421b86ea1bbee3ec83ec1d", "43", "1"],
-["0", "Tue 18/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",    "BITS",          "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_10.pdf",        "https://mediasite.bris.ac.uk/Mediasite/Play/a3533af3bc4e4fc0906e5ca4f2133dcf1d", "56", "1"],
-["6", "Weds 19+26/10/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "TRIANGLE CHALLENGE",              "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week04/index.html", "", "44", "4"],
+["3", "in your own time",   "BITS &amp; POINTERS",                   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_Task04.pdf", "", "54", "2"],
+["22", "Tue 25/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",    "</a>STRUCTURES &amp; USER TYPES<a>",             "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_10.pdf",  "https://mediasite.bris.ac.uk/Mediasite/Play/7d3fe970d51b4ce69c1de4f69a99629a1d", "59", "2"],
+["22", "Tue 25/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",    "</a>DYNAMIC DATA<a>",          "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_11.pdf",        "", "81", "5"],
+["8", "",                     "",                                 "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["0", "Fri 21/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "POINTERS",             "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_11.pdf",           "https://mediasite.bris.ac.uk/Mediasite/Play/388e5402b8404f5d8dc76f2115f16cb31d",  "57", "2"],
-["9", "",                     "",                                 "", "", "0", "0"],
+["22", "Fri 28/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "</a>STACKS<a>",             "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_12.pdf",           "",  "79", "2"],
+["22", "Fri 28/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "</a>LISTS<a>",             "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_12.pdf",           "",  "86", "2"],
 ["8", "",                     "",                                 "", "", "0", "0"],
 
 //WEEK 05 - WORKING WITH POINTERS
