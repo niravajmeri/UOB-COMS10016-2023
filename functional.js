@@ -61,7 +61,14 @@ const activities = [
 ["0","","","","","25","0",],
 ["0","","","","","25","0",],
 ["8","Deadline: 13:00 Thurs 27/10/22<br/>(submit at least 1 hour early)","Power to the People","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/coursework/CW1/CW1-Instrs.pdf","https://www.ole.bris.ac.uk/webapps/assignment/uploadAssignment?content_id=_7367855_1&course_id=_252989_1","25","2",],
-
+["0","","","","","22","0",],
+["0","","","","","22","0",],
+["0","","","","","22","0",],
+["0","","","","","22","0",],
+["0","","","","","22","0",],
+["0","","","","","22","0",],
+["0","","","","","22","0",],
+["0","","","","","22","0",],
 ];
 
 const files = [
