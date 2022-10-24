@@ -126,6 +126,13 @@ functionalPage =
           , materials = [code "card.hs"]
           }
       , Entry
+          { title = ""
+          , spec = NotesExtra
+          , materials = map (uncurry note)
+              [ ("Pattern Matching", "PatternMatching.pdf")
+              ]
+          }
+      , Entry
           { title = "Pattern Matching"
           , spec = Worksheet "sheet03.pdf"
           , materials = sheets 3 ++ answers 3
@@ -150,6 +157,14 @@ functionalPage =
               , revisionVideos = []
               }
           , materials = []
+          }
+      , Entry
+          { title = ""
+          , spec = NotesExtra
+          , materials = map (uncurry note)
+              [ ("Lists", "Lists.pdf")
+              , ("Maybe", "Maybe.pdf")
+              ]
           }
       , Entry
           { title = "List and Property Testing"
@@ -196,7 +211,7 @@ entryToCategory (Entry _ details materials) = case details of
         }
   NotesExtra -> MkCat
         { title = "Notes ft.<br>Extra Examples<br>+ Explanations"
-        , colour = "#DDDDDD"
+        , colour = "#94e5bf"
         , counter = False
         , slidesLinkName = ""
         , materialLinkName = "Notes"
