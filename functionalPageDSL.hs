@@ -156,7 +156,7 @@ functionalPage =
               { slidesFile = "week5.pdf"
               , revisionVideos = []
               }
-          , materials = []
+          , materials = [code "week5.hs"]
           }
       , Entry
           { title = ""
