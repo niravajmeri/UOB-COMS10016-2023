@@ -102,7 +102,7 @@ var activities = [
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["12", "",                     "",                                 "", "", "0", "0"],
 ["12", "",                     "",                                 "", "", "0", "0"],
-["8", "",                     "SUBMIT HERE<br/>before<br/>Thu 10/11/22<br/>01:00pm UK time<hr/>",                                 "https://www.ole.bris.ac.uk/webapps/assignment/uploadAssignment?content_id=_7367854_1&course_id=_252989_1&group_id=&mode=view", "", "0", "0"],
+["8", "Submission Deadline<br/>Thu 10/11/22<br/>01:00pm UK time<hr/>",                     "SUBMIT HERE<br/>(Blackboard)<hr/>",                                 "https://www.ole.bris.ac.uk/webapps/assignment/uploadAssignment?content_id=_7367854_1&course_id=_252989_1&group_id=&mode=view", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
@@ -112,10 +112,10 @@ var activities = [
 ["9", "",                     "",                                 "", "", "0", "0"],
 ["9", "",                     "",                                 "", "", "0", "0"],
 ["9", "",                     "",                                 "", "", "0", "0"],
-["8", "Final Support Lab<br/>Wed 10/11/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15",                     "",                                 "", "", "0", "0"],
-["9", "",                     "",                                 "", "", "0", "0"],
-["9", "",                     "",                                 "", "", "0", "0"],
-["9", "",                     "",                                 "", "", "0", "0"],
+["8", "Final Support Lab<br/>Wed 09/11/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15",                     "",                                 "", "", "0", "0"],
+["10", "",                     "",                                 "", "", "0", "0"],
+["10", "",                     "",                                 "", "", "0", "0"],
+["10", "",                     "",                                 "", "", "0", "0"],
 ["8", "",                     "",                                 "", "", "0", "0"],
  
 //WEEK 06 - READING WEEK
