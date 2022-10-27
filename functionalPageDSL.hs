@@ -164,6 +164,7 @@ functionalPage =
           , materials = map (uncurry note)
               [ ("Lists", "Lists.pdf")
               , ("Maybe", "Maybe.pdf")
+              , ("Recipe for writing functions", "FunctionRecipe.pdf")
               ]
           }
       , Entry
@@ -171,8 +172,13 @@ functionalPage =
           , spec = Worksheet "sheet04.pdf"
           , materials = sheets 4
           }
+      , Entry
+          { title = "Structural Inductive Proofs"
+          , spec = WorksheetBonus "sheetBonus1.pdf"
+          , materials = sheetsBonus 1 -- ++ answersBonus 1
+          }
       ]
-    
+
     -- Spare week of lectures, to make sure site doesn't break
     , []
   ]
@@ -209,6 +215,13 @@ entryToCategory (Entry _ details materials) = case details of
         , slidesLinkName = ""
         , materialLinkName = "Materials"
         }
+  WorksheetBonus{} -> MkCat
+        { title = "Bonus Worksheet"
+        , colour = "#DE591C"
+        , counter = True
+        , slidesLinkName = ""
+        , materialLinkName = "Materials"
+        }
   NotesExtra -> MkCat
         { title = "Notes ft.<br>Extra Examples<br>+ Explanations"
         , colour = "#94e5bf"
@@ -235,6 +248,20 @@ entryToCategory (Entry _ details materials) = case details of
        
   _ -> blankCategory
 
+isLectureCategory :: EntrySpec -> Bool
+isLectureCategory x = case x of
+  Lectures{} -> True
+  NotesExtra{} -> True
+  _ -> False
+
+isCourseworkCategory :: EntrySpec -> Bool
+isCourseworkCategory x = case x of
+  Worksheet{} -> True
+  WorksheetBonus{} -> True
+  SetupLab{} -> True
+  Coursework{} -> True
+  _ -> False
+
 blankCategory :: Category
 blankCategory = MkCat
   { title = "",
@@ -257,6 +284,7 @@ entryToActivity catDict entry@(Entry {title, spec, materials})
           History -> "(optional)"
           SetupLab{} -> "Thurs 29/09/22<br/>15:00-18:00<br/>MVB2.11/1.15"
           Worksheet{} -> "Thurs 15:00-18:00<br/>MVB2.11/1.15"
+          WorksheetBonus{} -> "(optional)"
           Lectures{} -> "Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley"
           NotesExtra -> "in your own time"
           Coursework{..} -> "Deadline: " ++ deadline
@@ -268,6 +296,7 @@ entryToActivity catDict entry@(Entry {title, spec, materials})
       , activityURL = case spec of
           SetupLab{setupLink}  -> setupLink
           Worksheet{file} -> sheetLink file
+          WorksheetBonus{file} -> sheetLink file
           Coursework{instructions} -> courseworkLink instructions
           _ -> ""
       , slidesURL = case spec of
@@ -305,6 +334,7 @@ data EntrySpec
               }
   | SetupLab  { setupLink :: URL }
   | Worksheet { file :: String }
+  | WorksheetBonus { file :: String }
   | History
   | NotesExtra
   | Coursework { instructions :: String
@@ -413,6 +443,18 @@ answers i = map sheet
   , printf "answer%02dDyslexic.pdf" i
   ]
 
+sheetsBonus :: Int -> [Material]
+sheetsBonus i = map sheet
+  [ printf "sheetBonus%01d.pdf" i
+  , printf "sheetBonus%01dDyslexic.pdf" i
+  ]
+
+answersBonus :: Int -> [Material]
+answersBonus i = map sheet
+  [ printf "answerBonus%01d.pdf" i
+  , printf "answerBonus%01dDyslexic.pdf" i
+  ]
+
 -- Link construction
 
 bbRootDir :: String
@@ -493,16 +535,7 @@ genActivitiesAndMaterials page catDict config
           | isCourseworkCategory spec = (ex, lecs, entry : cws)
           | otherwise = (entry : ex, lecs, cws)
 
-        isLectureCategory x = case x of
-          Lectures {} -> True
-          NotesExtra {} -> True
-          _ -> False
 
-        isCourseworkCategory x = case x of
-          Worksheet {} -> True
-          SetupLab {} -> True
-          Coursework {} -> True
-          _ -> False
 
         pad :: Int -> [GridEntry] -> [GridEntry]
         pad n xs = take n $ xs ++ repeat blankEntry
