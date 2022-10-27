@@ -1,5 +1,5 @@
 //LAYOUT CUSTOMIZATION
-var currentWeek   = 5;                         // current week [releases content fully visible up to this week]
+var currentWeek   = 6;                         // current week [releases content fully visible up to this week]
 var activityNum   = 8;                         // number of activities per week (empty slots possible)
 var columnNum     = 4;                         // desired columns per week (yet, autofitted to max 2 rows per week)
 var title         = "IMPERATIVE PROGRAMMING";  // content title (different to unitName since multiple content streams maybe in one unit)
@@ -100,9 +100,9 @@ var activities = [
 
 //WEEK 06 - READING WEEK
 ["10", "",                     "",                                 "", "", "0", "0"],
-["10", "",                     "",                                 "", "", "0", "0"],
-["10", "",                     "",                                 "", "", "0", "0"],
-["10", "",                     "",                                 "", "", "0", "0"],
+["12", "",                     "",                                 "", "", "0", "0"],
+["12", "",                     "",                                 "", "", "0", "0"],
+["7", "in your own time and during labs", "LIST ASSIGNMENT<hr/>Submission Deadline:<br/>Thu 10/11/22<br/>01:00pm UK time<\a>", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week06/index.html", "", "91", "3"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
