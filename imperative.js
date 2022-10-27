@@ -96,18 +96,28 @@ var activities = [
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["22", "Fri 28/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "</a>STACKS<a>",             "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_12.pdf",           "",  "79", "2"],
 ["22", "Fri 28/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "</a>LISTS<a>",             "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_12.pdf",           "",  "86", "2"],
-["8", "",                     "",                                 "", "", "0", "0"],
+["7", "in your own time", "LIST ASSIGNMENT<hr/>", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week06/index.html", "", "91", "3"],
 
 //WEEK 06 - READING WEEK
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["12", "",                     "",                                 "", "", "0", "0"],
 ["12", "",                     "",                                 "", "", "0", "0"],
-["7", "in your own time &amp;<br/>Wed 09/11/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "LIST ASSIGNMENT<hr/>", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week06/index.html", "", "91", "3"],
+["8", "",                     "SUBMIT HERE<br/>before<br/>Thu 10/11/22<br/>01:00pm UK time<hr/>",                                 "https://www.ole.bris.ac.uk/webapps/assignment/uploadAssignment?content_id=_7367854_1&course_id=_252989_1&group_id=&mode=view", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["8", "",                     "SUBMIT HERE<br/>before<br/>Thu 10/11/22<br/>01:00pm UK time",                                 "https://www.ole.bris.ac.uk/webapps/assignment/uploadAssignment?content_id=_7367854_1&course_id=_252989_1&group_id=&mode=view", "", "0", "0"],
+["8", "<a href='https://teams.microsoft.com/l/channel/19%3a36aaf52e957147cf98f49ee558b8a878%40thread.tacv2/Week%252005-07%2520(Imp)%2520-%2520List%2520Assignment?groupId=7830f761-4803-4b75-8a0d-36308e7d5c31&tenantId=b2e47f30-cd7d-4a4e-a5da-b18cf1a4151b' target='_blank'>MS Teams Help</a><hr/>",                     "",                              "", "", "0", "0"],
 
+//WEEK 07 - 
+["9", "",                     "",                                 "", "", "0", "0"],
+["9", "",                     "",                                 "", "", "0", "0"],
+["9", "",                     "",                                 "", "", "0", "0"],
+["8", "Final Support Lab<br/>Wed 10/11/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15",                     "",                                 "", "", "0", "0"],
+["9", "",                     "",                                 "", "", "0", "0"],
+["9", "",                     "",                                 "", "", "0", "0"],
+["9", "",                     "",                                 "", "", "0", "0"],
+["8", "",                     "",                                 "", "", "0", "0"],
+ 
 //WEEK 06 - READING WEEK
 ["17", "Mon 01/11/21<br/>04:00pm<br/>MVB2.11", "Pointer Surgery<br/>with Sion and Tilo",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/monday.html", "", "0", "0"],
 ["12","",                   "",        "", ""],
