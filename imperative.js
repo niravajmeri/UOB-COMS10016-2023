@@ -106,7 +106,7 @@ var activities = [
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["8", "",                     "Submission Deadline:<br/>Thu 10/11/22<br/>01:00pm UK time",                                 "", "", "0", "0"],
+["8", "",                     "</a>Submission Deadline:<br/>Thu 10/11/22<br/>01:00pm UK time<a>",                                 "", "", "0", "0"],
 
 //WEEK 06 - READING WEEK
 ["17", "Mon 01/11/21<br/>04:00pm<br/>MVB2.11", "Pointer Surgery<br/>with Sion and Tilo",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/monday.html", "", "0", "0"],
