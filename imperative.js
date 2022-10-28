@@ -94,8 +94,8 @@ var activities = [
 ["21", "Tue 25/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",    "DYNAMIC DATA",          "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_13_OR.pdf",        "", "81", "5"],
 ["8", "",                     "",                                 "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["22", "Fri 28/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "</a>STACKS<a>",             "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_12.pdf",           "",  "79", "2"],
-["22", "Fri 28/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "</a>LISTS<a>",             "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_12.pdf",           "",  "86", "2"],
+["21", "Fri 28/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "STACKS",            "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_14_OR.pdf",           "",  "79", "2"],
+["21", "Fri 28/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "LISTS",             "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_15_OR.pdf",           "",  "86", "2"],
 ["7", "in your own time", "LIST ASSIGNMENT<hr/>", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week06/index.html", "", "91", "3"],
 
 //WEEK 06 - READING WEEK
