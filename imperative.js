@@ -1,5 +1,5 @@
 //LAYOUT CUSTOMIZATION
-var currentWeek   = 5;                         // current week [releases content fully visible up to this week]
+var currentWeek   = 6;                         // current week [releases content fully visible up to this week]
 var activityNum   = 8;                         // number of activities per week (empty slots possible)
 var columnNum     = 4;                         // desired columns per week (yet, autofitted to max 2 rows per week)
 var title         = "IMPERATIVE PROGRAMMING";  // content title (different to unitName since multiple content streams maybe in one unit)
@@ -94,20 +94,30 @@ var activities = [
 ["21", "Tue 25/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",    "DYNAMIC DATA",          "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_13_OR.pdf",        "", "81", "5"],
 ["8", "",                     "",                                 "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["22", "Fri 28/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "</a>STACKS<a>",             "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_12.pdf",           "",  "79", "2"],
-["22", "Fri 28/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "</a>LISTS<a>",             "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_12.pdf",           "",  "86", "2"],
+["21", "Fri 28/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "STACKS",            "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_14_OR.pdf",           "",  "79", "2"],
+["21", "Fri 28/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "LISTS",             "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_15_OR.pdf",           "",  "86", "2"],
+["7", "in your own time", "LIST ASSIGNMENT<hr/>", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week06/index.html", "", "91", "3"],
+
+//WEEK 06 - READING WEEK
+["10", "",                     "",                                 "", "", "0", "0"],
+["12", "",                     "",                                 "", "", "0", "0"],
+["12", "",                     "",                                 "", "", "0", "0"],
+["8", "Submission Deadline<br/>Thu 10/11/22<br/>01:00pm UK time<hr/>",                     "SUBMIT HERE<br/>(Blackboard)<hr/>",                                 "https://www.ole.bris.ac.uk/webapps/assignment/uploadAssignment?content_id=_7367854_1&course_id=_252989_1&group_id=&mode=view", "", "0", "0"],
+["10", "",                     "",                                 "", "", "0", "0"],
+["10", "",                     "",                                 "", "", "0", "0"],
+["10", "",                     "",                                 "", "", "0", "0"],
+["8", "Extra Help via<br/><a href='https://teams.microsoft.com/l/channel/19%3a36aaf52e957147cf98f49ee558b8a878%40thread.tacv2/Week%252005-07%2520(Imp)%2520-%2520List%2520Assignment?groupId=7830f761-4803-4b75-8a0d-36308e7d5c31&tenantId=b2e47f30-cd7d-4a4e-a5da-b18cf1a4151b' target='_blank'>MS Teams Channel</a><hr/>",                     "",                              "", "", "0", "0"],
+
+//WEEK 07 - 
+["9", "",                     "",                                 "", "", "0", "0"],
+["9", "",                     "",                                 "", "", "0", "0"],
+["9", "",                     "",                                 "", "", "0", "0"],
+["8", "Final Support Lab<br/>Wed 09/11/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15",                     "",                                 "", "", "0", "0"],
+["10", "",                     "",                                 "", "", "0", "0"],
+["10", "",                     "",                                 "", "", "0", "0"],
+["10", "",                     "",                                 "", "", "0", "0"],
 ["8", "",                     "",                                 "", "", "0", "0"],
-
-//WEEK 05 - WORKING WITH POINTERS
-["1", "Tue 26/10/21<br/>03:00pm<br/>CHEM LT1", "DYNAMIC STRUCTURES",  "https://web.microsoftstream.com/video/27b32d65-ce56-4530-9a89-b6758ceb4074", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_Week05.pdf", "162", "1"],
-["0", "watch before Tue<br/>22min",   "STRUCTURES &amp; USER TYPES",     "https://mediasite.bris.ac.uk/Mediasite/Play/7d3fe970d51b4ce69c1de4f69a99629a1d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_12.pdf", "59", "2"],
-["0", "watch before Tue<br/>38min",   "DYNAMIC DATA",                    "https://web.microsoftstream.com/video/1c746e39-efab-4eea-9d42-35dfa9a876f9", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_13.pdf", "81", "5"],
-["8", "",                   "",        "", ""],
-["4", "in your own time",   "BITS &amp; POINTERS",             "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_Task04.pdf", "", "54", "2"],
-["0", "watch before Tue<br/>52min",   "STACKS",                          "https://web.microsoftstream.com/video/125300f5-3aec-4318-a1ad-b80bc0aad486", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_14.pdf", "79", "2"],
-["0", "watch before Tue<br/>25min",   "LISTS",                           "https://web.microsoftstream.com/video/40263cce-c988-4df7-9a24-1d28dc34b659", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_15.pdf", "86", "2"],
-["3", "Wed 27/10/21<br/>10am-1pm<br/>MVB2.11", "TRIANGLE CHALLENGE 2/2", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/wednesday.html", "", "0", "0"],
-
+ 
 //WEEK 06 - READING WEEK
 ["17", "Mon 01/11/21<br/>04:00pm<br/>MVB2.11", "Pointer Surgery<br/>with Sion and Tilo",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/monday.html", "", "0", "0"],
 ["12","",                   "",        "", ""],
