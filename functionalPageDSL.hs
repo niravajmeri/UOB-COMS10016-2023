@@ -170,14 +170,17 @@ functionalPage =
       , Entry
           { title = "List and Property Testing"
           , spec = Worksheet "sheet04.pdf"
-          , materials = sheets 4
+          , materials = sheets 4 ++ answers 4
           }
       , Entry
           { title = "Structural Inductive Proofs"
           , spec = WorksheetBonus "sheetBonus1.pdf"
-          , materials = sheetsBonus 1 -- ++ answersBonus 1
+          , materials = sheetsBonus 1 ++ answersBonus 1
           }
       ]
+
+    -- Reading week
+    , []
 
     -- Spare week of lectures, to make sure site doesn't break
     , []
@@ -403,8 +406,9 @@ instance Semigroup ActivitiesMaterials where
   (MkAM a1s m1s) <> (MkAM a2s m2s) = MkAM (a1s ++ a2s') (m1s ++ m2s)
     where
       a2s' = map (adjustIndex (length m1s)) a2s
-      adjustIndex n activity@(MkActivity {materialStart}) =
-        activity {materialStart = materialStart + n}
+      adjustIndex n activity@(MkActivity{materialRange, materialStart})
+        | materialRange > 0 = activity{ materialStart = materialStart + n }
+        | otherwise         = activity -- If no materials, don't increment start. Makes diffs cleaner
 
 instance Monoid ActivitiesMaterials where
   mempty = MkAM [] []
