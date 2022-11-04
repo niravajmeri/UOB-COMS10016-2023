@@ -1,4 +1,4 @@
-const currentWeek   = 6;
+const currentWeek   = 7;
 const activityNum   = 8;
 const columnNum     = 4;
 const title         = "FUNCTIONAL PROGRAMMING";
@@ -79,6 +79,14 @@ const activities = [
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
+["2","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/week7.pdf' target='_blank'>Week 7 - Higher-Order Functions</a>","","","0","0",],
+["7","in your own time","","","","42","5",],
+["4","Thurs 15:00-18:00<br/>MVB2.11/1.15","Folding","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet05.pdf","","47","2",],
+["0","","","","","0","0",],
+["0","","","","","0","0",],
+["0","","","","","0","0",],
+["9","(optional)","Monoids","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus2.pdf","","49","2",],
+["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
@@ -132,6 +140,15 @@ const files = [
 ["39","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus1Dyslexic.pdf","sheetBonus1Dyslexic.pdf",],
 ["40","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/answerBonus1.pdf","answerBonus1.pdf",],
 ["41","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/answerBonus1Dyslexic.pdf","answerBonus1Dyslexic.pdf",],
+["42","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/notes/UniversalQuantification.pdf","Universal Quantification",],
+["43","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/notes/HigherOrderFunctions.pdf","Higher-Order Functions",],
+["44","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/notes/Map.pdf","Map",],
+["45","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/notes/Folds.pdf","Folds",],
+["46","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/notes/RecordSyntax.pdf","Record Syntax",],
+["47","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet05.pdf","sheet05.pdf",],
+["48","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet05Dyslexic.pdf","sheet05Dyslexic.pdf",],
+["49","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus2.pdf","sheetBonus2.pdf",],
+["50","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus2Dyslexic.pdf","sheetBonus2Dyslexic.pdf",],
 
 ];
 

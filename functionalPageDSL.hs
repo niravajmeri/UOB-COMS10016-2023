@@ -14,7 +14,7 @@ main = putStr $ pageToJS functionalPage config
 config :: Config
 config =
   MkConfig
-    { currentWeek = 6,
+    { currentWeek = 7,
       activityNum = 8,
       columnNum = 4,
       title = "FUNCTIONAL PROGRAMMING",
@@ -181,6 +181,38 @@ functionalPage =
 
     -- Reading week
     , []
+
+    -- Week 7
+    , [ Entry
+          { title = "Week 7 - Higher-Order Functions"
+          , spec = Lectures
+              { slidesFile = "week7.pdf"
+              , revisionVideos = []
+              }
+          , materials = []
+          }
+      , Entry
+          { title = ""
+          , spec = NotesExtra
+          , materials = map (uncurry note)
+              [ ("Universal Quantification", "UniversalQuantification.pdf")
+              , ("Higher-Order Functions", "HigherOrderFunctions.pdf")
+              , ("Map", "Map.pdf")
+              , ("Folds", "Folds.pdf")
+              , ("Record Syntax", "RecordSyntax.pdf")
+              ]
+          }
+      , Entry
+          { title = "Folding"
+          , spec = Worksheet "sheet05.pdf"
+          , materials = sheets 5
+          }
+      , Entry
+          { title = "Monoids"
+          , spec = WorksheetBonus "sheetBonus2.pdf"
+          , materials = sheetsBonus 2
+          }
+      ]
 
     -- Spare week of lectures, to make sure site doesn't break
     , []
