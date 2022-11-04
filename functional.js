@@ -25,7 +25,7 @@ var categories = [
 ["6","Lectures","#CCCFFF","0","","Materials",],
 ["7","Notes ft.<br>Extra Examples<br>+ Explanations","#94e5bf","0","","Notes",],
 ["8","Coursework","#EEEEDD","1","SUBMIT HERE (Blackboard)","Materials",],
-["9","Bonus Worksheet","#DE591C","1","","Materials",],
+["9","Bonus Worksheet","#FCC981","1","","Materials",],
 
 ];
 

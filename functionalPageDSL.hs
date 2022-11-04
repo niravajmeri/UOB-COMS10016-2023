@@ -252,7 +252,7 @@ entryToCategory (Entry _ details materials) = case details of
         }
   WorksheetBonus{} -> MkCat
         { title = "Bonus Worksheet"
-        , colour = "#DE591C"
+        , colour = "#FCC981"
         , counter = True
         , slidesLinkName = ""
         , materialLinkName = "Materials"
