@@ -89,7 +89,7 @@ var activities = [
 ["8", "",                     "",                                 "", "", "0", "0"],
 
 //WEEK 05 - WORKING WITH POINTERS
-["4", "in your own time",   "BITS &amp; POINTERS",                   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_Task04.pdf", "", "54", "2"],
+["4", "in your own time",   "BITS &amp; POINTERS",                   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_Task04.pdf", "", "171", "6"],
 ["0", "Tue 25/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",    "STRUCTURES &amp; USER TYPES",             "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_12_OR.pdf",  "https://mediasite.bris.ac.uk/Mediasite/Play/7d3fe970d51b4ce69c1de4f69a99629a1d", "59", "2"],
 ["0", "Tue 25/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",    "DYNAMIC DATA",          "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_13_OR.pdf",        "https://web.microsoftstream.com/video/1c746e39-efab-4eea-9d42-35dfa9a876f9", "81", "5"],
 ["8", "",                     "",                                 "", "", "0", "0"],
@@ -443,4 +443,10 @@ var files = [
 [ "167", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/replace.c",                  "replace.c"],
 [ "168", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/fibonacci.c",                "fibonacci.c"],
 [ "169", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/hanoi.c",                    "hanoi.c"],
+[ "170","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/bitsum.c",                    "bitsum.c"],
+[ "171", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/bitcmp.c",                   "bitcmp.c"],
+[ "172", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/addesses.c",                 "addresses.c"],
+[ "173", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/arraymem.c",                 "arraymem.c"],
+[ "174", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/self.c",                     "self.c"],
+[ "175", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/ring.c",                     "ring.c"],
 ];
