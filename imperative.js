@@ -34,7 +34,7 @@ var categories = [
 ["12", "<br/><div align='center' style='color:#777777'>LECTURE-FREE WEEK</div>",   "#CCCCCC","0","",          "",              ], // empty slot
 ["13", "Teams Session",       "#DDE3FC","0","",    "",     ],
 ["14", "Teams Q&amp;A",       "#CCDFFF","0","",    "",     ],
-["15", "<br/><div align='center' style='color:#777777'>REDUCED LECTURE LOAD</div>",   "#CCCCCC","0","",          "",              ], // empty slot
+["15", "<br/><div align='center' style='color:#777777'>REDUCED CONTENT LOAD</div>",   "#CCCCCC","0","",          "",              ], // empty slot
 ["16", "Live Session:",        "#DDE3FC","0","",    "",     ],
 ["17", "Optional Help Session:", "#DDE3FC","0","",    "",     ],
 ["18", "Optional Live Support:", "#DDDDDD","0","",    "",     ],
