@@ -367,7 +367,7 @@ entryToActivity catDict entry@(Entry {title, spec, materials})
           Lectures{} -> "Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley"
           NotesExtra -> "in your own time"
           Coursework{..} -> "Deadline: " ++ deadline
-          FormativePractical{} -> "(optional)"
+          FormativePractical{} -> ""
           _ -> ""
       , title = case spec of
           Lectures{slidesFile, revisionVideos}
