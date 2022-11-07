@@ -64,7 +64,7 @@ const activities = [
 ["0","","","","","0","0",],
 ["8","Deadline: 13:00 Thurs 27/10/22<br/>(submit at least 1 hour early)","Power to the People","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/coursework/CW1/CW1-Instrs.pdf","https://www.ole.bris.ac.uk/webapps/assignment/uploadAssignment?content_id=_7367855_1&course_id=_252989_1","28","2",],
 ["0","","","","","0","0",],
-["6","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/week5.pdf' target='_blank'>Week 5 - Types and Constructors, Pattern Matching, and Lists</a>","","","30","1",],
+["6","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/week5.pdf' target='_blank'>Week 5 - Types and Constructors, Pattern Matching, and Lists</a><br/>(<a href='https://mediasite.bris.ac.uk/Mediasite/Play/8f441a50546745c4bf1d796c084ebfa91d' target='_blank'>Revision Video 1</a>)<br/>(<a href='https://mediasite.bris.ac.uk/Mediasite/Play/6e8c8a6d980d45feb4808288da7bce771d' target='_blank'>Revision Video 2</a>)","","","30","1",],
 ["7","in your own time","","","","31","3",],
 ["4","Thurs 15:00-18:00<br/>MVB2.11/1.15","List and Property Testing","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet04.pdf","","34","4",],
 ["0","","","","","0","0",],

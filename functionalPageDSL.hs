@@ -154,7 +154,10 @@ functionalPage =
           { title = "Week 5 - Types and Constructors, Pattern Matching, and Lists"
           , spec = Lectures
               { slidesFile = "week5.pdf"
-              , revisionVideos = []
+              , revisionVideos =
+                  [ "https://mediasite.bris.ac.uk/Mediasite/Play/8f441a50546745c4bf1d796c084ebfa91d"
+                  , "https://mediasite.bris.ac.uk/Mediasite/Play/6e8c8a6d980d45feb4808288da7bce771d"
+                  ]
               }
           , materials = [code "week5.hs"]
           }
