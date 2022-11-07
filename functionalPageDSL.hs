@@ -205,9 +205,42 @@ functionalPage =
       , Entry
           { title = "Folding"
           , spec = Worksheet "sheet05.pdf"
-          , materials = sheets 5
+          , materials = sheets 5 ++ answers 5
           }
       , Entry
+          { title = "Sudoku"
+          , spec = FormativePractical "Sudoku/SudokuInstrs.pdf"
+          , materials = map (coursework "Sudoku")
+              [ "SudokuInstrs.pdf"
+              , "SudokuInstrsDyslexic.pdf"
+              , "Sudoku.hs"
+              , "hard.txt"
+              ]
+          }
+      ]
+
+    -- Week 8
+    , [ --Entry
+          -- { title = "Week 8"
+          -- , spec = Lectures
+          --     { slidesFile = "week8.pdf"
+          --     , revisionVideos = []
+          --     }
+          -- , materials = []
+          -- }
+      -- , Entry
+      --     { title = ""
+      --     , spec = NotesExtra
+      --     , materials = map (uncurry note)
+      --         [
+      --         ]
+      --     }
+      -- , Entry
+      --     { title = ""
+      --     , spec = Worksheet "sheet06.pdf"
+      --     , materials = sheets 6
+      --     }
+      Entry
           { title = "Monoids"
           , spec = WorksheetBonus "sheetBonus2.pdf"
           , materials = sheetsBonus 2
@@ -280,7 +313,14 @@ entryToCategory (Entry _ details materials) = case details of
                            else ""
         , materialLinkName = "Materials"
         }
-       
+  FormativePractical{} -> MkCat
+        { title = "Formative Practical"
+        , colour = "#EEEEDD"
+        , counter = True
+        , slidesLinkName = ""
+        , materialLinkName = "Materials"
+        }
+
   _ -> blankCategory
 
 isLectureCategory :: EntrySpec -> Bool
@@ -295,6 +335,7 @@ isCourseworkCategory x = case x of
   WorksheetBonus{} -> True
   SetupLab{} -> True
   Coursework{} -> True
+  FormativePractical{} -> True
   _ -> False
 
 blankCategory :: Category
@@ -323,6 +364,7 @@ entryToActivity catDict entry@(Entry {title, spec, materials})
           Lectures{} -> "Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley"
           NotesExtra -> "in your own time"
           Coursework{..} -> "Deadline: " ++ deadline
+          FormativePractical{} -> "(optional)"
           _ -> ""
       , title = case spec of
           Lectures{slidesFile, revisionVideos}
@@ -333,6 +375,7 @@ entryToActivity catDict entry@(Entry {title, spec, materials})
           Worksheet{file} -> sheetLink file
           WorksheetBonus{file} -> sheetLink file
           Coursework{instructions} -> courseworkLink instructions
+          FormativePractical{file} -> courseworkLink file
           _ -> ""
       , slidesURL = case spec of
           Coursework{submissionLink} -> submissionLink
@@ -376,6 +419,7 @@ data EntrySpec
                , submissionLink :: URL
                , deadline :: String
                }
+  | FormativePractical { file :: String }
   | Blank
   deriving (Show, Eq, Ord)
 
