@@ -114,7 +114,7 @@ var activities = [
 ["15", "",                     "",                                 "", "", "0", "0"],
 ["8", "Final Support Lab<br/>Wed 09/11/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15",                     "",                                 "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["21", "Fri 11/11/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "SORTING",                   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_17_OR.pdf",      "https://mediasite.bris.ac.uk/Mediasite/Play/ab93766ee4b64918925dd1d8e18f8e111d", "105", "1"],
+["0", "Fri 11/11/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "SORTING<br/></b>(<a href='https://mediasite.bris.ac.uk/Mediasite/Play/7c02ccf8d6564257828411d6aefafd181d' target='_blank'>Lecture Recording</a>)<b>",                   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_17_OR.pdf",      "https://mediasite.bris.ac.uk/Mediasite/Play/ab93766ee4b64918925dd1d8e18f8e111d", "105", "1"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["8", "",                     "",                                 "", "", "0", "0"],
  
