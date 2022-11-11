@@ -190,7 +190,10 @@ functionalPage =
           { title = "Week 7 - Higher-Order Functions"
           , spec = Lectures
               { slidesFile = "week7.pdf"
-              , revisionVideos = []
+              , revisionVideos =
+                  [ "https://mediasite.bris.ac.uk/Mediasite/Play/cb5a2aad0fed4dc385ea5db8da9c4c801d"
+                  , "https://mediasite.bris.ac.uk/Mediasite/Play/c3299d40b82d4163b30f89d3da36afcc1d"
+                  ]
               }
           , materials = [code "week7.hs"]
           }

@@ -80,7 +80,7 @@ const activities = [
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
-["6","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/week7.pdf' target='_blank'>Week 7 - Higher-Order Functions</a>","","","42","1",],
+["6","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/week7.pdf' target='_blank'>Week 7 - Higher-Order Functions</a><br/>(<a href='https://mediasite.bris.ac.uk/Mediasite/Play/cb5a2aad0fed4dc385ea5db8da9c4c801d' target='_blank'>Revision Video 1</a>)<br/>(<a href='https://mediasite.bris.ac.uk/Mediasite/Play/c3299d40b82d4163b30f89d3da36afcc1d' target='_blank'>Revision Video 2</a>)","","","42","1",],
 ["7","in your own time","","","","43","5",],
 ["4","Thurs 15:00-18:00<br/>MVB2.11/1.15","Folding","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet05.pdf","","48","4",],
 ["0","","","","","0","0",],
