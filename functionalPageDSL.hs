@@ -14,7 +14,7 @@ main = putStr $ pageToJS functionalPage config
 config :: Config
 config =
   MkConfig
-    { currentWeek = 7,
+    { currentWeek = 8,
       activityNum = 8,
       columnNum = 4,
       title = "FUNCTIONAL PROGRAMMING",
@@ -226,27 +226,40 @@ functionalPage =
       ]
 
     -- Week 8
-    , [ --Entry
-          -- { title = "Week 8"
-          -- , spec = Lectures
-          --     { slidesFile = "week8.pdf"
-          --     , revisionVideos = []
-          --     }
-          -- , materials = []
-          -- }
-      -- , Entry
-      --     { title = ""
-      --     , spec = NotesExtra
-      --     , materials = map (uncurry note)
-      --         [
-      --         ]
-      --     }
-      -- , Entry
-      --     { title = ""
-      --     , spec = Worksheet "sheet06.pdf"
-      --     , materials = sheets 6
-      --     }
-      Entry
+    , [ Entry
+          { title = "Week 8 - Function Composition and Data Transformations"
+          , spec = Lectures
+              { slidesFile = "function-machine-composition.pdf"
+              , revisionVideos = []
+              }
+          , materials =
+              [ code "data-transformations-lecture-solutions.hs"
+              , code "data-transformations-jess-solutions.hs"
+              ]
+          }
+      , Entry
+          { title = "Week 8 - List Comprehensions, Type-Classes, and Trees"
+          , spec = Lectures
+              { slidesFile = "week8.pdf"
+              , revisionVideos = []
+              }
+          , materials = []
+          }
+      , Entry
+          { title = ""
+          , spec = NotesExtra
+          , materials = map (uncurry note)
+              [ ("How to Design \"Co\"-Programs", "copro.pdf")
+              , ("Functions Cheatsheet", "PreludeFunctionsCheatsheet.pdf")
+              , ("Type Classes", "TypeClasses.pdf")
+              ]
+          }
+      , Entry
+          { title = "List Comprehensions, Type Classes, and Trees"
+          , spec = Worksheet "sheet06.pdf"
+          , materials = sheets 6
+          }
+      , Entry
           { title = "Monoids"
           , spec = WorksheetBonus "sheetBonus2.pdf"
           , materials = sheetsBonus 2
