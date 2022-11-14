@@ -122,7 +122,7 @@ var activities = [
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["22", "Tue 15/11/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "</a>FUNCTION POINTERS<a>",     "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_18.pdf",          "https://mediasite.bris.ac.uk/Mediasite/Play/434d2a8c7d8940c5ada2244ed17243bb1d", "101", "3"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["9", "",                     "",                                 "", "", "0", "0"],
+["6", "Wed 12/10/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "TEXT CHALLENGE", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week07/index.html", "", "96", "4"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["22", "Tue 15/11/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "</a>INPUT &amp; OUTPUT<a>",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_19.pdf",  "https://mediasite.bris.ac.uk/Mediasite/Play/5d0479bdadf5499a8c252f4911f5883f1d",  "121", "9"],
 ["10", "",                     "",                                 "", "", "0", "0"],
