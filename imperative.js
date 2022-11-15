@@ -1,5 +1,5 @@
 //LAYOUT CUSTOMIZATION
-var currentWeek   = 7;                         // current week [releases content fully visible up to this week]
+var currentWeek   = 8;                         // current week [releases content fully visible up to this week]
 var activityNum   = 8;                         // number of activities per week (empty slots possible)
 var columnNum     = 4;                         // desired columns per week (yet, autofitted to max 2 rows per week)
 var title         = "IMPERATIVE PROGRAMMING";  // content title (different to unitName since multiple content streams maybe in one unit)
@@ -120,7 +120,7 @@ var activities = [
  
 //WEEK 08 - 
 ["4", "in your own time",   "CELLULAR",                   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_Task05.pdf", "", "88", "1"],
-["22", "Tue 15/11/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "</a>FUNCTION POINTERS<a>",     "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_18.pdf",          "https://mediasite.bris.ac.uk/Mediasite/Play/434d2a8c7d8940c5ada2244ed17243bb1d", "101", "3"],
+["21", "Tue 15/11/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "FUNCTION POINTERS",     "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_18.pdf",          "https://mediasite.bris.ac.uk/Mediasite/Play/434d2a8c7d8940c5ada2244ed17243bb1d", "101", "3"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["6", "Wed 16/11/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "TEXT CHALLENGE", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week07/index.html", "", "96", "4"],
 ["10", "",                     "",                                 "", "", "0", "0"],
