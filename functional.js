@@ -27,6 +27,7 @@ var categories = [
 ["8","Coursework","#EEEEDD","1","SUBMIT HERE (Blackboard)","Materials",],
 ["9","Bonus Worksheet","#FCC981","1","","Materials",],
 ["10","Formative Practical","#EEEEDD","1","","Materials",],
+["11","Bonus Lecture","#D8CCFF","0","","",],
 
 ];
 
@@ -89,12 +90,12 @@ const activities = [
 ["10","","Sudoku","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/coursework/Sudoku/SudokuInstrs.pdf","","52","4",],
 ["0","","","","","0","0",],
 ["6","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/function-machine-composition.pdf' target='_blank'>Week 8 - Function Composition and Data Transformations</a>","","","56","2",],
-["2","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/week8.pdf' target='_blank'>Week 8 - List Comprehensions, Type-Classes, and Trees</a>","","","0","0",],
-["4","Thurs 15:00-18:00<br/>MVB2.11/1.15","List Comprehensions, Type Classes, and Trees","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet06.pdf","","58","2",],
+["6","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/week8.pdf' target='_blank'>Week 8 - List Comprehensions, Type-Classes, and Trees</a>","","","58","1",],
+["4","Thurs 15:00-18:00<br/>MVB2.11/1.15","List Comprehensions, Type Classes, and Trees","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet06.pdf","","59","2",],
 ["0","","","","","0","0",],
-["7","in your own time","","","","60","3",],
-["0","","","","","0","0",],
-["9","(optional)","Monoids","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus2.pdf","","63","2",],
+["11","(optional)","Binary Trees with Alex Kavvos","https://mediasite.bris.ac.uk/Mediasite/Play/b3fcbbfaf52a4ea0a850d131b088c8ac1d","","0","0",],
+["7","in your own time","","","","61","3",],
+["9","(optional)","Monoids","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus2.pdf","","64","2",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
@@ -165,13 +166,14 @@ const files = [
 ["55","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/coursework/Sudoku/hard.txt","hard.txt",],
 ["56","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/code/data-transformations-lecture-solutions.hs","data-transformations-lecture-solutions.hs",],
 ["57","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/code/data-transformations-jess-solutions.hs","data-transformations-jess-solutions.hs",],
-["58","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet06.pdf","sheet06.pdf",],
-["59","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet06Dyslexic.pdf","sheet06Dyslexic.pdf",],
-["60","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/notes/copro.pdf","How to Design \"Co\"-Programs",],
-["61","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/notes/PreludeFunctionsCheatsheet.pdf","Functions Cheatsheet",],
-["62","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/notes/TypeClasses.pdf","Type Classes",],
-["63","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus2.pdf","sheetBonus2.pdf",],
-["64","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus2Dyslexic.pdf","sheetBonus2Dyslexic.pdf",],
+["58","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/code/questions.hs","questions.hs",],
+["59","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet06.pdf","sheet06.pdf",],
+["60","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet06Dyslexic.pdf","sheet06Dyslexic.pdf",],
+["61","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/notes/copro.pdf","How to Design \"Co\"-Programs",],
+["62","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/notes/PreludeFunctionsCheatsheet.pdf","Functions Cheatsheet",],
+["63","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/notes/TypeClasses.pdf","Type Classes",],
+["64","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus2.pdf","sheetBonus2.pdf",],
+["65","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus2Dyslexic.pdf","sheetBonus2Dyslexic.pdf",],
 
 ];
 

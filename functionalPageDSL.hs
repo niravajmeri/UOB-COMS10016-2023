@@ -243,6 +243,13 @@ functionalPage =
               { slidesFile = "week8.pdf"
               , revisionVideos = []
               }
+          , materials = [code "questions.hs"]
+          }
+      , Entry
+          { title = "Binary Trees with Alex Kavvos"
+          , spec = LectureExtra
+              { videoLink = "https://mediasite.bris.ac.uk/Mediasite/Play/b3fcbbfaf52a4ea0a850d131b088c8ac1d"
+              }
           , materials = []
           }
       , Entry
@@ -282,6 +289,15 @@ entryToCategory (Entry _ details materials) = case details of
   Lectures{..} -> MkCat
         { title = "Lectures"
         , colour = "#CCCFFF"
+        , counter = False
+        , slidesLinkName = ""
+        , materialLinkName = if not (null materials)
+                             then "Materials"
+                             else ""
+        }
+  LectureExtra{..} -> MkCat
+        { title = "Bonus Lecture"
+        , colour = "#D8CCFF"
         , counter = False
         , slidesLinkName = ""
         , materialLinkName = if not (null materials)
@@ -346,6 +362,7 @@ isLectureCategory :: EntrySpec -> Bool
 isLectureCategory x = case x of
   Lectures{} -> True
   NotesExtra{} -> True
+  LectureExtra{} -> True
   _ -> False
 
 isCourseworkCategory :: EntrySpec -> Bool
@@ -381,6 +398,7 @@ entryToActivity catDict entry@(Entry {title, spec, materials})
           Worksheet{} -> "Thurs 15:00-18:00<br/>MVB2.11/1.15"
           WorksheetBonus{} -> "(optional)"
           Lectures{} -> "Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley"
+          LectureExtra{} -> "(optional)"
           NotesExtra -> "in your own time"
           Coursework{..} -> "Deadline: " ++ deadline
           FormativePractical{} -> ""
@@ -395,6 +413,7 @@ entryToActivity catDict entry@(Entry {title, spec, materials})
           WorksheetBonus{file} -> sheetLink file
           Coursework{instructions} -> courseworkLink instructions
           FormativePractical{file} -> courseworkLink file
+          LectureExtra{videoLink}  -> videoLink
           _ -> ""
       , slidesURL = case spec of
           Coursework{submissionLink} -> submissionLink
@@ -429,6 +448,7 @@ data EntrySpec
   | Lectures  { slidesFile :: String
               , revisionVideos :: [URL]
               }
+  | LectureExtra { videoLink :: String }
   | SetupLab  { setupLink :: URL }
   | Worksheet { file :: String }
   | WorksheetBonus { file :: String }
