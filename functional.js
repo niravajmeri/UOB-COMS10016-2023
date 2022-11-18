@@ -95,7 +95,7 @@ const activities = [
 ["0","","","","","0","0",],
 ["11","(optional)","Binary Trees with Alex Kavvos","https://mediasite.bris.ac.uk/Mediasite/Play/b3fcbbfaf52a4ea0a850d131b088c8ac1d","","0","0",],
 ["7","in your own time","","","","63","3",],
-["9","(optional)","Monoids","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus2.pdf","","66","2",],
+["8","Deadline: 13:00 Thurs 01/12/22<br/>(submit at least 1 hour early)","Simplify","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/coursework/CW2/CW2-Instrs.pdf","https://www.ole.bris.ac.uk/webapps/assignment/uploadAssignment?content_id=_7367856_1&course_id=_252989_1","66","2",],
 ["0","","","","","0","0",],
 ["2","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/week9.pdf' target='_blank'>Week 9 - IO and QuickCheck Generators</a>","","","0","0",],
 ["0","","","","","0","0",],
@@ -103,7 +103,7 @@ const activities = [
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
-["0","","","","","0","0",],
+["9","(optional)","Monoids","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus2.pdf","","70","2",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
@@ -182,10 +182,12 @@ const files = [
 ["63","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/notes/copro.pdf","How to Design \"Co\"-Programs",],
 ["64","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/notes/PreludeFunctionsCheatsheet.pdf","Functions Cheatsheet",],
 ["65","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/notes/TypeClasses.pdf","Type Classes",],
-["66","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus2.pdf","sheetBonus2.pdf",],
-["67","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus2Dyslexic.pdf","sheetBonus2Dyslexic.pdf",],
+["66","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/coursework/CW2/CW2-Instrs.pdf","CW2-Instrs.pdf",],
+["67","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/coursework/CW2/CW2-Simplify.zip","CW2-Simplify.zip",],
 ["68","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet07.pdf","sheet07.pdf",],
 ["69","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet07Dyslexic.pdf","sheet07Dyslexic.pdf",],
+["70","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus2.pdf","sheetBonus2.pdf",],
+["71","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus2Dyslexic.pdf","sheetBonus2Dyslexic.pdf",],
 
 ];
 

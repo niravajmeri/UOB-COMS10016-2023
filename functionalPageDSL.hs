@@ -267,9 +267,15 @@ functionalPage =
           , materials = sheets 6 ++ answers 6
           }
       , Entry
-          { title = "Monoids"
-          , spec = WorksheetBonus "sheetBonus2.pdf"
-          , materials = sheetsBonus 2
+          { title = "Simplify"
+          , spec = Coursework
+              { instructions = "CW2/CW2-Instrs.pdf"
+              , submissionLink = "https://www.ole.bris.ac.uk/webapps/assignment/uploadAssignment?content_id=_7367856_1&course_id=_252989_1"
+              , deadline = "13:00 Thurs 01/12/22<br/>(submit at least 1 hour early)"
+              }
+          , materials = map (coursework "CW2")
+              [ "CW2-Instrs.pdf"
+              , "CW2-Simplify.zip" ]
           }
       ]
 
@@ -285,6 +291,11 @@ functionalPage =
           { title = "IO and Properties of Trees"
           , spec = Worksheet "sheet07.pdf"
           , materials = sheets 7
+          }
+      , Entry
+          { title = "Monoids"
+          , spec = WorksheetBonus "sheetBonus2.pdf"
+          , materials = sheetsBonus 2
           }
       ]
 
