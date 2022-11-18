@@ -97,6 +97,14 @@ const activities = [
 ["7","in your own time","","","","63","3",],
 ["9","(optional)","Monoids","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus2.pdf","","66","2",],
 ["0","","","","","0","0",],
+["2","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/week9.pdf' target='_blank'>Week 9 - IO and QuickCheck Generators</a>","","","0","0",],
+["0","","","","","0","0",],
+["4","Thurs 15:00-18:00<br/>MVB2.11/1.15","IO and Properties of Trees","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet07.pdf","","68","2",],
+["0","","","","","0","0",],
+["0","","","","","0","0",],
+["0","","","","","0","0",],
+["0","","","","","0","0",],
+["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
@@ -176,6 +184,8 @@ const files = [
 ["65","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/notes/TypeClasses.pdf","Type Classes",],
 ["66","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus2.pdf","sheetBonus2.pdf",],
 ["67","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus2Dyslexic.pdf","sheetBonus2Dyslexic.pdf",],
+["68","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet07.pdf","sheet07.pdf",],
+["69","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet07Dyslexic.pdf","sheet07Dyslexic.pdf",],
 
 ];
 

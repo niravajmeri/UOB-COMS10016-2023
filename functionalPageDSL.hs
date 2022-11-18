@@ -273,6 +273,21 @@ functionalPage =
           }
       ]
 
+    , [ Entry
+          { title = "Week 9 - IO and QuickCheck Generators"
+          , spec = Lectures
+              { slidesFile = "week9.pdf"
+              , revisionVideos = []
+              }
+          , materials = []
+          }
+      , Entry
+          { title = "IO and Properties of Trees"
+          , spec = Worksheet "sheet07.pdf"
+          , materials = sheets 7
+          }
+      ]
+
     -- Spare week of lectures, to make sure site doesn't break
     , []
   ]
