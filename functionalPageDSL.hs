@@ -264,7 +264,7 @@ functionalPage =
       , Entry
           { title = "List Comprehensions, Type Classes, and Trees"
           , spec = Worksheet "sheet06.pdf"
-          , materials = sheets 6
+          , materials = sheets 6 ++ answers 6
           }
       , Entry
           { title = "Monoids"
