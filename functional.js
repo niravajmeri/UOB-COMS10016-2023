@@ -89,7 +89,7 @@ const activities = [
 ["0","","","","","0","0",],
 ["10","","Sudoku","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/coursework/Sudoku/SudokuInstrs.pdf","","52","4",],
 ["0","","","","","0","0",],
-["6","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/function-machine-composition.pdf' target='_blank'>Week 8 - Function Composition and Data Transformations</a>","","","56","2",],
+["6","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/function-machine-composition.pdf' target='_blank'>Week 8 - Function Composition and Data Transformations</a><br/>(<a href='https://mediasite.bris.ac.uk/Mediasite/Play/d1580512ac654fdd951562f63c18fd691d' target='_blank'>Revision Video 1</a>)<br/>(<a href='https://mediasite.bris.ac.uk/Mediasite/Play/2f9bb8f91901479a90886db304e28bf81d' target='_blank'>Revision Video 2</a>)","","","56","2",],
 ["6","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/week8.pdf' target='_blank'>Week 8 - List Comprehensions, Type-Classes, and Trees</a>","","","58","1",],
 ["4","Thurs 15:00-18:00<br/>MVB2.11/1.15","List Comprehensions, Type Classes, and Trees","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet06.pdf","","59","4",],
 ["0","","","","","0","0",],

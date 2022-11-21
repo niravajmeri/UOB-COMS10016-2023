@@ -230,7 +230,10 @@ functionalPage =
           { title = "Week 8 - Function Composition and Data Transformations"
           , spec = Lectures
               { slidesFile = "function-machine-composition.pdf"
-              , revisionVideos = []
+              , revisionVideos =
+                  [ "https://mediasite.bris.ac.uk/Mediasite/Play/d1580512ac654fdd951562f63c18fd691d"
+                  , "https://mediasite.bris.ac.uk/Mediasite/Play/2f9bb8f91901479a90886db304e28bf81d"
+                  ]
               }
           , materials =
               [ code "data-transformations-lecture-solutions.hs"
