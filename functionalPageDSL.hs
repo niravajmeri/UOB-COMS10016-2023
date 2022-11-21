@@ -285,7 +285,13 @@ functionalPage =
               { slidesFile = "week9.pdf"
               , revisionVideos = []
               }
-          , materials = []
+          , materials = [code "ExampleIO.hs"]
+          }
+      , Entry
+          { title = ""
+          , spec = NotesExtra
+          , materials = map (uncurry note)
+              [ ("Intro to IO", "Intro-to-IO.pdf") ]
           }
       , Entry
           { title = "IO and Properties of Trees"
