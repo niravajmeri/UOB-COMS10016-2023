@@ -42,6 +42,7 @@ var categories = [
 ["20", "<br/><div align='center' style='color:#777777'>REVISION WEEK</div>",   "#CCCCCC","0","",          "",              ], // empty slot
 ["21", "Lecture:",        "#CCCFFF","0","",    "Code",     ],
 ["22", "Lecture:",             "#CCCFFF","0","",    "",          ],
+["23", "",             "#EEEEDD","0","",    "",          ],
 ];
 
 //WEEKLY ACTIVITIES
@@ -130,23 +131,23 @@ var activities = [
  
 //WEEK 09 - 
 ["3", "in your own time",   "BUBBLE",                   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_Task06.pdf", "", "95", "1"],
-["0", "Tue 22/11/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "</a>MODULES<a>",     "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_20.pdf",          "https://mediasite.bris.ac.uk/Mediasite/Play/2b6abb9643bb40d5a6b4b0b1e42deef11d", "113", "8"],
+["0", "Tue 22/11/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "</a>MODULES<a>",     "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_20_OR.pdf",          "https://mediasite.bris.ac.uk/Mediasite/Play/2b6abb9643bb40d5a6b4b0b1e42deef11d", "113", "8"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["6", "Wed 23/11/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "GRAPHICS CHALLENGE", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week09/index.html", "", "107", "6"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["22", "Fri 25/11/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "</a>PREPROCESSOR<a>",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_21.pdf",  "https://mediasite.bris.ac.uk/Mediasite/Play/554d0dcf701a44eca46968749456ee851d",  "112", "1"],
+["22", "Fri 25/11/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "PREPROCESSOR",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_21_OR.pdf",  "https://mediasite.bris.ac.uk/Mediasite/Play/554d0dcf701a44eca46968749456ee851d",  "112", "1"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["8", "",                     "",                                 "", "", "0", "0"],
+["23", "",                     "",                                 "", "", "0", "0"],
  
 //WEEK 10 - 
 ["9", "",                     "",                                 "", "", "0", "0"],
 ["9", "",                     "",                                 "", "", "0", "0"],
 ["9", "",                     "",                                 "", "", "0", "0"],
+["8", "",                     "",                                 "", "", "0", "0"],
 ["9", "",                     "",                                 "", "", "0", "0"],
 ["9", "",                     "",                                 "", "", "0", "0"],
 ["9", "",                     "",                                 "", "", "0", "0"],
-["9", "",                     "",                                 "", "", "0", "0"],
-["9", "",                     "",                                 "", "", "0", "0"],
+["8", "",                     "",                                 "", "", "0", "0"],
  
 //WEEK 06 - READING WEEK
 ["17", "Mon 01/11/21<br/>04:00pm<br/>MVB2.11", "Pointer Surgery<br/>with Sion and Tilo",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/monday.html", "", "0", "0"],
