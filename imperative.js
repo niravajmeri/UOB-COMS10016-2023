@@ -1,5 +1,5 @@
 //LAYOUT CUSTOMIZATION
-var currentWeek   = 9;                         // current week [releases content fully visible up to this week]
+var currentWeek   = 10;                         // current week [releases content fully visible up to this week]
 var activityNum   = 8;                         // number of activities per week (empty slots possible)
 var columnNum     = 4;                         // desired columns per week (yet, autofitted to max 2 rows per week)
 var title         = "IMPERATIVE PROGRAMMING";  // content title (different to unitName since multiple content streams maybe in one unit)
@@ -137,6 +137,16 @@ var activities = [
 ["22", "Fri 25/11/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "</a>PREPROCESSOR<a>",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_21.pdf",  "https://mediasite.bris.ac.uk/Mediasite/Play/554d0dcf701a44eca46968749456ee851d",  "112", "1"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["8", "",                     "",                                 "", "", "0", "0"],
+ 
+//WEEK 10 - 
+["9", "",                     "",                                 "", "", "0", "0"],
+["9", "",                     "",                                 "", "", "0", "0"],
+["9", "",                     "",                                 "", "", "0", "0"],
+["9", "",                     "",                                 "", "", "0", "0"],
+["9", "",                     "",                                 "", "", "0", "0"],
+["9", "",                     "",                                 "", "", "0", "0"],
+["9", "",                     "",                                 "", "", "0", "0"],
+["9", "",                     "",                                 "", "", "0", "0"],
  
 //WEEK 06 - READING WEEK
 ["17", "Mon 01/11/21<br/>04:00pm<br/>MVB2.11", "Pointer Surgery<br/>with Sion and Tilo",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/monday.html", "", "0", "0"],
