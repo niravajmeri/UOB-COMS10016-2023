@@ -135,7 +135,7 @@ var activities = [
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["6", "Wed 23/11/22<br/>10:00am-01:00pm<br/>MVB2.11/1.15", "GRAPHICS CHALLENGE", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week09/index.html", "", "107", "6"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["22", "Fri 25/11/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "PREPROCESSOR",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_21_OR.pdf",  "https://mediasite.bris.ac.uk/Mediasite/Play/554d0dcf701a44eca46968749456ee851d",  "112", "1"],
+["0", "Fri 25/11/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "PREPROCESSOR",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_21_OR.pdf",  "https://mediasite.bris.ac.uk/Mediasite/Play/554d0dcf701a44eca46968749456ee851d",  "112", "1"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["7", "in your own time", "SKETCH ASSIGNMENT<hr/>", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week10/index.html", "", "133", "19"],
  
