@@ -14,7 +14,7 @@ main = putStr $ pageToJS functionalPage config
 config :: Config
 config =
   MkConfig
-    { currentWeek = 9,
+    { currentWeek = 10,
       activityNum = 8,
       columnNum = 4,
       title = "FUNCTIONAL PROGRAMMING",
@@ -305,6 +305,35 @@ functionalPage =
           { title = "Monoids"
           , spec = WorksheetBonus "sheetBonus2.pdf"
           , materials = sheetsBonus 2
+          }
+      ]
+    -- Week 10
+    , [ Entry
+          { title = "Week 10 - Functors and Applicatives"
+          , spec = Lectures
+              { slidesFile = ""
+              , revisionVideos = []
+              }
+          , materials =
+              [ code "Functors-Livecode.hs"
+              , code "Functor2021.hs"
+              ]
+          }
+      -- , Entry
+      --     { title = ""
+      --     , spec = NotesExtra
+      --     , materials = map (uncurry note)
+      --         [ ("Intro to IO", "Intro-to-IO.pdf") ]
+      --     }
+      , Entry
+          { title = "Functors and Applicatives"
+          , spec = Worksheet "sheet08.pdf"
+          , materials = sheets 8
+          }
+      , Entry
+          { title = "Maps, Tries, Sets, and Perfect Trees"
+          , spec = WorksheetBonus "sheetBonus3.pdf"
+          , materials = sheetsBonus 3
           }
       ]
 
