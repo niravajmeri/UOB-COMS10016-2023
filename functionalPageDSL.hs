@@ -317,6 +317,7 @@ functionalPage =
           , materials =
               [ code "Functors-Livecode.hs"
               , code "Functor2021.hs"
+              , code "ApplicativeLive2022.hs"
               ]
           }
       -- , Entry
