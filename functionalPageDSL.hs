@@ -286,7 +286,10 @@ functionalPage =
           { title = "Week 9 - IO and QuickCheck Generators"
           , spec = Lectures
               { slidesFile = "week9.pdf"
-              , revisionVideos = []
+              , revisionVideos =
+                  [ "https://mediasite.bris.ac.uk/Mediasite/Play/a18e66283df649239452b70e7794cffc1d" 
+                  , "https://mediasite.bris.ac.uk/Mediasite/Play/f48f5649eea243049ed5852b9de08c941d"
+                  ]
               }
           , materials = [code "ExampleIO.hs"]
           }

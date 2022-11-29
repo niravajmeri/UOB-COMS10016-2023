@@ -97,7 +97,7 @@ const activities = [
 ["7","in your own time","","","","63","3",],
 ["8","Deadline: 13:00 Thurs 01/12/22<br/>(submit at least 1 hour early)","Simplify","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/coursework/CW2/CW2-Instrs.pdf","https://www.ole.bris.ac.uk/webapps/assignment/uploadAssignment?content_id=_7367856_1&course_id=_252989_1","66","2",],
 ["0","","","","","0","0",],
-["6","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/week9.pdf' target='_blank'>Week 9 - IO and QuickCheck Generators</a>","","","68","1",],
+["6","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/week9.pdf' target='_blank'>Week 9 - IO and QuickCheck Generators</a><br/>(<a href='https://mediasite.bris.ac.uk/Mediasite/Play/a18e66283df649239452b70e7794cffc1d' target='_blank'>Revision Video 1</a>)<br/>(<a href='https://mediasite.bris.ac.uk/Mediasite/Play/f48f5649eea243049ed5852b9de08c941d' target='_blank'>Revision Video 2</a>)","","","68","1",],
 ["7","in your own time","","","","69","1",],
 ["4","Thurs 15:00-18:00<br/>MVB2.11/1.15","IO and Properties of Trees","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet07.pdf","","70","2",],
 ["0","","","","","0","0",],
