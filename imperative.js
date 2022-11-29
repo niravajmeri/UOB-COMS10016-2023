@@ -141,7 +141,7 @@ var activities = [
  
 //WEEK 10 - 
 ["10", "",                     "",                                 "", "", "0", "0"],
-["22", "Tue 29/11/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "</a>DESIGN<a>", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_22.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/f205eea1d0014aa286f0bf98d613ee5f1d",  "112", "1"],
+["21", "Tue 29/11/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "DESIGN", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_22_Design_NA.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/f205eea1d0014aa286f0bf98d613ee5f1d",  "112", "1"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["8", "Submission Deadline<br/>Thu 08/12/22<br/>01:00pm UK time<hr/>",                     "SUBMIT HERE<br/>(Blackboard)<hr/>",                                 "https://www.ole.bris.ac.uk/webapps/assignment/uploadAssignment?content_id=_7367857_1&course_id=_252989_1&group_id=&mode=view", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
