@@ -302,7 +302,7 @@ functionalPage =
       , Entry
           { title = "IO and Properties of Trees"
           , spec = Worksheet "sheet07.pdf"
-          , materials = sheets 7
+          , materials = sheets 7 ++ answers 7
           }
       , Entry
           { title = "Monoids"
