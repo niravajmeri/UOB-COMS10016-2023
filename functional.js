@@ -28,7 +28,7 @@ var categories = [
 ["9","Bonus Worksheet","#FCC981","1","","Materials",],
 ["10","Formative Practical","#EEEEDD","1","","Materials",],
 ["11","Bonus Lecture","#D8CCFF","0","","",],
-["12","Mock Test","#EEEEDD","1","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/notes/COMS10016-Mock.pdf","Materials",],
+["12","Mock Test","#EEEEDD","1","","Materials",],
 
 ];
 
@@ -105,7 +105,7 @@ const activities = [
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["9","(optional)","Monoids","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus2.pdf","","74","2",],
-["12","in your own time","Mock Test","","","76","1",],
+["12","in your own time","Mock Test","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/notes/COMS10016-Mock.pdf","","76","1",],
 ["6","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/' target='_blank'>Week 10 - Functors and Applicatives</a>","","","77","3",],
 ["0","","","","","0","0",],
 ["4","Thurs 15:00-18:00<br/>MVB2.11/1.15","Functors and Applicatives","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet08.pdf","","80","4",],

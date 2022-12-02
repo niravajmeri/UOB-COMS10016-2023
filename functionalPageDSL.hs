@@ -427,7 +427,7 @@ entryToCategory (Entry _ details materials) = case details of
         { title = "Mock Test"
         , colour = "#EEEEDD"
         , counter = True
-        , slidesLinkName = test
+        , slidesLinkName = ""
         , materialLinkName = "Materials"
         }
 
@@ -490,7 +490,7 @@ entryToActivity catDict entry@(Entry {title, spec, materials})
           Coursework{instructions} -> courseworkLink instructions
           FormativePractical{file} -> courseworkLink file
           LectureExtra{videoLink}  -> videoLink
-          -- MockTest{test} -> test
+          MockTest{test} -> test
           _ -> ""
       , slidesURL = case spec of
           Coursework{submissionLink} -> submissionLink
