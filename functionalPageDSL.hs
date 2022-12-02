@@ -332,7 +332,7 @@ functionalPage =
       , Entry
           { title = "Functors and Applicatives"
           , spec = Worksheet "sheet08.pdf"
-          , materials = sheets 8
+          , materials = sheets 8 ++ answers 8
           }
       , Entry
           { title = "Maps, Tries, Sets, and Perfect Trees"

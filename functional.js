@@ -107,11 +107,11 @@ const activities = [
 ["0","","","","","0","0",],
 ["6","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/slides/' target='_blank'>Week 10 - Functors and Applicatives</a>","","","76","3",],
 ["0","","","","","0","0",],
-["4","Thurs 15:00-18:00<br/>MVB2.11/1.15","Functors and Applicatives","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet08.pdf","","79","2",],
+["4","Thurs 15:00-18:00<br/>MVB2.11/1.15","Functors and Applicatives","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet08.pdf","","79","4",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
-["9","(optional)","Maps, Tries, Sets, and Perfect Trees","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus3.pdf","","81","2",],
+["9","(optional)","Maps, Tries, Sets, and Perfect Trees","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus3.pdf","","83","2",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
@@ -205,8 +205,10 @@ const files = [
 ["78","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/code/ApplicativeLive2022.hs","ApplicativeLive2022.hs",],
 ["79","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet08.pdf","sheet08.pdf",],
 ["80","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet08Dyslexic.pdf","sheet08Dyslexic.pdf",],
-["81","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus3.pdf","sheetBonus3.pdf",],
-["82","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus3Dyslexic.pdf","sheetBonus3Dyslexic.pdf",],
+["81","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/answer08.pdf","answer08.pdf",],
+["82","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/answer08Dyslexic.pdf","answer08Dyslexic.pdf",],
+["83","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus3.pdf","sheetBonus3.pdf",],
+["84","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus3Dyslexic.pdf","sheetBonus3Dyslexic.pdf",],
 
 ];
 
