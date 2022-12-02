@@ -490,7 +490,7 @@ entryToActivity catDict entry@(Entry {title, spec, materials})
           Coursework{instructions} -> courseworkLink instructions
           FormativePractical{file} -> courseworkLink file
           LectureExtra{videoLink}  -> videoLink
-          MockTest{test} -> test
+          -- MockTest{test} -> test
           _ -> ""
       , slidesURL = case spec of
           Coursework{submissionLink} -> submissionLink
