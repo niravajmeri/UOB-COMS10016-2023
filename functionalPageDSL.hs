@@ -323,12 +323,12 @@ functionalPage =
               , code "ApplicativeLive2022.hs"
               ]
           }
-      -- , Entry
-      --     { title = ""
-      --     , spec = NotesExtra
-      --     , materials = map (uncurry note)
-      --         [ ("Intro to IO", "Intro-to-IO.pdf") ]
-      --     }
+      , Entry
+          { title = "Mock Test"
+          , spec = MockTest{ test = noteLink "COMS10016-Mock.pdf" }
+          , materials = map (uncurry note)
+              [ ("COMS10016-Mock.pdf", "COMS10016-Mock.pdf") ]
+          }
       , Entry
           { title = "Functors and Applicatives"
           , spec = Worksheet "sheet08.pdf"
@@ -423,6 +423,13 @@ entryToCategory (Entry _ details materials) = case details of
         , slidesLinkName = ""
         , materialLinkName = "Materials"
         }
+  MockTest{test} -> MkCat
+        { title = "Mock Test"
+        , colour = "#EEEEDD"
+        , counter = True
+        , slidesLinkName = test
+        , materialLinkName = "Materials"
+        }
 
   _ -> blankCategory
 
@@ -470,6 +477,7 @@ entryToActivity catDict entry@(Entry {title, spec, materials})
           NotesExtra -> "in your own time"
           Coursework{..} -> "Deadline: " ++ deadline
           FormativePractical{} -> ""
+          MockTest{} -> "in your own time"
           _ -> ""
       , title = case spec of
           Lectures{slidesFile, revisionVideos}
@@ -482,6 +490,7 @@ entryToActivity catDict entry@(Entry {title, spec, materials})
           Coursework{instructions} -> courseworkLink instructions
           FormativePractical{file} -> courseworkLink file
           LectureExtra{videoLink}  -> videoLink
+          MockTest{test} -> test
           _ -> ""
       , slidesURL = case spec of
           Coursework{submissionLink} -> submissionLink
@@ -527,6 +536,7 @@ data EntrySpec
                , deadline :: String
                }
   | FormativePractical { file :: String }
+  | MockTest { test :: URL }
   | Blank
   deriving (Show, Eq, Ord)
 
