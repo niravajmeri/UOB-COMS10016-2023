@@ -14,7 +14,7 @@ main = putStr $ pageToJS functionalPage config
 config :: Config
 config =
   MkConfig
-    { currentWeek = 10,
+    { currentWeek = 11,
       activityNum = 8,
       columnNum = 4,
       title = "FUNCTIONAL PROGRAMMING",
@@ -307,14 +307,14 @@ functionalPage =
       , Entry
           { title = "Monoids"
           , spec = WorksheetBonus "sheetBonus2.pdf"
-          , materials = sheetsBonus 2
+          , materials = sheetsBonus 2 ++ answersBonus 2
           }
       ]
     -- Week 10
     , [ Entry
           { title = "Week 10 - Functors and Applicatives"
           , spec = Lectures
-              { slidesFile = ""
+              { slidesFile = "https://quizizz.com/admin/presentation/619be26fa9afb8001d4e68fa"
               , revisionVideos = []
               }
           , materials =
@@ -337,7 +337,27 @@ functionalPage =
       , Entry
           { title = "Maps, Tries, Sets, and Perfect Trees"
           , spec = WorksheetBonus "sheetBonus3.pdf"
-          , materials = sheetsBonus 3
+          , materials = sheetsBonus 3 ++ answersBonus 3
+          }
+      ]
+
+    , [ Entry
+          { title = "Week 11 - Monads"
+          , spec = Lectures
+              { slidesFile = "https://quizizz.com/admin/presentation/61a1077bf56186001dc1301e"
+              , revisionVideos = []
+              }
+          , materials = [ code "Monads.hs" ]
+          }
+      , Entry
+          { title = "Monads"
+          , spec = Worksheet "sheet09.pdf"
+          , materials = sheets 9
+          }
+      , Entry
+          { title = "Sheet of Death"
+          , spec = WorksheetBonus "sheetBonus4.pdf"
+          , materials = sheetsBonus 4
           }
       ]
 
