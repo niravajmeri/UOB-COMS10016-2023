@@ -46,7 +46,7 @@ functionalPage =
     , Entry
         { title = "Introduction"
         , spec = Lectures
-            { slidesFile = "week1.pdf"
+            { slidesFile = BB "week1.pdf"
             , revisionVideos = ["https://mediasite.bris.ac.uk/Mediasite/Play/18e6ea68ad654e9aaafc9f34805f2c831d"]
             }
         , materials = []
@@ -61,7 +61,7 @@ functionalPage =
   , [ Entry
         { title = "Data Types and Functions"
         , spec = Lectures
-            { slidesFile = "week2.pdf"
+            { slidesFile = BB "week2.pdf"
             , revisionVideos = [ "https://mediasite.bris.ac.uk/Mediasite/Play/21b78fbe973d43a599fbf79dd94f8aa51d"
                                , "https://mediasite.bris.ac.uk/Mediasite/Play/7aae664dcbf94eb28fe13a6ed93f24221d"
                                ]
@@ -86,7 +86,7 @@ functionalPage =
       , Entry
           { title = "Evaluation, Currying, Cases, and Recursion"
           , spec = Lectures
-              { slidesFile = "week3.pdf"
+              { slidesFile = BB "week3.pdf"
               , revisionVideos = [ "https://mediasite.bris.ac.uk/Mediasite/Play/6ec18e18e6814510b259e151366aecee1d"
                                  , "https://mediasite.bris.ac.uk/Mediasite/Play/2da7d7439ebe40189e8e211a36208bee1d"]
               }
@@ -117,7 +117,7 @@ functionalPage =
     , [ Entry
           { title = "Modelling, Datatypes, and Testing"
           , spec = Lectures
-              { slidesFile = "week4.pdf"
+              { slidesFile = BB "week4.pdf"
               , revisionVideos =
                   [ "https://mediasite.bris.ac.uk/Mediasite/Play/4361b923603143a18bdd32f7bfe710671d" 
                   , "https://mediasite.bris.ac.uk/Mediasite/Play/c467dfea5fbb4d9a9fc73aea48f202ff1d"
@@ -153,7 +153,7 @@ functionalPage =
     , [ Entry
           { title = "Types and Constructors, Pattern Matching, and Lists"
           , spec = Lectures
-              { slidesFile = "week5.pdf"
+              { slidesFile = BB "week5.pdf"
               , revisionVideos =
                   [ "https://mediasite.bris.ac.uk/Mediasite/Play/8f441a50546745c4bf1d796c084ebfa91d"
                   , "https://mediasite.bris.ac.uk/Mediasite/Play/6e8c8a6d980d45feb4808288da7bce771d"
@@ -189,7 +189,7 @@ functionalPage =
     , [ Entry
           { title = "Higher-Order Functions"
           , spec = Lectures
-              { slidesFile = "week7.pdf"
+              { slidesFile = BB "week7.pdf"
               , revisionVideos =
                   [ "https://mediasite.bris.ac.uk/Mediasite/Play/cb5a2aad0fed4dc385ea5db8da9c4c801d"
                   , "https://mediasite.bris.ac.uk/Mediasite/Play/c3299d40b82d4163b30f89d3da36afcc1d"
@@ -229,7 +229,7 @@ functionalPage =
     , [ Entry
           { title = "Function Composition and Data Transformations"
           , spec = Lectures
-              { slidesFile = "function-machine-composition.pdf"
+              { slidesFile = BB "function-machine-composition.pdf"
               , revisionVideos =
                   [ "https://mediasite.bris.ac.uk/Mediasite/Play/d1580512ac654fdd951562f63c18fd691d"
                   , "https://mediasite.bris.ac.uk/Mediasite/Play/2f9bb8f91901479a90886db304e28bf81d"
@@ -243,7 +243,7 @@ functionalPage =
       , Entry
           { title = "List Comprehensions, Type-Classes, and Trees"
           , spec = Lectures
-              { slidesFile = "week8.pdf"
+              { slidesFile = BB "week8.pdf"
               , revisionVideos = []
               }
           , materials = [code "questions.hs"]
@@ -285,7 +285,7 @@ functionalPage =
     , [ Entry
           { title = "IO and QuickCheck Generators"
           , spec = Lectures
-              { slidesFile = "week9.pdf"
+              { slidesFile = BB "week9.pdf"
               , revisionVideos =
                   [ "https://mediasite.bris.ac.uk/Mediasite/Play/a18e66283df649239452b70e7794cffc1d" 
                   , "https://mediasite.bris.ac.uk/Mediasite/Play/f48f5649eea243049ed5852b9de08c941d"
@@ -314,7 +314,7 @@ functionalPage =
     , [ Entry
           { title = "Functors and Applicatives"
           , spec = Lectures
-              { slidesFile = "https://quizizz.com/admin/presentation/619be26fa9afb8001d4e68fa"
+              { slidesFile = External "https://quizizz.com/admin/presentation/619be26fa9afb8001d4e68fa"
               , revisionVideos = []
               }
           , materials =
@@ -345,7 +345,7 @@ functionalPage =
     , [ Entry
           { title = "Monads"
           , spec = Lectures
-              { slidesFile = "https://quizizz.com/admin/presentation/61a1077bf56186001dc1301e"
+              { slidesFile = External "https://quizizz.com/admin/presentation/61a1077bf56186001dc1301e"
               , revisionVideos = []
               }
           , materials = [ code "Monads.hs" ]
@@ -353,7 +353,7 @@ functionalPage =
       , Entry
           { title = "Embedding"
           , spec = Lectures
-              { slidesFile = "https://docs.google.com/presentation/d/1_VBk9BFqwWpJZxg4sPm-TMPbHTUxos8sSBwyC8aC3KU"
+              { slidesFile = External "https://docs.google.com/presentation/d/1_VBk9BFqwWpJZxg4sPm-TMPbHTUxos8sSBwyC8aC3KU"
               , revisionVideos = []
               }
           , materials =
@@ -516,7 +516,8 @@ entryToActivity catDict entry@(Entry {title, spec, materials})
           _ -> ""
       , title = case spec of
           Lectures{slidesFile, revisionVideos}
-            -> href title (slideLink slidesFile) ++ revisionVidLinks revisionVideos
+            -> href title (case slidesFile of BB path -> slideLink path; External url -> url)
+               ++ revisionVidLinks revisionVideos
           _ -> title
       , activityURL = case spec of
           SetupLab{setupLink}  -> setupLink
@@ -553,11 +554,11 @@ data GridEntry = Entry
   { title     :: String
   , spec      :: EntrySpec
   , materials :: [Material]
-  } deriving (Show, Eq, Ord)
+  } deriving (Show, Eq)
 
 data EntrySpec
   = ExtraMaterials
-  | Lectures  { slidesFile :: String
+  | Lectures  { slidesFile :: SlidesPath
               , revisionVideos :: [URL]
               }
   | LectureExtra { videoLink :: String }
@@ -573,7 +574,10 @@ data EntrySpec
   | FormativePractical { file :: String }
   | MockTest { test :: URL }
   | Blank
-  deriving (Show, Eq, Ord)
+  deriving (Show, Eq)
+
+data SlidesPath = BB FilePath | External URL
+  deriving (Show, Eq)
 
 data Material = MkMaterial
   { name :: String
@@ -658,7 +662,7 @@ coursework :: String -> String -> Material
 coursework cwDir file = MkMaterial file (courseworkLink (cwDir ++ "/" ++ file))
 
 external :: String -> URL -> Material
-external name url = MkMaterial name url
+external = MkMaterial
 
 sheet :: String -> Material
 sheet file = MkMaterial file (sheetLink file)
