@@ -44,7 +44,7 @@ functionalPage =
             ]
         }
     , Entry
-        { title = "Week 1 - Introduction"
+        { title = "Introduction"
         , spec = Lectures
             { slidesFile = "week1.pdf"
             , revisionVideos = ["https://mediasite.bris.ac.uk/Mediasite/Play/18e6ea68ad654e9aaafc9f34805f2c831d"]
@@ -59,7 +59,7 @@ functionalPage =
     ]
     -- Week 2
   , [ Entry
-        { title = "Week 2 - Data Types and Functions"
+        { title = "Data Types and Functions"
         , spec = Lectures
             { slidesFile = "week2.pdf"
             , revisionVideos = [ "https://mediasite.bris.ac.uk/Mediasite/Play/21b78fbe973d43a599fbf79dd94f8aa51d"
@@ -84,7 +84,7 @@ functionalPage =
               ]
           }
       , Entry
-          { title = "Week 3 - Evaluation, Currying, Cases, and Recursion"
+          { title = "Evaluation, Currying, Cases, and Recursion"
           , spec = Lectures
               { slidesFile = "week3.pdf"
               , revisionVideos = [ "https://mediasite.bris.ac.uk/Mediasite/Play/6ec18e18e6814510b259e151366aecee1d"
@@ -115,7 +115,7 @@ functionalPage =
     
     -- Week 4
     , [ Entry
-          { title = "Week 4 - Modelling, Datatypes, and Testing"
+          { title = "Modelling, Datatypes, and Testing"
           , spec = Lectures
               { slidesFile = "week4.pdf"
               , revisionVideos =
@@ -151,7 +151,7 @@ functionalPage =
       ]
     -- Week 5
     , [ Entry
-          { title = "Week 5 - Types and Constructors, Pattern Matching, and Lists"
+          { title = "Types and Constructors, Pattern Matching, and Lists"
           , spec = Lectures
               { slidesFile = "week5.pdf"
               , revisionVideos =
@@ -187,7 +187,7 @@ functionalPage =
 
     -- Week 7
     , [ Entry
-          { title = "Week 7 - Higher-Order Functions"
+          { title = "Higher-Order Functions"
           , spec = Lectures
               { slidesFile = "week7.pdf"
               , revisionVideos =
@@ -227,7 +227,7 @@ functionalPage =
 
     -- Week 8
     , [ Entry
-          { title = "Week 8 - Function Composition and Data Transformations"
+          { title = "Function Composition and Data Transformations"
           , spec = Lectures
               { slidesFile = "function-machine-composition.pdf"
               , revisionVideos =
@@ -241,7 +241,7 @@ functionalPage =
               ]
           }
       , Entry
-          { title = "Week 8 - List Comprehensions, Type-Classes, and Trees"
+          { title = "List Comprehensions, Type-Classes, and Trees"
           , spec = Lectures
               { slidesFile = "week8.pdf"
               , revisionVideos = []
@@ -283,7 +283,7 @@ functionalPage =
       ]
 
     , [ Entry
-          { title = "Week 9 - IO and QuickCheck Generators"
+          { title = "IO and QuickCheck Generators"
           , spec = Lectures
               { slidesFile = "week9.pdf"
               , revisionVideos =
@@ -312,7 +312,7 @@ functionalPage =
       ]
     -- Week 10
     , [ Entry
-          { title = "Week 10 - Functors and Applicatives"
+          { title = "Functors and Applicatives"
           , spec = Lectures
               { slidesFile = "https://quizizz.com/admin/presentation/619be26fa9afb8001d4e68fa"
               , revisionVideos = []
@@ -342,7 +342,7 @@ functionalPage =
       ]
 
     , [ Entry
-          { title = "Week 11 - Monads"
+          { title = "Monads"
           , spec = Lectures
               { slidesFile = "https://quizizz.com/admin/presentation/61a1077bf56186001dc1301e"
               , revisionVideos = []
