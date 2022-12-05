@@ -341,6 +341,7 @@ functionalPage =
           }
       ]
 
+    -- Week 11
     , [ Entry
           { title = "Monads"
           , spec = Lectures
@@ -348,6 +349,20 @@ functionalPage =
               , revisionVideos = []
               }
           , materials = [ code "Monads.hs" ]
+          }
+      , Entry
+          { title = "Embedding"
+          , spec = Lectures
+              { slidesFile = "https://docs.google.com/presentation/d/1_VBk9BFqwWpJZxg4sPm-TMPbHTUxos8sSBwyC8aC3KU"
+              , revisionVideos = []
+              }
+          , materials =
+              [ code "EmbeddingPartI.hs"
+              , external "Part II video" "https://web.microsoftstream.com/video/85b52444-fbe7-4f67-a7e2-b9083f2690a6"
+              , external "Folding Domain Specific Languages: Deep and Shallow" "https://dl.acm.org/doi/10.1145/2628136.2628138"
+              , external "CircuitFlow" "https://arxiv.org/abs/2111.12420"
+              , external "Bristol Quidditch Club" "https://www.bristolsu.org.uk/groups/bristol-quidditch-club-00bf"
+              ]
           }
       , Entry
           { title = "Monads"
@@ -642,7 +657,7 @@ code file = MkMaterial file (codeLink file)
 coursework :: String -> String -> Material
 coursework cwDir file = MkMaterial file (courseworkLink (cwDir ++ "/" ++ file))
 
-external :: String -> String -> Material
+external :: String -> URL -> Material
 external name url = MkMaterial name url
 
 sheet :: String -> Material
