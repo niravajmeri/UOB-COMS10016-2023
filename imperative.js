@@ -151,7 +151,7 @@ var activities = [
  
 //WEEK 06 - READING WEEK
 ["10", "",                     "",                                 "", "", "0", "0"],
-["21", "Tue 06/12/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "ADVANCED CONCEPTS",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_24.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/ff1c3ff560064ad0b8101bbe6cb2c90d1d", "152", "7"],
+["21", "Tue 06/12/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "ADVANCED CONCEPTS",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_24.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/ff1c3ff560064ad0b8101bbe6cb2c90d1d", "152", "7"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["8", "",                     "",                                 "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
