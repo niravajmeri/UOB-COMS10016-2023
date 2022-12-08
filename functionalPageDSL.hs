@@ -315,7 +315,10 @@ functionalPage =
           { title = "Functors and Applicatives"
           , spec = Lectures
               { slidesFile = External "https://quizizz.com/admin/presentation/619be26fa9afb8001d4e68fa"
-              , revisionVideos = []
+              , revisionVideos =
+                  [ "https://mediasite.bris.ac.uk/Mediasite/Play/64071d2d5e274e2e938715454a7488521d"
+                  , "https://mediasite.bris.ac.uk/Mediasite/Play/2bc2d5f933834dc2b1d12eb1820f11651d"
+                  ]
               }
           , materials =
               [ code "Functors-Livecode.hs"
@@ -346,7 +349,7 @@ functionalPage =
           { title = "Monads"
           , spec = Lectures
               { slidesFile = External "https://quizizz.com/admin/presentation/61a1077bf56186001dc1301e"
-              , revisionVideos = []
+              , revisionVideos = ["https://mediasite.bris.ac.uk/Mediasite/Play/284bff6ffeaa4d13907d7773a8ad0f501d"]
               }
           , materials = [ code "Monads.hs" ]
           }
@@ -354,7 +357,7 @@ functionalPage =
           { title = "Embedding"
           , spec = Lectures
               { slidesFile = External "https://docs.google.com/presentation/d/1_VBk9BFqwWpJZxg4sPm-TMPbHTUxos8sSBwyC8aC3KU"
-              , revisionVideos = []
+              , revisionVideos = ["https://mediasite.bris.ac.uk/Mediasite/Play/80396178d0094388982b5b4dde092e331d"]
               }
           , materials =
               [ code "EmbeddingPartI.hs"
