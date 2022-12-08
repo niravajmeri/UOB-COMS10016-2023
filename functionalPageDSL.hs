@@ -178,7 +178,7 @@ functionalPage =
       , Entry
           { title = "Structural Inductive Proofs"
           , spec = WorksheetBonus "sheetBonus1.pdf"
-          , materials = sheetsBonus 1 ++ answersBonus 1
+          , materials = sheetsBonus 1 ++ [note "Structural Inductive Proofs" "StructuralInductiveProofs.pdf"] ++ answersBonus 1
           }
       ]
 
@@ -307,7 +307,7 @@ functionalPage =
       , Entry
           { title = "Monoids"
           , spec = WorksheetBonus "sheetBonus2.pdf"
-          , materials = sheetsBonus 2 ++ answersBonus 2
+          , materials = sheetsBonus 2 ++ [note "Monoids notes" "Monoids.pdf"] ++ answersBonus 2
           }
       ]
     -- Week 10
