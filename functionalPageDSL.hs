@@ -330,7 +330,9 @@ functionalPage =
           { title = "Mock Test"
           , spec = MockTest{ test = noteLink "COMS10016-Mock.pdf" }
           , materials = map (uncurry note)
-              [ ("COMS10016-Mock.pdf", "COMS10016-Mock.pdf") ]
+              [ ("COMS10016-Mock.pdf", "COMS10016-Mock.pdf")
+              , ("COMS10016-Mock-Answer.txt", "COMS10016-Mock-Answer.txt")
+              ]
           }
       , Entry
           { title = "Functors and Applicatives"
