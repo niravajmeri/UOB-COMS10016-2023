@@ -116,11 +116,11 @@ const activities = [
 ["0","","","","","0","0",],
 ["6","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://quizizz.com/admin/presentation/61a1077bf56186001dc1301e' target='_blank'>Monads</a><br/>(<a href='https://mediasite.bris.ac.uk/Mediasite/Play/284bff6ffeaa4d13907d7773a8ad0f501d' target='_blank'>Revision Video 1</a>)","","","92","1",],
 ["6","Mon 11:00-11:50<br/>Tues 14:00-14:50<br/>QB1.40 Pugsley","<a href='https://docs.google.com/presentation/d/1_VBk9BFqwWpJZxg4sPm-TMPbHTUxos8sSBwyC8aC3KU' target='_blank'>Embedding</a><br/>(<a href='https://mediasite.bris.ac.uk/Mediasite/Play/80396178d0094388982b5b4dde092e331d' target='_blank'>Revision Video 1</a>)","","","93","5",],
-["4","Thurs 15:00-18:00<br/>MVB2.11/1.15","Monads","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet09.pdf","","98","2",],
+["4","Thurs 15:00-18:00<br/>MVB2.11/1.15","Monads","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet09.pdf","","98","4",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
-["9","(optional)","Sheet of Death","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus4.pdf","","100","2",],
+["9","(optional)","Sheet of Death","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus4.pdf","","102","4",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
 ["0","","","","","0","0",],
@@ -233,8 +233,12 @@ const files = [
 ["97","https://www.bristolsu.org.uk/groups/bristol-quidditch-club-00bf","Bristol Quidditch Club",],
 ["98","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet09.pdf","sheet09.pdf",],
 ["99","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheet09Dyslexic.pdf","sheet09Dyslexic.pdf",],
-["100","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus4.pdf","sheetBonus4.pdf",],
-["101","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus4Dyslexic.pdf","sheetBonus4Dyslexic.pdf",],
+["100","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/answer09.pdf","answer09.pdf",],
+["101","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/answer09Dyslexic.pdf","answer09Dyslexic.pdf",],
+["102","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus4.pdf","sheetBonus4.pdf",],
+["103","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/sheetBonus4Dyslexic.pdf","sheetBonus4Dyslexic.pdf",],
+["104","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/answerBonus4.pdf","answerBonus4.pdf",],
+["105","https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/functional/sheets/answerBonus4Dyslexic.pdf","answerBonus4Dyslexic.pdf",],
 
 ];
 

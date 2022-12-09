@@ -370,12 +370,12 @@ functionalPage =
       , Entry
           { title = "Monads"
           , spec = Worksheet "sheet09.pdf"
-          , materials = sheets 9
+          , materials = sheets 9 ++ answers 9
           }
       , Entry
           { title = "Sheet of Death"
           , spec = WorksheetBonus "sheetBonus4.pdf"
-          , materials = sheetsBonus 4
+          , materials = sheetsBonus 4 ++ answersBonus 4
           }
       ]
 
