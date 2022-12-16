@@ -155,7 +155,7 @@ var activities = [
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["8", "",                     "",                                 "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["0", "Fri 09/12/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley", "CORRECTNESS", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_25_OR.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/40295c2ae05c4abeb18672a60c925a7d1d",  "0", "0"],
+["0", "Fri 09/12/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley", "CORRECTNESS", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_25_OR.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/40295c2ae05c4abeb18672a60c925a7d1d",  "7", "1"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["8", "",                     "",                                 "", "", "0", "0"],
  
