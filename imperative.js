@@ -155,7 +155,7 @@ var activities = [
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["8", "",                     "",                                 "", "", "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["22", "Fri 09/12/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley", "</a>CORRECTNESS<a>", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_23_Libraries_NA.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/3d51c01de15c41ad8a6492b99775bb981d",  "108", "3"],
+["22", "Fri 09/12/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley", "CORRECTNESS", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_25_OR.pdf", "https://mediasite.bris.ac.uk/Mediasite/Play/40295c2ae05c4abeb18672a60c925a7d1d",  "0", "0"],
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["8", "",                     "",                                 "", "", "0", "0"],
  
@@ -205,7 +205,7 @@ var activities = [
 ["10","",                   "",        "", ""],
 ["8", "<a href='https://www.ole.bris.ac.uk/webapps/assignment/uploadAssignment?content_id=_6168669_1&course_id=_247722_1' target='_blank'>SUBMIT HERE (Blackboard)<hr/>Submission Deadline:<br/>Fri 10/12/21<br/>01:00pm UK time<\a>",                   "",        "0", "0"],
 ["9","",                   "",        "", ""],
-["19", "consider anytime", "CORRECTNESS", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_25.pdf", "", "0", "0"],
+["0", "consider anytime", "CORRECTNESS", "https://mediasite.bris.ac.uk/Mediasite/Play/40295c2ae05c4abeb18672a60c925a7d1d", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/content/imperative/COMS10016_25.pdf", "0", "0"],
 ["10", "",                  "",        "", ""],
 ["3", "Wed 08/12/21<br/>10am-1pm<br/>MVB2.11", "ASSIGNMENT SUPPORT LAB", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2021_TB-1/wednesday.html", "", "0", "0"],
  
