@@ -98,7 +98,7 @@ var activities = [
 ["0", "Fri 28/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "STACKS",            "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_14_OR.pdf",           "https://web.microsoftstream.com/video/125300f5-3aec-4318-a1ad-b80bc0aad486",  "79", "2"],
 ["0", "Fri 28/10/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "LISTS",             "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_15_OR.pdf",           "https://web.microsoftstream.com/video/40263cce-c988-4df7-9a24-1d28dc34b659",  "86", "2"],
 // ["7", "in your own time", "LIST ASSIGNMENT<hr/>", "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/week06/index.html", "", "91", "3"],
-["7", "in your own time", "LIST ASSIGNMENT<hr/>", "", "", "0", "0"],
+["7", "in your own time", "</a>LIST ASSIGNMENT<hr/><a>", "", "", "0", "0"],
 
 //WEEK 06 - READING WEEK
 ["10", "",                     "",                                 "", "", "0", "0"],
@@ -121,7 +121,7 @@ var activities = [
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["0", "Fri 11/11/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "SORTING</a><br/></strong>(<a href='https://mediasite.bris.ac.uk/Mediasite/Play/7c02ccf8d6564257828411d6aefafd181d' target='_blank'>Live Recording</a>)<a>",                   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_17_OR.pdf",      "https://mediasite.bris.ac.uk/Mediasite/Play/ab93766ee4b64918925dd1d8e18f8e111d", "105", "1"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["8", "",                     "",                                 "", "", "0", "0"],
+["9", "",                     "",                                 "", "", "0", "0"],
  
 //WEEK 08 - 
 ["4", "in your own time",   "CELLULAR",                   "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_Task05.pdf", "", "88", "1"],
@@ -141,7 +141,7 @@ var activities = [
 ["10", "",                     "",                                 "", "", "0", "0"],
 ["0", "Fri 25/11/22<br/>03:00pm-03:50pm<br/>QB1.40 Pugsley",   "PREPROCESSOR",  "https://www.ole.bris.ac.uk/bbcswebdav/courses/COMS10016_2022_TB-1/content/imperative/COMS10016_21_OR.pdf",  "https://mediasite.bris.ac.uk/Mediasite/Play/554d0dcf701a44eca46968749456ee851d",  "112", "1"],
 ["10", "",                     "",                                 "", "", "0", "0"],
-["7", "in your own time", "SKETCH ASSIGNMENT<hr/>", "", "", "0", "0"],
+["7", "in your own time", "</a>SKETCH ASSIGNMENT<hr/><a>", "", "", "0", "0"],
  
 //WEEK 10 - 
 ["10", "",                     "",                                 "", "", "0", "0"],
